@@ -1,0 +1,101 @@
+Area_Sqft,Soil_pH,No_of_Owners,District,Land_Type,Flood_Risk,Water_Availability,Soil_Type,Document_Issue,Owner_Objection,Court_Case,Compensation_Status,FMB,A_Register,Document_Verified,Objection,Ownership_Type,Acquisition_Days,Delay_Status,Land_ID,Taluk,Village,Survey_No,Delay_Risk_Band
+13487.0,6.8,1,Tirunelveli,Wet,No,Yes,Alluvial Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,30,No Delay,REC0264,Palayamkottai,Melathidiyoor,446/5D1,Low
+3067.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0005,Sriperumbudur,Magadevimangalam,96/1B2A2,Low
+7534.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0014,Sriperumbudur,Magadevimangalam,98/3C,Low
+36694.0,7.0,2,Coimbatore,Wet,No,Yes,Black Soil,Available,Yes,No,Objection enquiry,Yes,Yes,Yes,Yes,Joint,120,Delayed,REC0262,Pollachi,Samathur,75/3D,Medium
+22098.0,7.2,2,Tirunelveli,Dry,No,Yes,Alluvial Soil,Not Available,Yes,No,Objection enquiry,No,Yes,No,Yes,Joint,90,Delayed,REC0375,Palayamkottai,Melathidiyoor,355/6B,Medium
+34305.0,7.5,1,Tiruchirappalli,Dry,No,No,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,30,No Delay,REC0492,Srirangam,Pettavaithalai,431/2A3,Low
+25898.0,6.0,1,Salem,Dry,Yes,No,Clay Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,60,No Delay,REC0251,Omalur,Kamalapuram,335/3C3,Low
+6996.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0030,Sriperumbudur,Magadevimangalam,99/2C,Low
+3229.0,6.5,4,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0016,Sriperumbudur,Magadevimangalam,98/5A,Low
+42517.0,6.5,1,Ranipet,Wet,No,Yes,Red Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,45,No Delay,REC0249,Walajah,Seekarajapuram,235/5D4,Low
+13315.0,6.5,1,Ranipet,Dry,Yes,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0298,Walajah,Ranipet,268/6C4,Low
+13993.0,6.5,3,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0045,Sriperumbudur,Magadevimangalam,100/11A,Low
+8181.0,6.8,1,Madurai,Wet,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0461,Vadipatti,Palamedu,318/6A,Low
+12916.0,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0124,Uthukottai,Melmaligaipattu,54/1A3,Low
+19913.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,Yes,Yes,Yes,No,Individual,30,No Delay,REC0029,Sriperumbudur,Magadevimangalam,99/2B,Low
+39256.0,6.5,1,Erode,Dry,No,Yes,Red Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,30,No Delay,REC0338,Perundurai,Pethampalayam,415/5B1,Low
+39191.0,7.5,1,Thanjavur,Dry,Yes,No,Clay Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,45,No Delay,REC0218,Kumbakonam,Swamimalai,265/3B3,Low
+4790.0,6.5,1,Krishnagiri,Wet,No,Yes,Clay Soil,Available,Yes,Yes,Withheld pending court,Yes,Yes,Yes,Yes,Individual,180,Delayed,REC0232,Hosur,Bagalur,239/2C,High
+24218.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0049,Sriperumbudur,Magadevimangalam,101/2A,Low
+24218.0,6.5,3,Tiruvallur,Manavari,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0131,Uthukottai,Melmaligaipattu,54/2,Low
+45940.0,6.5,1,Chengalpattu,Dry,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0241,Chengalpattu,Alapakkam,241/3A2,Low
+41441.0,6.0,2,Ranipet,Dry,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Joint,45,No Delay,REC0290,Walajah,Lalapet,116/3A,Low
+30677.0,6.0,1,Tiruvallur,Dry,No,Yes,Clay Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0137,Uthukottai,Melmaligaipattu,56/4,Low
+25833.0,6.5,6,Tiruvallur,Manavari,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0173,Gummidipoondi,Manellore,32/1,Low
+34261.0,6.5,1,Chengalpattu,Dry,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,30,No Delay,REC0440,Thiruporur,Thaiyur,182/3B2,Low
+4381.0,7.0,1,Tiruchirappalli,Dry,No,Yes,Alluvial Soil,Not Available,No,No,Verification pending,No,Yes,No,No,Individual,90,Delayed,REC0261,Lalgudi,Peruvalanallur,335/2B4,Medium
+3229.0,7.2,1,Thanjavur,Dry,No,No,Alluvial Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0398,Kumbakonam,Dharasuram,246/1D1,Low
+128628.0,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0193,Gummidipoondi,Manellore,34/5,Low
+16415.0,6.5,1,Salem,Wet,Yes,Yes,Red Soil,Available,Yes,No,Objection enquiry,Yes,Yes,Yes,Yes,Individual,120,Delayed,REC0400,Omalur,Pagalpatti,469/6C,Medium
+6996.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0063,Sriperumbudur,Magadevimangalam,101/16A1,Low
+645.83,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0100,Uthukottai,Melmaligaipattu,94/2A1A5,Low
+16350.0,6.5,1,Krishnagiri,Dry,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,30,No Delay,REC0349,Hosur,Bagalur,273/6C3,Low
+34035.0,6.5,1,Chengalpattu,Manavari,Yes,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0471,Madurantakam,Silavattam,153/1B2,Low
+43809.0,6.8,1,Krishnagiri,Dry,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0233,Shoolagiri,Kamandoddi,130/4C1,Low
+29600.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0082,Sriperumbudur,Magadevimangalam,103/3B2,Low
+19547.0,6.8,1,Salem,Wet,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0274,Sankari,Thevur,374/5C1,Low
+24251.0,6.5,1,Coimbatore,Manavari,No,Yes,Red Soil,Available,Yes,No,Objection enquiry,Yes,Yes,Yes,Yes,Individual,90,Delayed,REC0467,Sulur,Irugur,388/2D,Medium
+11840.0,6.0,2,Kancheepuram,Wet,No,Yes,Clay Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0046,Sriperumbudur,Magadevimangalam,100/11B,Low
+41710.0,6.2,1,Chengalpattu,Dry,Yes,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0203,Madurantakam,Silavattam,379/3B,Low
+3229.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0043,Sriperumbudur,Magadevimangalam,100/9C,Low
+35273.0,7.0,1,Thanjavur,Dry,No,Yes,Clay Soil,Not Available,No,No,Verification pending,Yes,Yes,No,No,Individual,90,Delayed,REC0454,Thanjavur,Nanjikottai,229/5A2,Medium
+3767.0,6.0,1,Tiruvallur,Manavari,No,Yes,Clay Soil,Not Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0182,Gummidipoondi,Manellore,33/1,Low
+10225.0,6.5,2,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0097,Uthukottai,Melmaligaipattu,94/2A1A2,Low
+8471.0,7.0,2,Thanjavur,Manavari,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Joint,30,No Delay,REC0230,Papanasam,Melattur,209/6B1,Low
+10225.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0067,Sriperumbudur,Magadevimangalam,101/17A,Low
+42291.0,6.8,1,Ranipet,Dry,No,Yes,Clay Soil,Available,Yes,Yes,Withheld pending court,Yes,Yes,Yes,Yes,Individual,150,Delayed,REC0452,Arakkonam,Thakkolam,12/6C3,High
+33906.0,6.5,1,Tiruvallur,Manavari,No,Yes,Red Soil,Available,No,No,To be paid,No,No,Yes,No,Individual,30,No Delay,REC0175,Gummidipoondi,Manellore,32/4,Low
+36500.0,6.5,1,Coimbatore,Wet,No,Yes,Black Soil,Available,Yes,Yes,Withheld pending court,No,Yes,Yes,Yes,Individual,120,Delayed,REC0457,Pollachi,Kinathukadavu,391/1B,Medium
+26921.0,6.8,1,Ranipet,Manavari,Yes,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0490,Walajah,Lalapet,196/4C3,Low
+5177.0,6.5,1,Dindigul,Dry,Yes,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0458,Dindigul,Thadicombu,383/6B3,Low
+29881.0,6.2,1,Erode,Dry,Yes,No,Black Soil,Available,Yes,Yes,Withheld pending court,Yes,Yes,Yes,Yes,Individual,150,Delayed,REC0444,Bhavani,Anthiyur,14/3A,High
+4305.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,60,No Delay,REC0064,Sriperumbudur,Magadevimangalam,101/16A2,Low
+24983.0,6.8,3,Erode,Dry,No,Yes,Red Soil,Available,Yes,No,Objection enquiry,Yes,Yes,Yes,Yes,Joint,120,Delayed,REC0379,Erode,Modakkurichi,140/1B,Medium
+43055.0,6.5,1,Tiruvallur,Manavari,No,No,Red Soil,Available,No,No,To be paid,No,No,Yes,No,Individual,30,No Delay,REC0190,Gummidipoondi,Manellore,33/9,Low
+33260.0,6.5,1,Erode,Dry,Yes,Yes,Red Soil,Not Available,No,No,Verification pending,Yes,Yes,No,No,Individual,90,Delayed,REC0425,Erode,Vepampalayam,330/6B,Medium
+13993.0,6.0,1,Tiruvallur,Dry,No,No,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0163,Gummidipoondi,Manellore,31/1B,Low
+5716.0,6.5,1,Tirunelveli,Manavari,Yes,Yes,Alluvial Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,30,No Delay,REC0487,Nanguneri,Moondradaippu,85/2C3,Low
+27943.0,6.2,3,Erode,Wet,No,Yes,Black Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Joint,30,No Delay,REC0343,Bhavani,Jambai,175/6A4,Low
+46091.0,7.0,1,Tiruchirappalli,Dry,No,No,Alluvial Soil,Not Available,No,No,Verification pending,Yes,Yes,No,No,Individual,90,Delayed,REC0336,Thiruverumbur,Kattur,102/6A,Medium
+9322.0,6.2,1,Erode,Manavari,No,Yes,Black Soil,Available,Yes,No,Objection enquiry,No,Yes,Yes,Yes,Individual,120,Delayed,REC0473,Perundurai,Pethampalayam,311/4A,Medium
+430.56,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0103,Uthukottai,Melmaligaipattu,94/2A1A8,Low
+27813.0,6.5,2,Kancheepuram,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0146,Kancheepuram,Podavoor,199B/2,Low
+10742.0,6.8,1,Ranipet,Wet,Yes,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0333,Arcot,Melvisharam,403/2D2,Low
+34111.0,6.5,1,Madurai,Dry,Yes,Yes,Red Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,45,No Delay,REC0243,Madurai East,Rajakkur,230/3C2,Low
+538.2,6.5,1,Tiruvallur,Dry,No,No,Red Soil,Available,No,Yes,To be paid,No,Yes,Yes,No,Individual,30,Delayed,REC0102,Uthukottai,Melmaligaipattu,94/2A1A7,Low
+47329.0,6.8,2,Salem,Wet,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Joint,30,No Delay,REC0335,Sankari,Thevur,312/1C2,Low
+8072.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0087,Sriperumbudur,Magadevimangalam,103/6A,Low
+10430.0,6.2,2,Krishnagiri,Wet,No,Yes,Clay Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Joint,30,No Delay,REC0293,Krishnagiri,Kaveripattinam,143/4D3,Low
+15069.0,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,60,No Delay,REC0119,Uthukottai,Melmaligaipattu,94/2E3B,Low
+4305.0,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,Delayed,REC0114,Uthukottai,Melmaligaipattu,94/2A3,Low
+8438.91,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0036,Sriperumbudur,Magadevimangalam,100/6A2,Low
+43196.0,7.2,1,Coimbatore,Wet,No,Yes,Black Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,30,No Delay,REC0238,Sulur,Kangayampalayam,244/3D2,Low
+15909.0,7.2,1,Tirunelveli,Dry,Yes,Yes,Alluvial Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0309,Ambasamudram,Pathamadai,107/4B4,Low
+6092.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0037,Sriperumbudur,Magadevimangalam,100/6B,Low
+47533.0,6.8,1,Madurai,Dry,Yes,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0228,Madurai East,Sakkimangalam,378/3C4,Low
+9667.0,6.0,1,Tiruvallur,Dry,No,Yes,Clay Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0138,Uthukottai,Melmaligaipattu,56/5A,Low
+28051.0,6.8,2,Ranipet,Dry,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Joint,60,No Delay,REC0208,Walajah,Lalapet,271/3D3,Low
+26081.0,6.0,1,Salem,Wet,Yes,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0419,Salem,Sanniyasigundu,23/6C,Low
+22550.0,6.2,3,Chengalpattu,Dry,No,Yes,Clay Soil,Available,Yes,No,Objection enquiry,Yes,Yes,Yes,Yes,Joint,120,Delayed,REC0339,Thiruporur,Thaiyur,232/6B,Medium
+3918.0,6.5,2,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,30,No Delay,REC0034,Sriperumbudur,Magadevimangalam,100/5E,Low
+538.2,6.0,1,Tiruvallur,Dry,No,Yes,Clay Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,60,No Delay,REC0110,Uthukottai,Melmaligaipattu,94/2A1G,Low
+40892.0,7.2,1,Tiruchirappalli,Dry,No,Yes,Clay Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,45,No Delay,REC0481,Lalgudi,Valadi,161/2A2,Low
+26694.0,6.2,1,Krishnagiri,Wet,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0438,Shoolagiri,Kamandoddi,74/6C4,Low
+18880.0,7.0,1,Coimbatore,Dry,Yes,Yes,Black Soil,Available,Yes,Yes,Withheld pending court,Yes,Yes,Yes,Yes,Individual,120,Delayed,REC0300,Pollachi,Anaimalai,297/5D1,Medium
+3875.0,6.8,1,Salem,Dry,Yes,No,Clay Soil,Available,Yes,Yes,Withheld pending court,No,Yes,Yes,Yes,Individual,120,Delayed,REC0265,Omalur,Muthunaickenpatti,344/3B,Medium
+10118.0,7.0,1,Madurai,Wet,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0255,Madurai East,Othakadai,350/3B2,Low
+5253.0,6.2,1,Erode,Dry,No,Yes,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0296,Bhavani,Anthiyur,59/4D4,Low
+47490.0,7.5,1,Thanjavur,Wet,No,Yes,Alluvial Soil,Not Available,No,No,Verification pending,Yes,Yes,No,No,Individual,60,No Delay,REC0399,Kumbakonam,Cholapuram,198/4C2,Low
+22195.0,7.2,1,Thanjavur,Dry,No,Yes,Clay Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,60,No Delay,REC0428,Papanasam,Melattur,278/6B2,Low
+12916.0,6.5,1,Tiruvallur,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0134,Uthukottai,Melmaligaipattu,56/1B,Low
+25489.0,7.2,1,Tiruchirappalli,Dry,No,Yes,Clay Soil,Available,Yes,Yes,Withheld pending court,Yes,Yes,Yes,Yes,Individual,180,Delayed,REC0271,Srirangam,Perugamani,307/6C2,High
+3767.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0042,Sriperumbudur,Magadevimangalam,100/9B,Low
+13993.0,6.0,2,Tiruvallur,Dry,No,Yes,Clay Soil,Available,No,No,To be paid,No,Yes,Yes,No,Joint,60,No Delay,REC0166,Gummidipoondi,Manellore,31/2A3,Low
+33002.0,7.0,1,Dindigul,Wet,Yes,Yes,Red Soil,Available,No,No,Verification completed,No,Yes,Yes,No,Individual,45,No Delay,REC0382,Palani,Neikarapatti,80/4A1,Low
+17222.0,6.5,1,Kancheepuram,Dry,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0140,Kancheepuram,Podavoor,198A/1,Low
+12916.0,6.5,1,Tiruvallur,Manavari,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0174,Gummidipoondi,Manellore,32/2,Low
+32981.0,6.2,1,Erode,Manavari,Yes,Yes,Red Soil,Not Available,No,No,Verification pending,Yes,Yes,No,No,Individual,60,No Delay,REC0403,Erode,Chithode,106/1B,Low
+30796.0,6.8,1,Tirunelveli,Dry,No,No,Alluvial Soil,Not Available,No,No,Verification pending,No,Yes,No,No,Individual,60,No Delay,REC0439,Ambasamudram,Vikramasingapuram,281/5C,Low
+9687.0,6.5,1,Kancheepuram,Wet,No,Yes,Red Soil,Available,No,No,To be paid,No,Yes,Yes,No,Individual,30,No Delay,REC0053,Sriperumbudur,Magadevimangalam,101/11,Low
+35176.0,6.0,1,Salem,Dry,Yes,No,Red Soil,Available,No,No,Verification completed,Yes,Yes,Yes,No,Individual,45,No Delay,REC0447,Sankari,Thevur,61/4C,Low

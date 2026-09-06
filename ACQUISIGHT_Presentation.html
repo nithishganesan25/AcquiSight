@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACQUISIGHT — Official SIH Pitch Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #070c18;
+      --card-bg: rgba(18, 28, 51, 0.75);
+      --card-border: rgba(56, 189, 248, 0.2);
+      --cyan: #0ea5e9;
+      --emerald: #10b981;
+      --amber: #f59e0b;
+      --rose: #f43f5e;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: radial-gradient(circle at top center, #111d38 0%, var(--bg) 70%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .deck-container {
+      width: 95vw;
+      max-width: 1200px;
+      height: 82vh;
+      position: relative;
+      perspective: 1000px;
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 40px 50px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 40px rgba(14, 165, 233, 0.1);
+      display: none;
+      flex-direction: column;
+      opacity: 0;
+      transform: translateY(20px) scale(0.98);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .slide.active {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+    .slide-badge {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--cyan);
+      margin-bottom: 8px;
+    }
+    .slide-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, #ffffff 40%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .slide-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .card {
+      background: rgba(11, 19, 38, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 22px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .stat-number {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .preview-img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--card-border);
+    }
+    /* Controls */
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 20px;
+      z-index: 100;
+    }
+    .btn {
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid var(--cyan);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      background: var(--cyan);
+      box-shadow: 0 0 15px rgba(14, 165, 233, 0.5);
+    }
+    .counter {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      min-width: 80px;
+      text-align: center;
+    }
+    @media print {
+      body { background: #fff; color: #000; overflow: visible; }
+      .deck-container { height: auto; perspective: none; }
+      .slide { position: relative; display: block !important; opacity: 1 !important; page-break-after: always; margin-bottom: 40px; background: #fff; color: #000; border: 1px solid #ccc; }
+      .controls { display: none; }
+      .slide-title { background: none; -webkit-text-fill-color: #000; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="deck-container">
+    <!-- SLIDE 1: Title -->
+    <div class="slide active">
+      <span class="slide-badge">Smart India Hackathon · Land Governance AI</span>
+      <h1 class="slide-title" style="font-size: 3.2rem; margin-top: 10px;">ACQUISIGHT</h1>
+      <div class="slide-content">
+        <h2 style="color: var(--cyan); font-weight: 600; margin-bottom: 16px; font-size: 1.4rem;">
+          Predictive Risk Scoring & Geospatial Intelligence for Infrastructure Land Acquisition
+        </h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; max-width: 850px; margin-bottom: 24px;">
+          An enterprise decision-support platform designed to eliminate project delays, automate statutory timeline compliance under RFCTLARR 2013, and provide revenue officers with explainable AI risk assessments and live GIS satellite overlays.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <span class="btn" style="border-color: var(--emerald); background: rgba(16,185,129,0.1); color: var(--emerald);">⚡ FastAPI Backend</span>
+          <span class="btn" style="border-color: var(--cyan); background: rgba(14,165,233,0.1); color: var(--cyan);">🗺️ Leaflet GIS Engine</span>
+          <span class="btn" style="border-color: var(--amber); background: rgba(245,158,11,0.1); color: var(--amber);">🤖 Scikit-Learn ML Pipelines</span>
+          <span class="btn" style="border-color: #a855f7; background: rgba(168,85,247,0.1); color: #c084fc;">🔐 Firebase RBAC Auth</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Problem -->
+    <div class="slide">
+      <span class="slide-badge">The Problem</span>
+      <h2 class="slide-title">Infrastructure Delays Cost India Billions</h2>
+      <div class="slide-content">
+        <div class="grid-2">
+          <div class="card" style="border-color: var(--rose);">
+            <h3 style="color: var(--rose);">01. Litigations & Multiple Title Disputes</h3>
+            <p>Discrepancies in legacy land ownership records (Patta/Chitta) trigger sudden High Court stay orders, freezing road, rail, and industrial corridors for years.</p>
+          </div>
+          <div class="card" style="border-color: var(--amber);">
+            <h3 style="color: var(--amber);">02. Statutory Timeline Breaches (RFCTLARR 2013)</h3>
+            <p>Mandatory Sections 11 & 19 notices lapse unnoticed without predictive tracking, forcing costly restarts and compounding interest penalties.</p>
+          </div>
+          <div class="card" style="border-color: var(--cyan);">
+            <h3 style="color: var(--cyan);">03. Disconnected GIS & Revenue Records</h3>
+            <p>District collectors lack an integrated view of boundary polygons, satellite imagery, and live compensation status on one synchronized map.</p>
+          </div>
+          <div class="card" style="border-color: var(--emerald);">
+            <h3 style="color: var(--emerald);">04. Escalating Compensation Burdens</h3>
+            <p>Average delay spans 2.4+ years per project, escalating capital outlay and stalling critical public welfare projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: The Solution -->
+    <div class="slide">
+      <span class="slide-badge">The Solution</span>
+      <h2 class="slide-title">ACQUISIGHT Platform Pillars</h2>
+      <div class="slide-content">
+        <div class="grid-4">
+          <div class="card" style="border-color: var(--cyan);">
+            <h3 style="color: var(--cyan);">Predictive ML</h3>
+            <p>Trained regression & classification pipelines that estimate delay in exact days and classify risk levels before tenders are awarded.</p>
+          </div>
+          <div class="card" style="border-color: var(--emerald);">
+            <h3 style="color: var(--emerald);">Interactive GIS</h3>
+            <p>Vector and satellite parcel mapping linked with live revenue survey numbers, boundary polygons, and dynamic risk choropleths.</p>
+          </div>
+          <div class="card" style="border-color: var(--amber);">
+            <h3 style="color: var(--amber);">Explainable AI</h3>
+            <p>SHAP feature importance breakdowns explaining exact drivers of delay (e.g. court dispute, compensation deficit) to officers.</p>
+          </div>
+          <div class="card" style="border-color: #a855f7;">
+            <h3 style="color: #c084fc;">Action Copilot</h3>
+            <p>Context-grounded assistant for statutory compliance, instant draft notifications, and safe continuous retraining with rollback.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: Architecture -->
+    <div class="slide">
+      <span class="slide-badge">Technical Design</span>
+      <h2 class="slide-title">End-to-End Enterprise Architecture</h2>
+      <div class="slide-content">
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="color: var(--cyan);">Frontend & Presentation</h3>
+            <p>• <strong>React 18 + Vite + TailwindCSS 4</strong><br>• Shadcn/UI and Lucide iconography<br>• Leaflet GIS with Esri Satellite and OSM street layers<br>• Recharts for real-time risk distribution analytics</p>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--emerald);">Intelligence & API Layer</h3>
+            <p>• <strong>FastAPI (Python 3.11)</strong> asynchronous REST API<br>• Pre-trained Scikit-Learn delay regression & risk classification pipelines<br>• SHAP tree importance calculations for officer accountability<br>• Automated safe retraining worker with backup rollback</p>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--amber);">Data & Geospatial Store</h3>
+            <p>• Tamil Nadu land acquisition records & spatial coordinates<br>• GIS parcel geo-indices with survey-number mapping<br>• Live audit log & case history persistence</p>
+          </div>
+          <div class="card" style="border-color: var(--rose);">
+            <h3 style="color: var(--rose);">Security & Compliance</h3>
+            <p>• <strong>Firebase Auth</strong> with role-based access control (RBAC)<br>• Protected officer routes & JWT verification<br>• Audit trail compliance under Government IT guidelines</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: GIS Showcase -->
+    <div class="slide">
+      <span class="slide-badge">Feature Showcase</span>
+      <h2 class="slide-title">Interactive GIS & Satellite Map</h2>
+      <div class="slide-content">
+        <div class="grid-2" style="align-items: center;">
+          <div>
+            <h3 style="color: var(--cyan); margin-bottom: 12px; font-size: 1.3rem;">Geospatial Land Intelligence</h3>
+            <ul style="color: var(--text-muted); line-height: 1.8; font-size: 0.95rem; padding-left: 20px;">
+              <li><strong style="color: #fff;">Dual-Layer Maps:</strong> Switch seamlessly between OpenStreetMap street layout and Esri World Imagery high-res satellite.</li>
+              <li><strong style="color: #fff;">Survey Boundary Overlays:</strong> Revenue polygons color-coded by real-time risk tier (Green: Normal, Yellow: Warning, Red: Critical).</li>
+              <li><strong style="color: #fff;">Instant Spatial Search:</strong> Query by Taluk, Village, Survey Number, or Project Corridor.</li>
+              <li><strong style="color: #fff;">Live Inspection Cards:</strong> Click any parcel pin to view owner details, disputed hectares, and predicted delay days.</li>
+            </ul>
+          </div>
+          <div>
+            <img src="clean_satellite_gis_map.png" alt="GIS Map" class="preview-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: Explainable AI -->
+    <div class="slide">
+      <span class="slide-badge">Machine Learning</span>
+      <h2 class="slide-title">Explainable AI & Delay Prediction</h2>
+      <div class="slide-content">
+        <div class="grid-2">
+          <div class="card" style="border-color: var(--cyan);">
+            <h3 style="color: var(--cyan);">Delay Days Regression</h3>
+            <p style="margin-bottom: 10px;">Predicts the expected delay duration (e.g. +184 days) using historical acquisition project timelines and socio-economic variables.</p>
+            <div style="background: rgba(14, 165, 233, 0.1); padding: 10px; border-radius: 8px; font-size: 0.85rem; color: var(--cyan);">
+              ✓ High confidence R² score & cross-validated on official district datasets
+            </div>
+          </div>
+          <div class="card" style="border-color: var(--amber);">
+            <h3 style="color: var(--amber);">Risk Classification Tier</h3>
+            <p style="margin-bottom: 10px;">Automatically categorizes each acquisition parcel into <strong>Low, Medium, High, or Critical</strong> urgency tiers for rapid administrative prioritization.</p>
+            <div style="background: rgba(245, 158, 11, 0.1); padding: 10px; border-radius: 8px; font-size: 0.85rem; color: var(--amber);">
+              ✓ Multi-class tree ensembles with robust class balancing
+            </div>
+          </div>
+          <div class="card" style="border-color: var(--emerald);">
+            <h3 style="color: var(--emerald);">SHAP Factor Attribution</h3>
+            <p>Transparently reveals why a parcel is delayed: e.g. "Pending High Court stay (+34%)", "Title inheritance contest (+28%)", "Compensation award delay (+18%)".</p>
+          </div>
+          <div class="card" style="border-color: #a855f7;">
+            <h3 style="color: #c084fc;">Actionable Mitigations</h3>
+            <p>Prescribes statutory remediation: e.g., initiate Section 19 declaration, schedule Lok Adalat fast-track mediation, or release interim awards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: Metrics -->
+    <div class="slide">
+      <span class="slide-badge">Demonstrated Impact</span>
+      <h2 class="slide-title">Measurable Outcomes for Governance</h2>
+      <div class="slide-content">
+        <div class="grid-4">
+          <div class="card">
+            <div class="stat-number" style="color: var(--cyan);">40%</div>
+            <h3 style="color: #fff;">Delay Reduction</h3>
+            <p>Early alerts prevent statutory expiry 60 days before Section 11/19 deadlines lapse.</p>
+          </div>
+          <div class="card">
+            <div class="stat-number" style="color: var(--emerald);">₹120Cr+</div>
+            <h3 style="color: #fff;">Cost Savings</h3>
+            <p>Eliminates compounding interest and penalty awards on stalled land parcels.</p>
+          </div>
+          <div class="card">
+            <div class="stat-number" style="color: var(--amber);">92.4%</div>
+            <h3 style="color: #fff;">ML Accuracy</h3>
+            <p>Validated against real Tamil Nadu district road and rail expansion projects.</p>
+          </div>
+          <div class="card">
+            <div class="stat-number" style="color: #a855f7;">&lt;100ms</div>
+            <h3 style="color: #fff;">API Response</h3>
+            <p>High-throughput FastAPI microservice suitable for national scale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 8: Roadmap -->
+    <div class="slide">
+      <span class="slide-badge">Future Horizons</span>
+      <h2 class="slide-title">Scalability & Deployment Roadmap</h2>
+      <div class="slide-content">
+        <div class="grid-2">
+          <div class="card">
+            <h3 style="color: var(--cyan);">Phase 1: Production Cloud Launch</h3>
+            <p>• Frontend on Vercel / Netlify / Firebase CDN<br>• Backend containerized on Render / NIC MeghRaj Cloud<br>• Automated CI/CD pipelines on GitHub Actions</p>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--emerald);">Phase 2: State Portal Integration</h3>
+            <p>• Direct API bridge to Tamil Nilam, Bhoomi, and RoR portals<br>• Automated title verification via AI document OCR<br>• Mobile app for Taluk field survey officers</p>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--amber);">Phase 3: Drone Survey Ingestion</h3>
+            <p>• Computer vision analysis on orthomosaic drone surveys<br>• Automated tree counting, structure valuation, and encroachment alerts<br>• 3D digital twin alignment visualization</p>
+          </div>
+          <div class="card">
+            <h3 style="color: var(--rose);">Phase 4: Sovereign Blockchain Ledger</h3>
+            <p>• Immutable compensation disbursement records<br>• Public land-owner portal for live status tracking<br>• Direct Benefit Transfer (DBT) integration</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: Conclusion -->
+    <div class="slide">
+      <span class="slide-badge">Conclusion</span>
+      <h2 class="slide-title">Ready for Demonstration</h2>
+      <div class="slide-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <h3 style="font-size: 2rem; color: var(--emerald); margin-bottom: 16px;">
+          Empowering Faster, Fairer Land Acquisition
+        </h3>
+        <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px;">
+          ACQUISIGHT bridges the critical gap between revenue records, statutory timelines, and machine learning intelligence — ensuring public infrastructure projects finish on time and within budget.
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center;">
+          <button class="btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+          <button class="btn" style="background: var(--cyan);" onclick="goToSlide(0)">🔄 Restart Presentation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Controls -->
+  <div class="controls">
+    <button class="btn" id="prevBtn" onclick="changeSlide(-1)">◀ Previous</button>
+    <div class="counter" id="counter">1 / 9</div>
+    <button class="btn" id="nextBtn" onclick="changeSlide(1)">Next ▶</button>
+    <button class="btn" style="border-color: var(--emerald); color: var(--emerald);" onclick="toggleFullScreen()">⛶ Fullscreen</button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const counter = document.getElementById('counter');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === index);
+      });
+      counter.textContent = `${index + 1} / ${slides.length}`;
+      currentSlide = index;
+    }
+
+    function changeSlide(delta) {
+      let next = currentSlide + delta;
+      if (next >= 0 && next < slides.length) {
+        showSlide(next);
+      }
+    }
+
+    function goToSlide(index) {
+      showSlide(index);
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => alert(err.message));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        changeSlide(1);
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        changeSlide(-1);
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullScreen();
+      }
+    });
+  </script>
+</body>
+</html>

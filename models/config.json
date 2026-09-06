@@ -1,0 +1,74 @@
+{
+  "feature_columns": [
+    "Area_Sqft",
+    "Soil_pH",
+    "No_of_Owners",
+    "District",
+    "Land_Type",
+    "Flood_Risk",
+    "Water_Availability",
+    "Soil_Type",
+    "Document_Issue",
+    "Owner_Objection",
+    "Court_Case",
+    "Compensation_Status",
+    "FMB",
+    "A_Register",
+    "Document_Verified",
+    "Objection",
+    "Ownership_Type"
+  ],
+  "numerical_cols": [
+    "Area_Sqft",
+    "Soil_pH",
+    "No_of_Owners"
+  ],
+  "categorical_cols": [
+    "District",
+    "Land_Type",
+    "Flood_Risk",
+    "Water_Availability",
+    "Soil_Type",
+    "Document_Issue",
+    "Owner_Objection",
+    "Court_Case",
+    "Compensation_Status",
+    "FMB",
+    "A_Register",
+    "Document_Verified",
+    "Objection",
+    "Ownership_Type"
+  ],
+  "target_column": "Acquisition_Days",
+  "classification_target": "Delay_Status",
+  "risk_thresholds": {
+    "Low": {
+      "min": 0,
+      "max": 60
+    },
+    "Medium": {
+      "min": 61,
+      "max": 120
+    },
+    "High": {
+      "min": 121,
+      "max": 9999
+    }
+  },
+  "pipeline_path": "D:\\SIH\\Final Cut\\ACQUISIGHT\\models\\delay_regression_pipeline.pkl",
+  "classifier_path": "D:\\SIH\\Final Cut\\ACQUISIGHT\\models\\risk_classification_pipeline.pkl",
+  "cleaned_csv": "D:\\SIH\\Final Cut\\ACQUISIGHT\\data\\cleaned_land_records.csv",
+  "scored_csv": "D:\\SIH\\Final Cut\\ACQUISIGHT\\data\\land_records_scored.csv",
+  "notes": {
+    "risk_category": "Derived from predicted Acquisition_Days using risk_thresholds. Delay_Status is the recorded binary label.",
+    "excluded_features": [
+      "Land_ID",
+      "Survey_No",
+      "Taluk",
+      "Village",
+      "Ownership_Raw"
+    ]
+  },
+  "winning_regressor": "ExtraTrees",
+  "winning_classifier": "LogisticRegression"
+}

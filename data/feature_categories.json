@@ -1,0 +1,115 @@
+{
+  "numerical_features": [
+    "Area_Sqft",
+    "Soil_pH",
+    "No_of_Owners"
+  ],
+  "categorical_features": [
+    "District",
+    "Land_Type",
+    "Flood_Risk",
+    "Water_Availability",
+    "Soil_Type",
+    "Document_Issue",
+    "Owner_Objection",
+    "Court_Case",
+    "Compensation_Status",
+    "FMB",
+    "A_Register",
+    "Document_Verified",
+    "Objection",
+    "Ownership_Type"
+  ],
+  "regression_target": "Acquisition_Days",
+  "classification_target": "Delay_Status",
+  "id_columns": [
+    "Land_ID",
+    "Taluk",
+    "Village",
+    "Survey_No"
+  ],
+  "categories": {
+    "District": [
+      "Chengalpattu",
+      "Coimbatore",
+      "Dindigul",
+      "Erode",
+      "Kancheepuram",
+      "Krishnagiri",
+      "Madurai",
+      "Ranipet",
+      "Salem",
+      "Thanjavur",
+      "Tiruchirappalli",
+      "Tirunelveli",
+      "Tiruppur",
+      "Tiruvallur"
+    ],
+    "Land_Type": [
+      "Dry",
+      "Manavari",
+      "Wet"
+    ],
+    "Flood_Risk": [
+      "No",
+      "Yes"
+    ],
+    "Water_Availability": [
+      "No",
+      "Yes"
+    ],
+    "Soil_Type": [
+      "Alluvial Soil",
+      "Black Soil",
+      "Clay Soil",
+      "Red Soil"
+    ],
+    "Document_Issue": [
+      "Available",
+      "Not Available"
+    ],
+    "Owner_Objection": [
+      "No",
+      "Yes"
+    ],
+    "Court_Case": [
+      "No",
+      "Yes"
+    ],
+    "Compensation_Status": [
+      "Objection enquiry",
+      "To be paid",
+      "Verification completed",
+      "Verification pending",
+      "Withheld pending court"
+    ],
+    "FMB": [
+      "No",
+      "Yes"
+    ],
+    "A_Register": [
+      "No",
+      "Yes"
+    ],
+    "Document_Verified": [
+      "No",
+      "Yes"
+    ],
+    "Objection": [
+      "No",
+      "Yes"
+    ],
+    "Ownership_Type": [
+      "Individual",
+      "Joint"
+    ]
+  },
+  "row_count": 500,
+  "primary_excel": "land acquisition_01.xlsx",
+  "notes": {
+    "Delay_Risk_Band": "Derived from Acquisition_Days (Low<=60, Medium<=120, High>120). Not a recorded official risk label.",
+    "Delay_Status": "Recorded binary label from Acquisition_Delay sheet (No Delay / Delayed).",
+    "Acquisition_Days": "Recorded acquisition duration from Acquisition_Delay sheet.",
+    "coordinates": "Official gazette workbook has no latitude/longitude."
+  }
+}

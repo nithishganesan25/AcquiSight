@@ -1,0 +1,631 @@
+Area (sq.ft),Soil pH,No. of Owners,No. of Objections,Valuation Gap (%),Land Use,Ownership,Flood Risk,Water Availability,Soil Type,Title Dispute,Court Case,Document Status,Acquisition Notice,Compensation Status,Road Access,Delay Days,Land ID,District,Taluk,Village
+22152.0,6.0,5,0,13.0,Residential,Individual,Medium,Low,Red Soil,No,No,Incomplete,Issued,Not Started,Good,90.0,LND001,Chennai,Tiruvottiyur,Kathivakkam
+2069.0,6.9,4,5,17.0,Mixed,Joint,Medium,High,Black Soil,No,No,Complete,Issued,Approved,Moderate,80.0,LND002,Coimbatore,Sulur,Kittampalayam
+4549.0,7.1,4,0,23.0,Residential,Private Company,Low,Medium,Red Soil,No,No,Partial,Not Issued,Paid,Moderate,134.0,LND003,Madurai,Melur,Arittapatti
+2701.0,7.8,3,2,17.0,Agricultural,Government,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,330.0,LND004,Tiruchirappalli,Manachanallur,Samayapuram
+21160.0,6.2,2,6,25.0,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,219.0,LND005,Salem,Omalur,Karuppur
+19785.0,7.9,2,5,16.0,Commercial,Joint,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Paid,Poor,135.0,LND006,Tirunelveli,Palayamkottai,Pettai
+14287.0,6.8,1,6,4.0,Commercial,Joint,High,Low,Red Soil,No,No,Complete,Issued,Approved,Poor,110.0,LND007,Erode,Perundurai,Vijayamangalam
+16537.0,7.3,5,0,10.0,Mixed,Government,High,Low,Red Soil,No,No,Complete,Not Issued,Negotiation,Moderate,119.0,LND008,Thanjavur,Orathanadu,Vandayarriruppu
+17603.0,7.8,5,6,33.0,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,151.0,LND009,Vellore,Katpadi,Kilur
+17210.0,6.1,5,6,8.0,Residential,Individual,High,Medium,Black Soil,No,No,Complete,Issued,Not Started,Poor,183.0,LND010,Dindigul,Nilakottai,Batlagundu
+19215.0,6.6,5,5,33.0,Agricultural,Government,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,266.0,LND011,Chennai,Ambattur,Mannurpet
+8562.0,6.0,1,0,4.0,Residential,Government,Low,High,Black Soil,No,No,Complete,Issued,Not Started,Moderate,47.0,LND012,Coimbatore,Pollachi,Kinathukadavu
+23121.0,8.0,5,1,27.0,Industrial,Joint,Medium,High,Clay Loam,Yes,Yes,Partial,Issued,Not Started,Good,241.0,LND013,Madurai,Thirumangalam,Kappalur
+16503.0,6.4,2,1,17.0,Residential,Individual,Low,High,Red Soil,No,No,Complete,Issued,Approved,Good,44.0,LND014,Tiruchirappalli,Srirangam,Allur
+15720.0,7.7,2,3,3.0,Mixed,Individual,Low,High,Red Soil,No,No,Partial,Issued,Under Review,Moderate,82.0,LND015,Salem,Attur,Thammampatti
+13993.0,8.1,4,1,34.0,Commercial,Private Company,Low,High,Clay Loam,No,No,Complete,Issued,Not Started,Poor,68.0,LND016,Tirunelveli,Ambasamudram,Kallidaikurichi
+3073.0,5.8,1,0,7.0,Residential,Private Company,Medium,High,Clay Loam,No,No,Complete,Not Issued,Under Review,Moderate,51.0,LND017,Erode,Bhavani,Chithode
+20681.0,7.0,3,2,19.0,Residential,Individual,Low,High,Alluvial,No,No,Complete,Issued,Approved,Good,44.0,LND018,Thanjavur,Pattukkottai,Madukkur
+1505.0,6.8,3,2,34.0,Industrial,Individual,Low,Low,Black Soil,No,No,Complete,Issued,Under Review,Moderate,99.0,LND019,Vellore,Gudiyatham,Paradarami
+1456.0,8.0,3,2,13.0,Mixed,Government,High,Low,Black Soil,No,No,Complete,Issued,Negotiation,Poor,334.0,LND020,Dindigul,Oddanchatram,Kallimandayam
+23727.0,5.7,3,6,16.0,Commercial,Private Company,Low,Low,Sandy Loam,No,No,Complete,Issued,Under Review,Poor,81.0,LND021,Chennai,Tiruvottiyur,Kathivakkam
+19277.0,7.9,1,3,19.0,Industrial,Individual,Low,High,Clay Loam,No,No,Incomplete,Issued,Under Review,Good,107.0,LND022,Coimbatore,Sulur,Kittampalayam
+12924.0,7.6,5,6,1.0,Agricultural,Joint,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,83.0,LND023,Madurai,Melur,Arittapatti
+14691.0,5.7,4,2,14.0,Agricultural,Government,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,64.0,LND024,Tiruchirappalli,Manachanallur,Samayapuram
+14256.0,6.4,4,0,16.0,Commercial,Government,Medium,Medium,Clay Loam,No,No,Complete,Not Issued,Negotiation,Good,65.0,LND025,Salem,Omalur,Karuppur
+15439.0,5.7,2,0,12.0,Commercial,Government,Low,High,Clay Loam,No,No,Complete,Issued,Paid,Poor,38.0,LND026,Tirunelveli,Palayamkottai,Pettai
+22965.0,7.4,5,3,8.0,Commercial,Government,Medium,Low,Alluvial,No,No,Partial,Issued,Negotiation,Poor,200.0,LND027,Erode,Perundurai,Vijayamangalam
+23394.0,6.3,4,3,30.0,Agricultural,Government,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,354.0,LND028,Thanjavur,Orathanadu,Vandayarriruppu
+22789.0,7.1,2,1,15.0,Residential,Government,Medium,High,Red Soil,No,No,Complete,Issued,Not Started,Good,121.0,LND029,Vellore,Katpadi,Kilur
+16123.0,6.8,2,1,33.0,Industrial,Joint,Medium,Medium,Black Soil,No,No,Complete,Issued,Under Review,Poor,120.0,LND030,Dindigul,Nilakottai,Batlagundu
+9365.0,7.3,5,6,10.0,Residential,Private Company,Low,Medium,Clay Loam,No,No,Partial,Issued,Paid,Moderate,121.0,LND031,Chennai,Ambattur,Mannurpet
+9301.0,6.6,2,4,9.0,Commercial,Private Company,Medium,Medium,Alluvial,No,No,Complete,Issued,Not Started,Good,90.0,LND032,Coimbatore,Pollachi,Kinathukadavu
+24347.0,6.9,1,6,1.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,134.0,LND033,Madurai,Thirumangalam,Kappalur
+1393.0,6.9,5,2,1.0,Commercial,Government,Medium,Medium,Clay Loam,No,No,Partial,Issued,Approved,Moderate,110.0,LND034,Tiruchirappalli,Srirangam,Allur
+24929.0,6.9,5,1,3.0,Agricultural,Private Company,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,31.0,LND035,Salem,Attur,Thammampatti
+8135.0,6.2,3,0,22.0,Industrial,Government,Low,Medium,Sandy Loam,No,No,Partial,Not Issued,Paid,Good,29.0,LND036,Tirunelveli,Ambasamudram,Kallidaikurichi
+22556.0,7.7,2,5,13.0,Residential,Individual,High,Low,Clay Loam,No,No,Complete,Issued,Not Started,Poor,270.0,LND037,Erode,Bhavani,Chithode
+13287.0,8.1,5,3,15.0,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,74.0,LND038,Thanjavur,Pattukkottai,Madukkur
+23621.0,7.6,5,0,6.0,Mixed,Individual,Medium,High,Alluvial,Yes,No,Complete,Issued,Approved,Moderate,116.0,LND039,Vellore,Gudiyatham,Paradarami
+24377.0,8.1,5,2,17.0,Agricultural,Private Company,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,266.0,LND040,Dindigul,Oddanchatram,Kallimandayam
+19872.0,7.8,4,2,17.0,Mixed,Private Company,Low,Medium,Black Soil,No,No,Complete,Issued,Negotiation,Poor,132.0,LND041,Chennai,Tiruvottiyur,Kathivakkam
+7460.0,7.0,4,0,25.0,Residential,Joint,Medium,Medium,Black Soil,Yes,Yes,Complete,Not Issued,Negotiation,Good,328.0,LND042,Coimbatore,Sulur,Kittampalayam
+22956.0,6.4,3,2,7.0,Mixed,Government,Low,High,Clay Loam,No,No,Partial,Issued,Negotiation,Good,85.0,LND043,Madurai,Melur,Arittapatti
+18759.0,6.2,5,2,11.0,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,99.0,LND044,Tiruchirappalli,Manachanallur,Samayapuram
+5347.0,6.2,4,3,21.0,Commercial,Individual,High,High,Black Soil,No,No,Complete,Issued,Approved,Moderate,198.0,LND045,Salem,Omalur,Karuppur
+16854.0,7.0,2,0,35.0,Residential,Individual,Low,Low,Red Soil,No,No,Incomplete,Issued,Under Review,Good,114.0,LND046,Tirunelveli,Palayamkottai,Pettai
+21464.0,6.2,4,0,6.0,Agricultural,Private Company,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,87.0,LND047,Erode,Perundurai,Vijayamangalam
+9871.0,5.6,4,0,18.0,Residential,Joint,Low,High,Red Soil,Yes,No,Partial,Issued,Under Review,Moderate,150.0,LND048,Thanjavur,Orathanadu,Vandayarriruppu
+3532.0,7.1,4,5,9.0,Agricultural,Government,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,169.0,LND049,Vellore,Katpadi,Kilur
+11279.0,7.3,3,0,20.0,Mixed,Government,Low,Medium,Sandy Loam,Yes,Yes,Incomplete,Not Issued,Approved,Poor,305.0,LND050,Dindigul,Nilakottai,Batlagundu
+21618.860781586634,6.4251353587419375,5,0,0.0,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,111.82748675543866,REC0001,Kancheepuram,Sriperumbudur,Magadevimangalam
+15932.678655966325,7.505127222296925,5,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,76.56574160678254,REC0002,Kancheepuram,Sriperumbudur,Magadevimangalam
+4064.2921228874347,7.43817236209041,5,5,4.703537685583809,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,174.53489740340567,REC0003,Kancheepuram,Sriperumbudur,Magadevimangalam
+18563.93026419469,7.163535090392182,4,1,2.075688182273697,Agricultural,Joint,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,28.29418300721555,REC0004,Kancheepuram,Sriperumbudur,Magadevimangalam
+4680.5526603570015,6.971501653351067,5,6,11.661545927766744,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,122.741701850825,REC0005,Kancheepuram,Sriperumbudur,Magadevimangalam
+10442.626176836691,7.729246300902364,6,7,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,74.32610283527997,REC0006,Kancheepuram,Sriperumbudur,Magadevimangalam
+3633.329787798307,7.438691687816267,4,5,4.799217615187359,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,141.30860799375964,REC0007,Kancheepuram,Sriperumbudur,Magadevimangalam
+4128.448120453038,7.322976251361032,3,6,3.144024148187314,Agricultural,Joint,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,149.97397743613897,REC0008,Kancheepuram,Sriperumbudur,Magadevimangalam
+23698.902207597752,6.235005742742219,6,3,15.35714388974095,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,77.601297526393,REC0009,Kancheepuram,Sriperumbudur,Magadevimangalam
+18028.380760548007,6.220273720846667,5,1,9.156441129192702,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,97.7096327642947,REC0010,Kancheepuram,Sriperumbudur,Magadevimangalam
+2758.372056810339,7.608336645526998,4,1,24.47470655617198,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,363.3437864345134,REC0011,Kancheepuram,Sriperumbudur,Magadevimangalam
+18126.994561716292,7.295139068515258,4,7,33.813765325525026,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,155.85429369961443,REC0012,Kancheepuram,Sriperumbudur,Magadevimangalam
+19314.10885250341,6.095382478325469,2,6,29.28987940628577,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,206.9806637854172,REC0013,Kancheepuram,Sriperumbudur,Magadevimangalam
+16767.366923242444,7.260013835798955,6,5,3.4858037202688203,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,72.72096913678084,REC0014,Kancheepuram,Sriperumbudur,Magadevimangalam
+27170.67816800101,6.947561907323014,5,2,1.453267301398808,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,36.840779154788244,REC0015,Kancheepuram,Sriperumbudur,Magadevimangalam
+15323.871503184031,6.091083846030479,4,1,5.020801772054802,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,96.73550747693241,REC0016,Kancheepuram,Sriperumbudur,Magadevimangalam
+15436.294153730458,5.844223997671773,3,2,17.326925544863933,Agricultural,Joint,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,59.43121508210493,REC0017,Kancheepuram,Sriperumbudur,Magadevimangalam
+22208.87213801045,8.07608453672808,5,2,9.764437637884564,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,205.03374197843422,REC0018,Kancheepuram,Sriperumbudur,Magadevimangalam
+32527.749853660676,6.628356283391982,2,6,7.496141488930327,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,156.4115726788499,REC0019,Kancheepuram,Sriperumbudur,Magadevimangalam
+15532.362163283602,7.319914695997037,6,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,103.0495993478833,REC0020,Kancheepuram,Sriperumbudur,Magadevimangalam
+19689.66198921373,6.430327093063757,4,4,27.02925022151603,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0021,Kancheepuram,Sriperumbudur,Magadevimangalam
+3324.8328750594314,7.641152187280859,3,2,17.109260727617215,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,346.65139784472166,REC0022,Kancheepuram,Sriperumbudur,Magadevimangalam
+18504.849451498954,8.153782690486894,5,3,23.79593787620218,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,238.84584948831255,REC0023,Kancheepuram,Sriperumbudur,Magadevimangalam
+10354.281431833353,8.038990867365868,4,6,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,104.1709818951645,REC0024,Kancheepuram,Sriperumbudur,Magadevimangalam
+2546.5267394340162,7.990545284044321,3,1,9.64596852748671,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,326.49608051469426,REC0025,Kancheepuram,Sriperumbudur,Magadevimangalam
+4407.634575853608,7.351437970368314,3,5,23.56931233003665,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,213.39560253446328,REC0026,Kancheepuram,Sriperumbudur,Magadevimangalam
+13330.363913482048,7.68031343870315,5,7,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,79.95779072319132,REC0027,Kancheepuram,Sriperumbudur,Magadevimangalam
+12588.406209493418,8.119794069236292,4,7,32.20682581480656,Agricultural,Joint,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,155.8956746046379,REC0028,Kancheepuram,Sriperumbudur,Magadevimangalam
+28534.93772362204,8.083865234754503,4,3,17.65137260736443,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,203.3954549745611,REC0029,Kancheepuram,Sriperumbudur,Magadevimangalam
+32654.398275495736,6.544516870074893,1,5,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,123.62215162254007,REC0030,Kancheepuram,Sriperumbudur,Magadevimangalam
+26783.820804216437,5.929121846573892,3,5,26.924754830529317,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,220.97850678104732,REC0031,Kancheepuram,Sriperumbudur,Magadevimangalam
+11681.605710860214,7.903563691371183,4,2,12.7250825982961,Agricultural,Joint,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,71.11830946413488,REC0032,Kancheepuram,Sriperumbudur,Magadevimangalam
+24840.18168637315,6.6737273769231304,6,3,10.406808369450587,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,100.12018660695507,REC0033,Kancheepuram,Sriperumbudur,Magadevimangalam
+13532.619590312326,5.765814750409157,4,2,19.531443550299443,Agricultural,Joint,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,48.42752005356218,REC0034,Kancheepuram,Sriperumbudur,Magadevimangalam
+11742.01901254697,7.732659290483849,6,4,23.254639661156247,Agricultural,Joint,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,88.70140264234584,REC0035,Kancheepuram,Sriperumbudur,Magadevimangalam
+17327.8662004197,6.085043803659204,4,0,0.4647715897825604,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,77.09889572538495,REC0036,Kancheepuram,Sriperumbudur,Magadevimangalam
+33647.04895166174,8.098463439983979,6,2,18.687872743994667,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,222.85310238781727,REC0037,Kancheepuram,Sriperumbudur,Magadevimangalam
+18534.49427402851,6.493181637983057,5,2,29.75640799034941,Agricultural,Joint,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,395.2613413305491,REC0038,Kancheepuram,Sriperumbudur,Magadevimangalam
+12338.132868976534,5.599762967789757,4,1,7.36803641130218,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,49.832617659800825,REC0039,Kancheepuram,Sriperumbudur,Magadevimangalam
+14756.34832187377,6.346554256234779,4,2,9.361634528190196,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,98.32189229388108,REC0040,Kancheepuram,Sriperumbudur,Magadevimangalam
+18189.05635146816,8.05364829622503,5,4,13.880705915597503,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,76.45079307931101,REC0041,Kancheepuram,Sriperumbudur,Magadevimangalam
+24550.149257985966,5.87468357832999,5,0,7.141141650694526,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,111.33730581387408,REC0042,Kancheepuram,Sriperumbudur,Magadevimangalam
+29043.28729989885,6.113784991535248,4,0,3.0464649301825677,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,61.83108012359875,REC0043,Kancheepuram,Sriperumbudur,Magadevimangalam
+18926.322246410826,7.8812748486769175,4,3,6.263554851306726,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,270.9108266596089,REC0044,Kancheepuram,Sriperumbudur,Magadevimangalam
+4617.7977893158095,7.7633125881776515,4,4,4.615696109162059,Agricultural,Joint,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,184.4058059938094,REC0045,Kancheepuram,Sriperumbudur,Magadevimangalam
+31827.4560878917,6.459886426382703,1,5,0.0,Agricultural,Joint,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,153.7795481315731,REC0046,Kancheepuram,Sriperumbudur,Magadevimangalam
+11366.348189795865,5.3485300113523975,5,2,15.707777754702548,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,76.46710491352351,REC0047,Kancheepuram,Sriperumbudur,Magadevimangalam
+16146.074885559836,7.726416646217367,6,7,35.17383037233309,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,131.49563945981694,REC0048,Kancheepuram,Sriperumbudur,Magadevimangalam
+11471.36516771541,5.628547876807601,3,3,15.16084944813128,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,46.84986621288353,REC0049,Kancheepuram,Sriperumbudur,Magadevimangalam
+23906.617608304117,6.503814745345949,5,0,7.758782041996017,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,87.23626957256042,REC0050,Kancheepuram,Sriperumbudur,Magadevimangalam
+31548.65120276817,6.994948278501993,2,6,15.070419316323918,Agricultural,Joint,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,113.85076109690984,REC0051,Kancheepuram,Sriperumbudur,Magadevimangalam
+26778.3609603869,7.015753965766951,1,5,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,160.81006772460023,REC0052,Kancheepuram,Sriperumbudur,Magadevimangalam
+23718.09399422746,7.276624203907742,4,7,35.27210169107182,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,194.44910366114527,REC0053,Kancheepuram,Sriperumbudur,Magadevimangalam
+4455.3287863884325,7.179115161306956,4,5,7.539144070982225,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,131.9435939330931,REC0054,Kancheepuram,Sriperumbudur,Magadevimangalam
+22750.895780036935,6.641447591897947,4,1,4.8157486774515785,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,94.28520275857714,REC0055,Kancheepuram,Sriperumbudur,Magadevimangalam
+16630.30976109886,6.088425625603613,5,2,12.639977418570549,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,83.1146544674151,REC0056,Kancheepuram,Sriperumbudur,Magadevimangalam
+14051.57003627818,5.601442433063132,4,2,8.735507446480256,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,56.20005662353736,REC0057,Kancheepuram,Sriperumbudur,Magadevimangalam
+31914.10763630507,6.474796572596312,5,3,35.887059444888465,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,361.52634935989266,REC0058,Kancheepuram,Sriperumbudur,Magadevimangalam
+16994.712434117922,5.948396453039118,5,2,14.332729079296024,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,55.86517558460653,REC0059,Kancheepuram,Sriperumbudur,Magadevimangalam
+30274.40615026326,6.546508913065541,5,2,2.0467447124742026,Agricultural,Joint,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,33.12746317407971,REC0060,Kancheepuram,Sriperumbudur,Magadevimangalam
+29411.198881067103,7.119232407341594,1,6,0.6652341355089958,Agricultural,Joint,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,170.89397177109007,REC0061,Kancheepuram,Sriperumbudur,Magadevimangalam
+26674.696416172446,6.653368529983017,2,7,21.50534785710627,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,277.60795605419725,REC0062,Kancheepuram,Sriperumbudur,Magadevimangalam
+16351.863485096243,5.498657916781026,3,2,10.738432542917021,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,66.49410348054177,REC0063,Kancheepuram,Sriperumbudur,Magadevimangalam
+25749.807611715514,5.61261314742057,5,3,30.36016786616289,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0064,Kancheepuram,Sriperumbudur,Magadevimangalam
+3954.8348248205066,6.9226689724426675,4,6,1.092028002730288,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,127.1936938077519,REC0065,Kancheepuram,Sriperumbudur,Magadevimangalam
+24556.270978020297,6.453975195753022,3,7,29.068818449831053,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,197.1400014443305,REC0066,Kancheepuram,Sriperumbudur,Magadevimangalam
+23706.938644173806,6.681102971784518,6,6,32.262356598798235,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,211.35481912054993,REC0067,Kancheepuram,Sriperumbudur,Magadevimangalam
+11803.459868212136,5.999947274073088,4,2,13.374954848402112,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,72.8199312132113,REC0068,Kancheepuram,Sriperumbudur,Magadevimangalam
+18007.844403585852,8.160691857549358,5,3,15.057130277803296,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,95.6064405946399,REC0069,Kancheepuram,Sriperumbudur,Magadevimangalam
+15976.716179046285,8.352546020067019,5,2,26.638265501730423,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,80.08608044920963,REC0070,Kancheepuram,Sriperumbudur,Magadevimangalam
+20855.892274995826,6.062690170712952,4,2,17.547753424302634,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,118.32873096506148,REC0071,Kancheepuram,Sriperumbudur,Magadevimangalam
+22076.674333036786,6.419616618864344,1,6,3.1981830300849676,Agricultural,Joint,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,167.64272839945056,REC0072,Kancheepuram,Sriperumbudur,Magadevimangalam
+14937.969422103184,5.906968969010206,6,4,30.64111983180832,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,319.7686941138858,REC0073,Kancheepuram,Sriperumbudur,Magadevimangalam
+16388.286106078922,6.2414724296176045,2,5,26.146056870575343,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,157.1105347210673,REC0074,Kancheepuram,Sriperumbudur,Magadevimangalam
+14084.429847990792,7.859032828997087,4,7,31.03129413887714,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,165.15797496307061,REC0075,Kancheepuram,Sriperumbudur,Magadevimangalam
+13606.163400319003,6.164737349801561,4,1,1.0346981447292212,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,116.90801956504927,REC0076,Kancheepuram,Sriperumbudur,Magadevimangalam
+19018.765717968006,5.4965206679534475,3,3,12.575579668087126,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,74.44896252560821,REC0077,Kancheepuram,Sriperumbudur,Magadevimangalam
+15362.559108497933,7.998305839680307,5,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,64.32119922942103,REC0078,Kancheepuram,Sriperumbudur,Magadevimangalam
+17946.991155295338,5.727637997530233,4,1,11.027998239006324,Agricultural,Joint,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,73.00944993031021,REC0079,Kancheepuram,Sriperumbudur,Magadevimangalam
+20818.931928109636,6.792594993577672,4,2,11.60384915582992,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,33.074711071173496,REC0080,Kancheepuram,Sriperumbudur,Magadevimangalam
+26468.352429739287,6.44240912653896,3,2,20.845470870762348,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,284.57235458013963,REC0081,Kancheepuram,Sriperumbudur,Magadevimangalam
+19050.859067934005,6.739829928487934,5,2,0.0,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,36.283905639150184,REC0082,Kancheepuram,Sriperumbudur,Magadevimangalam
+26831.500749579187,8.208576556178652,5,1,15.286069245678103,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,278.4515476428837,REC0083,Kancheepuram,Sriperumbudur,Magadevimangalam
+27835.190913401624,6.200553548370824,4,4,31.916885565912352,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,355.7741216461305,REC0084,Kancheepuram,Sriperumbudur,Magadevimangalam
+3644.7347667728245,7.723094158716125,4,6,9.800952966585376,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,149.1970468213483,REC0085,Kancheepuram,Sriperumbudur,Magadevimangalam
+24365.59764793719,8.199921111785477,5,2,18.56954105728777,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,251.44178426482006,REC0086,Kancheepuram,Sriperumbudur,Magadevimangalam
+23863.98372109567,5.864784766103118,3,1,4.534042066756191,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,85.6497256397069,REC0087,Kancheepuram,Sriperumbudur,Magadevimangalam
+11399.116707880545,7.811372665097512,5,3,12.964608818248374,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,80.56891260973373,REC0088,Kancheepuram,Sriperumbudur,Magadevimangalam
+13535.551473112911,5.598222454834795,4,2,8.29030886928798,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,68.8388792681366,REC0089,Kancheepuram,Sriperumbudur,Magadevimangalam
+23189.546885302236,6.966923922787583,2,7,1.457600890866041,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,167.8529986625334,REC0090,Kancheepuram,Sriperumbudur,Magadevimangalam
+2874.3841594399937,7.5661552809823736,3,1,12.74231405407116,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,328.84004601044984,REC0091,Kancheepuram,Sriperumbudur,Magadevimangalam
+15008.830870671525,6.799675570894029,6,6,34.83265703618615,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,230.98558520693146,REC0092,Kancheepuram,Sriperumbudur,Magadevimangalam
+20469.104966926865,7.180664137639545,5,0,1.321963159406769,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,37.08542569608477,REC0093,Kancheepuram,Sriperumbudur,Magadevimangalam
+31640.96231097884,7.309158668944173,2,5,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,103.4216734915375,REC0094,Kancheepuram,Sriperumbudur,Magadevimangalam
+26341.851697708527,7.326124503674221,5,5,30.202138569752552,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,295.95134184690835,REC0095,Kancheepuram,Sriperumbudur,Magadevimangalam
+17537.88744072794,5.61080299119071,5,2,13.569496740894758,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,52.82781409032607,REC0096,Tiruvallur,Uthukottai,Melmaligaipattu
+17485.130596220042,5.993488315330772,4,0,14.144684738119958,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,89.921604143085,REC0097,Tiruvallur,Uthukottai,Melmaligaipattu
+22661.20113089756,8.200735300896069,5,5,40.019106960332785,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,141.26708805527795,REC0098,Tiruvallur,Uthukottai,Melmaligaipattu
+30631.03811432013,6.977468646996809,4,1,1.1911476127791438,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,25.065235731494145,REC0099,Tiruvallur,Uthukottai,Melmaligaipattu
+28653.850502172692,6.335700185192942,4,0,9.187354513255608,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,86.48831171336282,REC0100,Tiruvallur,Uthukottai,Melmaligaipattu
+26058.358065586886,6.66403026746875,5,0,0.0,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,33.55914982889934,REC0101,Tiruvallur,Uthukottai,Melmaligaipattu
+24427.19573058887,6.123986729315596,3,7,26.016941203099716,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,201.47234178014526,REC0102,Tiruvallur,Uthukottai,Melmaligaipattu
+20110.040970245664,6.31551138129683,4,0,7.482090004043298,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,105.37520998119703,REC0103,Tiruvallur,Uthukottai,Melmaligaipattu
+3720.4464623306085,7.007875034499627,3,5,3.8386866471108156,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,152.83590667298057,REC0104,Tiruvallur,Uthukottai,Melmaligaipattu
+14243.500951279475,7.833360806030724,5,2,16.671475642488573,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,79.80895147219456,REC0105,Tiruvallur,Uthukottai,Melmaligaipattu
+10951.87097258799,8.37005536920599,4,2,14.201758462889915,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,92.97924435757879,REC0106,Tiruvallur,Uthukottai,Melmaligaipattu
+2472.1565614259803,7.3655618221754855,3,2,18.310179060371905,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,370.20062620838075,REC0107,Tiruvallur,Uthukottai,Melmaligaipattu
+16801.198215312375,5.263553254422663,5,2,20.239749925297158,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,74.03901042626589,REC0108,Tiruvallur,Uthukottai,Melmaligaipattu
+29325.648950326195,6.553095701920401,2,6,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,102.97396732316443,REC0109,Tiruvallur,Uthukottai,Melmaligaipattu
+17815.620740737213,5.34701558417121,4,2,15.177241841549652,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,82.04090048149388,REC0110,Tiruvallur,Uthukottai,Melmaligaipattu
+19081.236772166852,6.746389655243933,3,7,22.880431237900808,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,169.57648841715863,REC0111,Tiruvallur,Uthukottai,Melmaligaipattu
+15418.50637575208,6.072918018061749,3,6,29.063006438768223,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,214.39751214384603,REC0112,Tiruvallur,Uthukottai,Melmaligaipattu
+23115.686296729484,6.126738333793305,5,3,26.8620623178154,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0113,Tiruvallur,Uthukottai,Melmaligaipattu
+19793.05453518917,5.928877944701081,3,1,5.572013413075959,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,46.67002133685189,REC0114,Tiruvallur,Uthukottai,Melmaligaipattu
+24814.626971822774,5.772879669380282,1,6,20.967005478463136,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,250.46129495781338,REC0115,Tiruvallur,Uthukottai,Melmaligaipattu
+4452.474924324437,7.172493356503025,5,4,16.25589424510532,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,205.3139058889571,REC0116,Tiruvallur,Uthukottai,Melmaligaipattu
+20372.52196613596,6.414100219761416,4,5,30.332738264176378,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,329.143327068838,REC0117,Tiruvallur,Uthukottai,Melmaligaipattu
+29170.14499837739,6.58782418424627,5,2,11.054684975059471,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,37.5722108832795,REC0118,Tiruvallur,Uthukottai,Melmaligaipattu
+23894.243705469136,6.106854807141217,3,0,5.0503807948887145,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,70.69239019724144,REC0119,Tiruvallur,Uthukottai,Melmaligaipattu
+2051.0532755494573,7.957352212585826,3,3,20.49598365847444,Agricultural,Joint,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0120,Tiruvallur,Uthukottai,Melmaligaipattu
+18488.108142890207,6.157399035677744,4,1,2.3466419724639085,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,92.60672411955457,REC0121,Tiruvallur,Uthukottai,Melmaligaipattu
+33422.53795661101,7.454347503886814,5,0,11.339438055597599,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,22.949300040568463,REC0122,Tiruvallur,Uthukottai,Melmaligaipattu
+13363.314063944146,5.939285825640566,4,3,17.062594184158,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,94.27067722741346,REC0123,Tiruvallur,Uthukottai,Melmaligaipattu
+24141.572580918146,7.794731152056766,5,6,31.28829530668059,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,186.96790996883337,REC0124,Tiruvallur,Uthukottai,Melmaligaipattu
+22615.515819263524,8.244620050657657,4,1,4.176278290897164,Agricultural,Joint,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,280.4828691485371,REC0125,Tiruvallur,Uthukottai,Melmaligaipattu
+4087.9631003550758,6.885837552789054,5,4,13.179039481571685,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,134.06177459805903,REC0126,Tiruvallur,Uthukottai,Melmaligaipattu
+13196.526487464196,5.8260565796174815,5,1,13.165360349457174,Agricultural,Joint,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,61.63403232963301,REC0127,Tiruvallur,Uthukottai,Melmaligaipattu
+21866.323254786577,6.575517502569559,2,7,22.822962635280188,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,177.6325659268988,REC0128,Tiruvallur,Uthukottai,Melmaligaipattu
+14821.027362959285,6.46234785205521,5,4,34.570386119348996,Agricultural,Joint,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,255.30240986169565,REC0129,Tiruvallur,Uthukottai,Melmaligaipattu
+17653.764428144612,6.224466812814287,2,5,0.0,Agricultural,Joint,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,113.58375556499705,REC0130,Tiruvallur,Uthukottai,Melmaligaipattu
+3597.6333535788413,7.03966860364435,3,6,7.774696744046488,Agricultural,Joint,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,129.61627734047158,REC0131,Tiruvallur,Uthukottai,Melmaligaipattu
+12877.136769246521,8.414752086432404,6,4,10.447125580392758,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,65.21197765399354,REC0132,Tiruvallur,Uthukottai,Melmaligaipattu
+24143.136315434178,6.895905962461411,1,5,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,93.89913822595742,REC0133,Tiruvallur,Uthukottai,Melmaligaipattu
+19804.197999385604,5.835232722768761,4,1,14.428745176373308,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,115.66651956907911,REC0134,Tiruvallur,Uthukottai,Melmaligaipattu
+21506.461509983485,8.43840565720479,6,2,9.516806550483368,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,295.2480338823466,REC0135,Tiruvallur,Uthukottai,Melmaligaipattu
+11423.857169397728,8.184776094875788,4,4,9.299195404368847,Agricultural,Joint,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,72.25817047263675,REC0136,Tiruvallur,Uthukottai,Melmaligaipattu
+15474.181682453804,6.764621645659237,6,4,34.390718632273135,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,187.67786117865128,REC0137,Tiruvallur,Uthukottai,Melmaligaipattu
+17601.42509090574,6.442102484583342,1,5,13.763657223295722,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,185.05135260831585,REC0138,Tiruvallur,Uthukottai,Melmaligaipattu
+20881.33262971683,5.642049378036312,5,2,15.654191131752647,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,106.07567373376224,REC0139,Kancheepuram,Kancheepuram,Podavoor
+10519.10777009433,7.488484991024291,6,7,1.057256458353272,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,103.85592530895352,REC0140,Kancheepuram,Kancheepuram,Podavoor
+14505.860353462693,8.135550520621639,5,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,73.95627606785729,REC0141,Kancheepuram,Kancheepuram,Podavoor
+29463.560797522205,6.4327636872612155,3,2,33.176855714306384,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,315.2658087388205,REC0142,Kancheepuram,Kancheepuram,Podavoor
+10590.51182527426,5.164916661085745,3,2,11.219040205754375,Agricultural,Joint,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,72.64703952067336,REC0143,Kancheepuram,Kancheepuram,Podavoor
+15886.785773969481,8.618698602265711,6,2,16.276067084279372,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,78.16607633246308,REC0144,Kancheepuram,Kancheepuram,Podavoor
+18729.308056263533,5.971958588861405,3,2,30.301929642122087,Agricultural,Joint,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0145,Kancheepuram,Kancheepuram,Podavoor
+12371.48210628468,7.776081130842957,5,7,37.471066642567045,Agricultural,Joint,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,117.19804378197729,REC0146,Kancheepuram,Kancheepuram,Podavoor
+25292.055226867524,6.539125804561335,6,4,32.244740611965355,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,194.26294354097203,REC0147,Kancheepuram,Sriperumbudur,Magadevimangalam
+27209.542221352818,8.25336654436426,5,2,8.06646244315961,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,189.0984228087325,REC0148,Kancheepuram,Sriperumbudur,Magadevimangalam
+21010.448001162476,8.40775105286557,5,3,12.774773360154246,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,274.545118078302,REC0149,Kancheepuram,Sriperumbudur,Magadevimangalam
+14357.757436659298,5.813784010309549,4,3,19.49989825171042,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,73.92341390789456,REC0150,Kancheepuram,Sriperumbudur,Magadevimangalam
+21324.283773732015,6.265169358443157,5,1,3.110529459611721,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,88.05600949980088,REC0151,Kancheepuram,Sriperumbudur,Magadevimangalam
+24025.313051529647,7.9115801748823875,6,3,14.990037099353977,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,295.1400230741916,REC0152,Kancheepuram,Sriperumbudur,Magadevimangalam
+20171.987925311118,5.555627662840377,3,3,8.189602436328563,Agricultural,Joint,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,62.84035410591339,REC0153,Kancheepuram,Sriperumbudur,Magadevimangalam
+3277.5188160569423,7.808732983973001,3,2,16.411945722874396,Agricultural,Joint,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,377.8598492829075,REC0154,Kancheepuram,Sriperumbudur,Magadevimangalam
+23981.70522891585,7.068431460541071,6,5,31.100967441050525,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,324.3453772756361,REC0155,Kancheepuram,Sriperumbudur,Magadevimangalam
+16267.027882361295,7.502121398493087,4,5,10.186933377437601,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,59.252376710180926,REC0156,Kancheepuram,Sriperumbudur,Magadevimangalam
+16969.314465810734,8.326107308010323,6,7,33.65528913023072,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,134.61340346712973,REC0157,nan,nan,nan
+21124.862385901546,6.455385672453437,5,2,15.84498935137929,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,124.8616533522498,REC0158,nan,nan,nan
+16096.780702186366,6.609325676331346,5,5,33.06992610932646,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,212.19429148850693,REC0159,nan,nan,nan
+20757.34232456423,7.218909920188375,4,7,28.089902900848497,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,114.66256016249689,REC0160,nan,nan,nan
+24700.448708549127,5.991948150628316,6,2,4.289124168145465,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,100.30753070117083,REC0161,nan,nan,nan
+21750.187290147172,6.186023818898199,1,5,19.960535251882277,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,279.35627047931894,REC0162,nan,nan,nan
+13529.548716507783,7.012422567880891,5,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,96.18721691984027,REC0163,nan,nan,nan
+24643.652492120895,6.2676679518530545,4,3,5.444475495412209,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,125.90814848641811,REC0164,nan,nan,nan
+15303.891954996943,6.973484213593934,4,4,20.49150077920173,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,321.18919446522193,REC0165,nan,nan,nan
+16626.23551877732,5.532681333751436,4,1,14.192905614904586,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,50.9559817593187,REC0166,nan,nan,nan
+23465.58306322676,5.941304612157337,3,7,17.321789650369404,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,206.49794232564653,REC0167,nan,nan,nan
+4351.461016139951,7.055767253024549,3,4,5.88896277352641,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,130.5344512167898,REC0168,nan,nan,nan
+9955.059327064693,7.6209758742984475,6,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,78.6956829792365,REC0169,nan,nan,nan
+19038.537425356302,6.013349689923722,6,3,16.78753879010567,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,121.24976330742098,REC0170,nan,nan,nan
+25068.89988677839,6.709028613625709,4,2,28.410467256857686,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0171,nan,nan,nan
+17080.25733462896,7.4285652342409785,4,6,10.410874401020248,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,84.48133417588839,REC0172,nan,nan,nan
+19295.59077072628,6.6227139863870494,5,5,35.241620329865796,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,263.13210922998155,REC0173,nan,nan,nan
+25648.12770918751,6.29288602457275,5,2,5.245677454072165,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,84.33916560392012,REC0174,nan,nan,nan
+15050.481506111213,6.663482919838515,4,4,35.45383354496909,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,260.41625546548795,REC0175,nan,nan,nan
+17256.50028903684,7.693290505328689,5,5,18.34702812073612,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,179.83869290456997,REC0176,nan,nan,nan
+24052.10849604108,6.435530580282295,5,4,24.187856099300348,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,258.4426608916287,REC0177,nan,nan,nan
+12485.562357647976,7.954790960528197,5,3,14.99040073411827,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,87.03741104348957,REC0178,nan,nan,nan
+25875.84749311132,6.29929680579276,4,4,32.821946319049545,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,344.74161234642406,REC0179,nan,nan,nan
+17228.696839410866,6.3773423718007685,5,5,33.173059370926275,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,210.51134294114908,REC0180,nan,nan,nan
+23768.7737170153,8.285044259906934,5,2,11.792061836893641,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,259.79146905272324,REC0181,nan,nan,nan
+3138.4699250451276,7.374947372220937,2,2,19.316849030163436,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,298.8573012654813,REC0182,nan,nan,nan
+27480.132722155893,6.412315935511879,3,3,22.978654509546253,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0183,nan,nan,nan
+30531.369785789717,7.081293719341645,5,1,0.5860492063767762,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,27.326133229165464,REC0184,nan,nan,nan
+23842.964175958125,7.294442361451772,6,1,4.763600815131715,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,35.087955151400756,REC0185,nan,nan,nan
+25748.301472069932,8.139229256373463,4,2,16.703586769870338,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,240.84104435468862,REC0186,nan,nan,nan
+13393.762051669446,8.100897987359986,5,4,18.35039621101095,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,80.90498758243153,REC0187,nan,nan,nan
+4111.37797741304,7.213652781037518,5,4,16.21152395593122,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,197.20455424596284,REC0188,nan,nan,nan
+12820.48699528053,5.393686451796504,5,1,12.630747472268814,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,50.124332655363304,REC0189,nan,nan,nan
+17263.99607114293,6.701962608357811,6,6,35.049142286643466,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,272.7158139781348,REC0190,nan,nan,nan
+29342.269504501928,5.545936980653158,5,1,5.976835138878274,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,77.62963863959244,REC0191,nan,nan,nan
+29270.41372292557,6.260832514475711,2,7,27.42580556272869,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,205.86807402210687,REC0192,nan,nan,nan
+19841.383593050898,7.632668596203173,6,5,36.38700684346151,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,134.8927400483582,REC0193,nan,nan,nan
+22877.85093103632,6.409569903611452,2,6,21.188382709861738,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,185.38853710063773,REC0194,nan,nan,nan
+33572.18717859878,6.613312449779581,6,2,0.0,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,35.92281045125319,REC0195,nan,nan,nan
+23707.7180319435,7.333539043517675,5,5,40.36007283245067,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,289.11314341974276,REC0196,nan,nan,nan
+21949.134091828993,7.03341804545857,4,1,10.270250907287291,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,36.87864191160266,REC0197,nan,nan,nan
+25025.595699469006,6.4066898639360925,5,4,27.640187238548904,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,313.4827293746481,REC0198,nan,nan,nan
+15311.095157595919,6.540934290388827,6,5,31.85353673223846,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,345.5780785959018,REC0199,nan,nan,nan
+2254.8314694826813,7.868035813832741,2,2,31.046054306147514,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0200,nan,nan,nan
+9948.620596872903,8.054625705976086,6,3,15.309582418399796,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,91.08729824208241,REC0201,nan,nan,nan
+28385.00003603141,7.680567102060344,6,3,20.266224416406136,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,253.78986499087273,REC0202,nan,nan,nan
+3710.4942269860794,7.338479675874688,4,6,5.719725316795163,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,219.64138159533263,REC0203,nan,nan,nan
+26462.671513812722,7.3737556508944895,6,2,7.86831755672045,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,27.620870809899777,REC0204,nan,nan,nan
+23331.86196539294,6.479504114122465,4,3,24.513311627264784,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0205,nan,nan,nan
+27527.23770709678,5.9616201634624835,5,0,10.201100813470987,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,99.98844469862027,REC0206,nan,nan,nan
+24420.533690615735,6.227868840878897,5,2,30.394943581700048,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,268.2106274832276,REC0207,nan,nan,nan
+18889.903244061945,6.405610341540877,3,2,32.25158639021907,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,247.9101812607958,REC0208,nan,nan,nan
+4387.5800841069085,7.044747276045433,4,5,17.85670621133842,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,135.33528604579612,REC0209,nan,nan,nan
+10666.864911200399,7.470764712716957,4,4,13.684632877718236,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,88.17247464065272,REC0210,nan,nan,nan
+22835.750441461452,6.686533274795476,3,3,30.186139182107883,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,354.8875355726089,REC0211,nan,nan,nan
+21566.952530096918,8.315638500914957,4,6,22.992271277806605,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,124.57916833401237,REC0212,nan,nan,nan
+15049.903636230785,6.7419261594082425,6,5,38.09521846620881,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,317.5679765999812,REC0213,nan,nan,nan
+18810.613339039894,6.888797271746052,6,4,30.192584866085582,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,257.8172293493196,REC0214,nan,nan,nan
+4635.958173741313,7.541886071656872,4,6,1.9115791492021517,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,140.6889092105859,REC0215,nan,nan,nan
+14982.169169397217,7.523617549070191,4,7,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,85.53525667082206,REC0216,nan,nan,nan
+17590.605864770176,5.576475174694606,5,2,8.253980014058529,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,63.46977570389538,REC0217,nan,nan,nan
+15528.121341601875,7.500644405026792,4,7,24.99897075478261,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,156.546809950838,REC0218,nan,nan,nan
+11495.739461893934,7.725241587622604,5,5,5.2734286506778085,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,91.79728864897996,REC0219,nan,nan,nan
+9915.496132840199,8.096808397014541,4,2,13.41901147709406,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,80.49530988734803,REC0220,nan,nan,nan
+4673.488619212714,7.5595336671803155,3,6,7.716729418001236,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,124.33195058739066,REC0221,nan,nan,nan
+10993.47481491109,8.188145380234907,5,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,68.76179600896867,REC0222,nan,nan,nan
+15849.284226791759,6.054141760790286,4,2,10.488016466944519,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,120.40074404140509,REC0223,nan,nan,nan
+16270.066382446386,7.586298880676187,4,5,44.40816438638031,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,129.6915302653351,REC0224,nan,nan,nan
+12395.872204173727,5.644212996844185,4,1,0.7414583254039897,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,48.92427352148136,REC0225,nan,nan,nan
+10373.539668226487,7.425064866614518,5,2,21.624778396908155,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,85.28965526324242,REC0226,nan,nan,nan
+22928.754204357083,6.434767647714548,5,0,8.619754770963354,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,77.8094941185446,REC0227,nan,nan,nan
+20039.285715111186,5.86786211118485,5,3,11.252236894349586,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,82.37955112577686,REC0228,nan,nan,nan
+18405.17669101452,7.114553839351403,5,7,34.63504934394658,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,158.67859487412727,REC0229,nan,nan,nan
+18472.76393980845,6.471161110841545,3,2,37.759400600612445,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0230,nan,nan,nan
+16741.702004486073,7.640707048633286,5,6,33.339933130255446,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,189.66530686890277,REC0231,nan,nan,nan
+32940.16977985198,6.848530646935096,2,5,5.836496179213862,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,139.46191212645078,REC0232,nan,nan,nan
+28945.744627324377,6.682382543397607,5,1,6.8724735193268565,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,28.741825848610993,REC0233,nan,nan,nan
+14723.452202838402,6.455330256389123,5,6,33.48706706478891,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,220.4404200205989,REC0234,nan,nan,nan
+26376.630517754747,6.16535033621032,4,0,9.310407672908763,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,92.08399441765448,REC0235,nan,nan,nan
+17162.957040771704,6.161089696175294,4,3,12.125276550754323,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,80.27777538094452,REC0236,nan,nan,nan
+1899.4327629730792,7.620075165264341,3,3,18.818490751714815,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,236.2534225668027,REC0237,nan,nan,nan
+17929.219203222645,5.048815377061377,3,2,17.97919327609887,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,45.010167379249694,REC0238,nan,nan,nan
+22679.2608539472,6.89302988674489,2,7,5.120998098979315,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,115.53547977122592,REC0239,nan,nan,nan
+19804.162907117792,7.981628144439181,4,2,18.2882021046058,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,340.280386175685,REC0240,nan,nan,nan
+4587.889581697022,6.752760610329973,5,6,9.267408134109502,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,156.27064315592227,REC0241,nan,nan,nan
+18766.04227542358,7.08428113150712,1,6,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,172.76440142395467,REC0242,nan,nan,nan
+24315.705739067787,7.2666017157814276,5,1,11.099996107663705,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,313.0421891234445,REC0243,nan,nan,nan
+17092.42072631185,8.221186206220683,6,2,24.181129198650098,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,52.864283785441216,REC0244,nan,nan,nan
+15052.00194707015,6.057124068988124,4,2,11.196229179561271,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,59.266585902395256,REC0245,nan,nan,nan
+23976.403294248736,6.268631008678682,2,6,26.46466911748646,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,181.46248933514522,REC0246,nan,nan,nan
+17603.681376218206,5.636603370210228,1,5,29.3827180204076,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,206.5162196805504,REC0247,nan,nan,nan
+30868.07640021491,8.657848442286992,4,1,20.289440052165897,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,325.2768902438977,REC0248,nan,nan,nan
+24936.93452552326,7.02833891947414,5,1,0.366423040268959,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,40.179899740235356,REC0249,nan,nan,nan
+29012.37587469629,6.298053041116407,1,7,29.57965151139799,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,271.9527747575664,REC0250,nan,nan,nan
+25420.5435957381,5.812435319530493,4,3,14.609325738886163,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,118.88163526101998,REC0251,nan,nan,nan
+2185.1910285116373,7.6871363688649605,2,3,14.948300133274454,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,309.6521936916192,REC0252,nan,nan,nan
+2628.4508928482505,6.580037269037304,4,4,7.101567374287194,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,147.30519640661606,REC0253,nan,nan,nan
+29096.29576273258,6.598589320054831,3,7,29.797952628750366,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,262.3645201414963,REC0254,nan,nan,nan
+31434.34282627435,7.6184186258602296,6,2,18.82267244516631,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,273.2898407753352,REC0255,nan,nan,nan
+26338.054484883236,8.187369425054214,4,3,23.1301695495534,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,263.2769669596967,REC0256,nan,nan,nan
+22702.45043519538,5.774370428181909,4,2,36.24378886205253,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,264.24742450931706,REC0257,nan,nan,nan
+4400.550201989903,6.8252529568110685,3,6,16.386968170850174,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,121.86684459350016,REC0258,nan,nan,nan
+2279.843482649693,8.358695268418463,2,3,16.08750078674869,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0259,nan,nan,nan
+25963.1108943244,6.554759222525798,5,1,9.979652424757827,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,73.06171163493194,REC0260,nan,nan,nan
+20597.359494689157,6.276772055031267,4,1,10.956026552572142,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,81.29091474560674,REC0261,nan,nan,nan
+29485.99725543083,6.968919552422864,4,4,36.30468661781492,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,321.6941247707002,REC0262,nan,nan,nan
+18419.33740690807,6.498647084883595,3,0,6.140110935129384,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,101.13436175333231,REC0263,nan,nan,nan
+20720.181748042738,6.717159178895855,5,4,33.9065710893071,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,293.587401791709,REC0264,nan,nan,nan
+18198.69866663124,6.396397858534336,2,7,23.64535934921096,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,177.99053028539302,REC0265,nan,nan,nan
+18895.067428137845,7.6093610254626425,5,2,16.582756083867032,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,255.8921312984788,REC0266,nan,nan,nan
+13823.747350387814,8.43625219542095,6,4,16.802958388284207,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,78.12727442304295,REC0267,nan,nan,nan
+20928.131945222474,6.856791701983598,1,5,12.628898959408424,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,131.50800835261884,REC0268,nan,nan,nan
+19376.036434073638,6.10233649654414,6,3,10.473879328745644,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,115.73636862589234,REC0269,nan,nan,nan
+3531.007170539338,7.065737032466648,3,6,9.453712818760865,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,153.55410657236058,REC0270,nan,nan,nan
+4133.49229592942,6.882616684544682,4,6,11.298529775074938,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,200.64926826436783,REC0271,nan,nan,nan
+2846.9448084841006,7.414081999474891,3,2,9.864317989068795,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,378.55036087064013,REC0272,nan,nan,nan
+14769.067760399132,7.795975263922557,4,5,32.046197698327255,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,130.39633666587977,REC0273,nan,nan,nan
+16688.409840621607,5.7628586261241335,5,0,14.52926340272282,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,76.10739747575191,REC0274,nan,nan,nan
+32855.87097496447,6.99898306159718,5,0,0.0,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,28.352896946383122,REC0275,nan,nan,nan
+13750.496377039583,8.198510391849462,5,2,11.918534559039461,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,57.45106320580935,REC0276,nan,nan,nan
+22389.23675701813,6.093915577515907,5,2,12.61398732046624,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,113.73061365977536,REC0277,nan,nan,nan
+22365.51219891711,7.4455562796213535,5,7,29.876982958924106,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,138.3894368644269,REC0278,nan,nan,nan
+25010.192257027207,7.049615832320917,1,7,0.7843320517954628,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,119.03328047777639,REC0279,nan,nan,nan
+19123.630499575152,6.220373950750801,3,0,10.478026216571728,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,80.17604231799857,REC0280,nan,nan,nan
+23715.32291582257,6.385537031430747,4,5,31.42412805057388,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,324.6006953464303,REC0281,nan,nan,nan
+26247.231616719473,5.375097194110827,5,3,10.058079363678083,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,116.31221837577277,REC0282,nan,nan,nan
+18448.703747833373,8.048883472993166,5,2,20.086407902461293,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,251.21503710293035,REC0283,nan,nan,nan
+23227.694807327687,6.494443924792435,2,7,35.043776930925695,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,182.88834532626868,REC0284,nan,nan,nan
+27370.15967731677,5.920920593818985,3,7,23.695500884995752,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,194.6053196615695,REC0285,nan,nan,nan
+20761.41212294688,6.168512553199949,3,6,23.8167058767405,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,198.58581248762655,REC0286,nan,nan,nan
+3204.9712063331963,7.218652731908752,4,4,5.378287402958994,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,214.55836323313872,REC0287,nan,nan,nan
+18421.633003196235,5.787225923419535,4,3,7.356947573702363,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,79.72245744679782,REC0288,nan,nan,nan
+19002.040509716422,6.082388061238781,5,1,1.917124462722125,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,103.41553632881475,REC0289,nan,nan,nan
+11488.99614301507,7.909556050808563,5,4,15.810297795314373,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,70.89009301556212,REC0290,nan,nan,nan
+21865.832296697954,6.834019261420099,5,1,2.9353061594820598,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,37.233339714101646,REC0291,nan,nan,nan
+12474.89870287902,5.708827072675492,4,2,2.929063144784985,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,46.283941497352366,REC0292,nan,nan,nan
+20430.16139877253,6.765060748807932,4,6,32.403169003615616,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,305.43329778052987,REC0293,nan,nan,nan
+2593.1767441339075,8.082829740367583,2,1,14.722360774982848,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,325.92458081156644,REC0294,nan,nan,nan
+27988.743744412455,6.681126841759307,2,5,3.2626920948979596,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,126.22969402122992,REC0295,nan,nan,nan
+25256.046037297954,6.673330461479566,6,3,10.72532566898541,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,75.10860704825932,REC0296,nan,nan,nan
+2269.903464527662,7.706293367503239,3,2,19.540395525995326,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,388.6199686299225,REC0297,nan,nan,nan
+3606.7085681519848,7.684859722287676,3,1,15.738129375077584,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,281.4362133232585,REC0298,nan,nan,nan
+26145.059950178966,6.7596388121644315,4,6,24.115066803369622,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,249.91157030418336,REC0299,nan,nan,nan
+9627.517948449897,8.273220773255774,6,3,18.809273870212316,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,61.16548684889885,REC0300,nan,nan,nan
+24896.836763261635,5.896710631863397,6,4,34.8753107594617,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,324.6407969014204,REC0301,nan,nan,nan
+16090.2009985395,7.550769035518399,5,7,32.914810553312684,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,176.44395491942572,REC0302,nan,nan,nan
+29492.817578000144,8.392145721515192,6,1,15.981090694377261,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,305.065440079554,REC0303,nan,nan,nan
+31768.3748721158,6.175767644690689,5,0,0.0,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,31.053473827834573,REC0304,nan,nan,nan
+23442.12810204693,6.146403449295833,2,7,22.466986520143983,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,185.7196720272025,REC0305,nan,nan,nan
+23357.105539699245,6.484311005543051,4,5,25.164114547072764,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,313.1190684698004,REC0306,nan,nan,nan
+17706.84828979081,5.73858647774738,5,1,8.499322231378471,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,69.30778443237134,REC0307,nan,nan,nan
+13708.900999497999,8.457416892087425,4,2,16.11983714186724,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,90.6739335770093,REC0308,nan,nan,nan
+30506.718424016657,8.07320387918978,4,2,17.67561725934041,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,234.2907290829534,REC0309,nan,nan,nan
+30206.39827009861,7.615484732824563,4,2,18.82262518996401,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,318.6034272900785,REC0310,nan,nan,nan
+11348.566529818423,7.792376961666628,4,2,21.142104061400758,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,54.251322077834324,REC0311,nan,nan,nan
+13865.264702752576,5.5385051391415265,5,1,13.29302248928099,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,81.09369424655767,REC0312,nan,nan,nan
+25916.64158447316,6.153425011458563,1,6,22.34061253028621,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,181.67251746266834,REC0313,nan,nan,nan
+25076.14389435851,6.160269550542576,5,2,21.31142702431434,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,253.57348515488704,REC0314,nan,nan,nan
+3233.1289151192764,7.842425842002163,4,2,18.18413058394014,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,325.27449657590125,REC0315,nan,nan,nan
+21470.47155552159,6.277942357041653,1,5,24.180232499865017,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,259.96426157821145,REC0316,nan,nan,nan
+2984.6765974834398,7.766049477081331,3,1,17.632983551388467,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0317,nan,nan,nan
+23246.64483133954,7.0818873468326125,4,0,8.236576430368793,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,23.934057719885747,REC0318,nan,nan,nan
+26128.963668649954,6.538206428492726,4,1,6.297348922493917,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,103.76626887453082,REC0319,nan,nan,nan
+26282.667634080954,6.211256969701879,2,7,24.845837429579078,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,221.90723720747403,REC0320,nan,nan,nan
+14884.552841604514,5.974387216196054,5,1,13.052222442303608,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,75.38835442442335,REC0321,nan,nan,nan
+12964.699476124453,5.583410045679955,5,1,16.53291577095127,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,57.479729750952885,REC0322,nan,nan,nan
+17266.280333765964,7.92690108858674,6,4,12.541262901349327,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,61.418032969771495,REC0323,nan,nan,nan
+27657.11240507938,6.114316034222591,3,2,27.171806258224805,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,309.360765781632,REC0324,nan,nan,nan
+27641.232402238857,7.580293261169777,1,5,1.3520956366364445,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,149.56065375477226,REC0325,nan,nan,nan
+21991.649354735626,6.0109752469233,5,1,5.7405636355079315,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,93.59668684351634,REC0326,nan,nan,nan
+18105.713748007558,5.924673938774746,1,7,22.743077745178024,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,253.21940943325873,REC0327,nan,nan,nan
+21811.499225185526,6.711827527438292,1,6,26.484579353680562,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,217.92417319765636,REC0328,nan,nan,nan
+21547.660157927032,7.038706579042008,5,4,33.47719519243868,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,263.06201763728455,REC0329,nan,nan,nan
+17873.39986989522,8.306328339479961,5,3,20.545849057460657,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,71.80559498387915,REC0330,nan,nan,nan
+18283.921361932407,5.702499330325327,3,0,7.369211991542281,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,101.05446274376715,REC0331,nan,nan,nan
+17826.448857820673,5.6022905669778815,3,2,13.25963797726123,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,80.93732933496437,REC0332,nan,nan,nan
+24093.780092535097,6.332736381490913,1,6,22.95175535815999,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,253.11709707306025,REC0333,nan,nan,nan
+12655.934921134092,5.843110538167938,5,2,14.198467632987809,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,77.42963934980712,REC0334,nan,nan,nan
+16462.681175071535,6.682141153597056,6,5,33.85088471595966,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,279.1581807496846,REC0335,nan,nan,nan
+18034.99956239581,7.879791652897335,4,6,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,100.92653307633996,REC0336,nan,nan,nan
+20542.557358688602,8.293367523595194,6,3,20.36897196833879,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,256.3935231798825,REC0337,nan,nan,nan
+33882.43991409075,7.837167022731612,6,3,20.736360255717276,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,229.1532279153598,REC0338,nan,nan,nan
+25337.994351002784,6.47359849014455,3,2,31.09792463589972,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,334.52781000724684,REC0339,nan,nan,nan
+16268.893919776037,7.829792344886196,5,2,15.054927567637629,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,60.17882212528401,REC0340,nan,nan,nan
+3575.7884539062834,6.488681447679585,5,4,3.408470913967281,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,120.44521955832197,REC0341,nan,nan,nan
+17705.719781907486,6.407537183765146,4,5,31.50331046124139,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,196.56550596190698,REC0342,nan,nan,nan
+23765.1363063701,6.149404473979865,3,0,7.966884351270485,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,92.56276269720144,REC0343,nan,nan,nan
+23657.92220909837,5.974616813269129,4,2,35.120494199205126,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0344,nan,nan,nan
+20086.833105988408,7.103557185420009,1,6,2.1778493531994694,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,110.10435238977635,REC0345,nan,nan,nan
+22327.6449781113,6.4151421780027915,4,5,27.67763626936914,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,265.0525511444196,REC0346,nan,nan,nan
+25207.354652535992,8.527598683041091,4,3,20.624273357781,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,242.4131139729938,REC0347,nan,nan,nan
+29167.378372082367,6.930434229195015,1,6,2.3336808398832076,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,142.8764903776143,REC0348,nan,nan,nan
+31594.112194178164,7.062857467343279,6,0,0.0,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,32.92335080926952,REC0349,nan,nan,nan
+11268.386839901346,7.520075939777446,6,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,78.71372988891913,REC0350,nan,nan,nan
+18761.742116294237,5.533628278307866,3,2,17.01468471877611,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,45.48586083232694,REC0351,nan,nan,nan
+19795.736580576413,5.351726413083979,4,1,14.736611652432353,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,82.05574038668199,REC0352,nan,nan,nan
+25877.98633971583,6.352946212332836,6,3,0.0,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,105.7613983950553,REC0353,nan,nan,nan
+15018.504984020856,7.915185292333162,5,3,13.413566373737797,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,84.64578917953708,REC0354,nan,nan,nan
+23266.416207122522,6.023548640835408,4,5,32.72448950478855,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,236.0293979583637,REC0355,nan,nan,nan
+29171.6205421434,5.894832697669508,1,6,28.66213904881419,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,182.1527584153548,REC0356,nan,nan,nan
+18067.63443448362,8.488052990537811,5,2,23.02114552342507,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,68.59210322162984,REC0357,nan,nan,nan
+27821.755451420042,5.996817744797217,4,0,0.0,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,74.36206727751485,REC0358,nan,nan,nan
+3757.411970552972,7.686097058745548,4,2,13.239195659662398,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,298.267717654308,REC0359,nan,nan,nan
+17542.485312459823,6.900288930477046,5,4,31.22685504497666,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,318.96395678209063,REC0360,nan,nan,nan
+3758.2257958753025,6.792641326126097,5,4,2.986517070494849,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,184.29057139737853,REC0361,nan,nan,nan
+13750.217408350323,7.849296197814574,6,6,31.645531864645314,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,119.5337261260327,REC0362,nan,nan,nan
+15736.562439109237,6.271516512451228,5,0,3.8477083326902095,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,82.52926689810566,REC0363,nan,nan,nan
+18752.71361587955,7.707990813652219,5,5,41.48293341485425,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,139.558851061141,REC0364,nan,nan,nan
+2096.15664169963,7.865181947468587,3,2,19.443342622336537,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,309.0262508853565,REC0365,nan,nan,nan
+3422.739041255543,7.809314160146566,4,2,13.070116960343224,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,235.3226155458707,REC0366,nan,nan,nan
+12166.419437529406,7.3581154537945945,5,7,2.9536251304444807,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,105.03173169026444,REC0367,nan,nan,nan
+13750.026771878434,6.889551147818599,4,6,34.960054686828784,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,311.8938713441694,REC0368,nan,nan,nan
+31591.581433544587,6.964245784737573,4,4,26.670611444397817,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,363.9802060816135,REC0369,nan,nan,nan
+19543.8302492347,6.478562535716902,1,7,0.5290271232458335,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,130.18163769456046,REC0370,nan,nan,nan
+11977.069943568857,7.220637402415625,6,5,4.2939868418309635,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,64.61988134489566,REC0371,nan,nan,nan
+2600.2762159959852,7.577065641686533,5,4,8.85958462447984,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,127.49715908152281,REC0372,nan,nan,nan
+28999.44940562926,6.204404041966914,4,1,6.649649270830369,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,87.2372615125455,REC0373,nan,nan,nan
+16822.803167340604,7.158456294602744,4,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,77.51649554985592,REC0374,nan,nan,nan
+24354.964165074063,7.651959537253837,5,7,31.015430793811042,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,141.20049651785078,REC0375,nan,nan,nan
+17777.116973822936,6.0612332851026265,2,5,20.031510614467585,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,187.92067126407633,REC0376,nan,nan,nan
+20266.361524866712,6.7749334630206235,4,0,0.0,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,105.40690593385928,REC0377,nan,nan,nan
+20641.755250482325,6.349376880280814,4,3,5.38521475446435,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,71.61537502571683,REC0378,nan,nan,nan
+19613.05623140965,7.757231526941959,5,2,3.268927156411602,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,36.709162572985065,REC0379,nan,nan,nan
+31718.40636897487,5.756936003673955,3,4,24.535523794506254,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0380,nan,nan,nan
+17471.687111111354,6.313906274184196,4,1,5.135644587782818,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,92.90431167149409,REC0381,nan,nan,nan
+10428.954521655614,5.85920818140742,4,1,12.289235546339764,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,48.95677855263451,REC0382,nan,nan,nan
+16728.044071816563,6.21694900759797,4,1,10.827625674826836,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,92.17896359894456,REC0383,nan,nan,nan
+22848.694184873468,7.825462602156149,4,1,18.93529364697872,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,218.45744230497206,REC0384,nan,nan,nan
+4922.078064348594,7.333121887697269,5,4,6.660118433378538,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,150.19857110023443,REC0385,nan,nan,nan
+26653.085277643055,6.258531191942867,5,1,6.65936906560576,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,83.57303075736043,REC0386,nan,nan,nan
+27140.779620412315,6.4612468311099915,5,0,0.0,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,112.80085115232336,REC0387,nan,nan,nan
+30167.479100509794,6.385654231351164,1,6,4.8593714618491415,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,155.7230307353123,REC0388,nan,nan,nan
+23734.900668790524,5.885813856084857,3,6,26.056932375241338,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,207.7229263372769,REC0389,nan,nan,nan
+2577.3730425721897,7.373371413370684,4,4,11.446919694692046,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,161.40540688401987,REC0390,nan,nan,nan
+15653.26847293862,7.86452944074571,6,7,35.77572840972415,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,151.22759166976422,REC0391,nan,nan,nan
+20999.61355760638,6.220301377418813,2,6,25.965907899065993,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,199.54359451321773,REC0392,nan,nan,nan
+24088.57536831192,7.22053862017329,1,7,12.689225595860826,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,156.89165047644863,REC0393,nan,nan,nan
+25837.05430228061,5.960358276532106,4,1,12.24466955198329,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,79.39672415902966,REC0394,nan,nan,nan
+21307.772987589917,6.571510406822198,6,4,46.51992553639693,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,276.19243959402166,REC0395,nan,nan,nan
+16007.226094899745,7.891720871325579,5,3,19.68284677928394,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,54.79821276016157,REC0396,nan,nan,nan
+11385.915079276021,7.8194477223822805,5,6,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,102.65748336939363,REC0397,nan,nan,nan
+17819.028463748553,6.299759693929293,3,0,9.387424210456969,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,84.00664399136548,REC0398,nan,nan,nan
+19267.77481230825,7.290347504595609,4,0,6.024966878394366,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,23.33232451955084,REC0399,nan,nan,nan
+18242.955473456335,5.787232168826954,4,4,26.91912457912738,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,323.2370219974984,REC0400,nan,nan,nan
+21277.54601067503,5.835018885413179,4,0,6.258491607143073,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,97.71521977473343,REC0401,nan,nan,nan
+9654.343985332753,7.780902056028003,4,6,11.605717013168336,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,90.74187775745607,REC0402,nan,nan,nan
+29296.12701295986,5.677849103291655,3,0,5.390973879733332,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,77.61240257620777,REC0403,nan,nan,nan
+17968.137723442764,6.3646948622230735,5,1,6.344632560289484,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,91.21137581580575,REC0404,nan,nan,nan
+17077.46074553888,7.2431065298656625,4,7,33.07036041436752,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,140.8667374127727,REC0405,nan,nan,nan
+20214.116405692985,6.038139445423658,5,1,6.454000118050239,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,91.56851751141488,REC0406,nan,nan,nan
+3762.943634145468,6.963153141165392,5,6,12.054224582054271,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,161.81062556698265,REC0407,nan,nan,nan
+28979.9354800288,8.393875602346792,6,2,25.891604533599114,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,275.8966642841737,REC0408,nan,nan,nan
+25943.507726858377,6.170577929440248,1,5,17.572189983844645,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,235.94376945518889,REC0409,nan,nan,nan
+3986.5949976455654,7.125798044224287,4,6,3.501708270778293,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,121.99402184224436,REC0410,nan,nan,nan
+16359.430351431965,7.255759129925287,5,6,35.425408835320646,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,216.22143480816766,REC0411,nan,nan,nan
+20118.56217472021,6.674848834032,3,0,0.7802796426567893,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,107.25510117947816,REC0412,nan,nan,nan
+2268.452275395331,7.70850803438607,4,1,12.970031955841012,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,351.8833568343373,REC0413,nan,nan,nan
+22285.78151423491,7.047689073581411,2,5,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,97.2712880945735,REC0414,nan,nan,nan
+3269.9563626187532,7.489025407539103,2,1,20.37572329947449,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,327.2369594130529,REC0415,nan,nan,nan
+21577.662523018276,5.845264828338069,5,0,7.23341574805372,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,92.12436333812845,REC0416,nan,nan,nan
+3771.9643053341283,7.564566225853202,4,2,16.025100569401065,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,300.7198538372557,REC0417,nan,nan,nan
+15864.371281855521,7.982535520928904,4,7,23.7683149443976,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,188.98364974888065,REC0418,nan,nan,nan
+2017.335329428653,7.989382419036473,2,3,17.634334881479212,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0419,nan,nan,nan
+18164.376310534826,6.765856747566825,3,0,0.0,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,91.19887911398851,REC0420,nan,nan,nan
+31877.551208874793,6.98308760256581,5,2,4.815046238572583,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,37.849197789261936,REC0421,nan,nan,nan
+23370.232933711075,8.391301900787756,5,1,19.233307576394516,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,197.23445072959186,REC0422,nan,nan,nan
+15871.603740591088,8.149483333556438,6,5,45.86258718484865,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,181.39903594886488,REC0423,nan,nan,nan
+10128.017346236373,8.008164285462014,6,2,10.549896251181984,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,62.22083491390417,REC0424,nan,nan,nan
+19183.69765487335,6.452033446348226,5,6,33.066879063579314,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,344.0590735441844,REC0425,nan,nan,nan
+10404.99207399918,7.847922192967977,6,5,7.843923159517814,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,102.23947423186458,REC0426,nan,nan,nan
+25320.012613052273,6.113514362561805,4,1,17.17193123098841,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,88.1193355702473,REC0427,nan,nan,nan
+18017.71877802329,8.177333685260832,6,5,33.05858208859683,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,138.77328056775912,REC0428,nan,nan,nan
+32668.781701252963,7.34098116928237,4,1,7.998370099359945,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,37.4665963047623,REC0429,nan,nan,nan
+12726.445590683814,5.7782263152423505,4,1,11.542295869214172,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,74.07045177485485,REC0430,nan,nan,nan
+14054.162777467158,6.914849581758995,6,4,40.397310719260965,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,306.8696150755468,REC0431,nan,nan,nan
+12641.8241785475,8.043424160098196,4,3,10.15099802442463,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,63.2382135740292,REC0432,nan,nan,nan
+19178.5590413567,8.324837104621968,4,2,20.108006565604857,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,306.39049446983336,REC0433,nan,nan,nan
+33025.416846622706,6.544444625840305,4,0,3.7504056517251203,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,27.23186243914059,REC0434,nan,nan,nan
+32925.93469034991,7.370999545499684,1,7,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,137.00998089765972,REC0435,nan,nan,nan
+2811.689124435978,8.244029761114174,3,1,15.061060222253547,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,244.34011241633524,REC0436,nan,nan,nan
+2778.59111923679,7.028469094705909,5,6,16.96456044561404,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,209.58819930100253,REC0437,nan,nan,nan
+4266.623080014397,7.25133339429874,3,6,9.213155122188734,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,195.09523247982776,REC0438,nan,nan,nan
+3248.885409791484,7.340140536494188,4,2,20.420189565586906,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0439,nan,nan,nan
+3924.9888501795886,7.30056660297702,4,5,8.775023961784969,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,219.46347358313767,REC0440,nan,nan,nan
+18065.89884348813,6.29263978305445,3,0,0.20080357116517344,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,63.461665291207055,REC0441,nan,nan,nan
+17303.634922549423,7.606737524884065,6,6,30.76965310770583,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,170.95157222764132,REC0442,nan,nan,nan
+18410.323537078333,5.440218034850314,4,3,15.453665889334111,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,65.05215157727224,REC0443,nan,nan,nan
+23079.135766901378,7.6392855381691795,4,5,40.8783879608533,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,125.78946167992116,REC0444,nan,nan,nan
+24579.9931866689,7.0070289472391885,6,6,29.839570885955446,Agricultural,Individual,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,257.42150337734495,REC0445,nan,nan,nan
+3524.4696645586732,7.241641894648333,3,2,24.74945283064563,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,240.97518818113375,REC0446,nan,nan,nan
+15665.971671398336,6.832065419983444,4,3,10.91581638133287,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,83.24950569759832,REC0447,nan,nan,nan
+2090.6417848984847,8.108274321166146,2,3,17.512361835515783,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,383.9561495924379,REC0448,nan,nan,nan
+14586.520773144593,5.6972063761290785,6,3,12.382071821268772,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,72.32607888677953,REC0449,nan,nan,nan
+32819.04477629141,8.121033947619965,5,2,12.141906134935201,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,219.99388000306953,REC0450,nan,nan,nan
+22516.16585683402,6.087168742832126,5,0,9.844829357868727,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,104.18165559604816,REC0451,nan,nan,nan
+2414.7985236960676,7.679051196920986,3,3,12.862078796326692,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,336.4182333031481,REC0452,nan,nan,nan
+21975.27339216775,6.018620415146138,4,1,0.0,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,73.04861805649698,REC0453,nan,nan,nan
+16615.721504590725,7.553616772414027,4,5,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,68.81353466029806,REC0454,nan,nan,nan
+25600.554110797486,6.498584276829154,3,4,27.69486859709581,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,279.87094111680835,REC0455,nan,nan,nan
+31334.006926366772,6.475250722005687,5,4,30.18240377807116,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,379.5191500456823,REC0456,nan,nan,nan
+25039.62010463825,6.115979411935737,2,5,20.593807762819747,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,255.9846112974782,REC0457,nan,nan,nan
+24033.9812761725,6.869910699766978,6,1,3.5355251500473583,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,29.828000762593007,REC0458,nan,nan,nan
+18778.38700412351,6.268940037741576,4,1,10.076580360858166,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,69.92680546543382,REC0459,nan,nan,nan
+21610.579402347652,6.071402542851903,4,3,41.0532043869662,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,384.53047485611563,REC0460,nan,nan,nan
+21903.89443796343,7.269562540286791,2,7,2.2445679933751475,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,131.08306613092606,REC0461,nan,nan,nan
+13538.30186598232,6.565317556235341,5,3,18.608502263684795,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,99.98452558767492,REC0462,nan,nan,nan
+2639.540570592236,7.619561756532298,3,3,18.08102338161344,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0463,nan,nan,nan
+12516.82909329405,7.62404530472401,5,7,40.17997008883857,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,155.09556405077117,REC0464,nan,nan,nan
+15781.069043504092,8.634688137811413,5,4,17.717505562769553,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,52.955172717689706,REC0465,nan,nan,nan
+32042.236514138465,7.467914665626763,6,0,2.649935705935998,Agricultural,Individual,High,High,Sandy Loam,No,No,Complete,Issued,Approved,Good,29.981774722970357,REC0466,nan,nan,nan
+17270.68700494585,6.544476927354797,2,5,26.223409627436748,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,270.65732221760226,REC0467,nan,nan,nan
+15370.36275196045,8.413692036062779,6,4,6.890374365848954,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,69.8643992689527,REC0468,nan,nan,nan
+4822.823754049156,7.222318510885411,5,6,12.937413521927626,Agricultural,Individual,Medium,High,Black Soil,No,No,Incomplete,Issued,Under Review,Moderate,194.70089869884504,REC0469,nan,nan,nan
+13546.00392772897,6.10643260632338,5,2,2.325119589772836,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,108.86350657658743,REC0470,nan,nan,nan
+28346.472181758887,6.069911754453744,4,0,7.945187952168816,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,75.0533976614717,REC0471,nan,nan,nan
+2825.1969600181883,8.051870427232275,3,3,24.45062171148286,Agricultural,Individual,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,REC0472,nan,nan,nan
+24146.3411007233,8.30471507560203,6,6,28.292311988850994,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,143.97805460298457,REC0473,nan,nan,nan
+20489.737740122928,5.657114909324831,4,1,22.364959129896945,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,74.19622257375333,REC0474,nan,nan,nan
+32172.93346302421,6.878034502804854,1,7,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,131.13789075590222,REC0475,nan,nan,nan
+12435.845459225671,6.111702702859955,4,1,18.83999402276932,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,73.98342444145226,REC0476,nan,nan,nan
+19157.77596212297,5.998305140437296,4,3,21.05080997650968,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,75.47199338605162,REC0477,nan,nan,nan
+17118.03835886604,5.450021222538826,3,3,16.34912461602483,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,76.05436225444751,REC0478,nan,nan,nan
+24791.6312206933,8.471365106375618,6,1,7.431101325855369,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,203.10840017575745,REC0479,nan,nan,nan
+15104.124518803937,8.223395095763014,6,6,34.02353343010265,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,127.98588024807019,REC0480,nan,nan,nan
+30776.35789060252,6.841050473880568,1,6,0.0,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,131.36877877854369,REC0481,nan,nan,nan
+15014.274063051102,7.919106506229898,4,3,5.7159479902991706,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,77.64076131678479,REC0482,nan,nan,nan
+15139.091890961019,5.468630950129609,4,3,10.577219879100998,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,75.5421613125883,REC0483,nan,nan,nan
+24340.84302989879,6.263438045709175,4,2,10.224334344097032,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,113.20683592244731,REC0484,nan,nan,nan
+15120.853402488585,7.587269856976267,4,6,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,77.08911541513044,REC0485,nan,nan,nan
+31968.02344242235,7.242062843681021,1,7,4.438425331324995,Agricultural,Individual,Low,Medium,Sandy Loam,No,No,Partial,Issued,Paid,Poor,159.7005208506271,REC0486,nan,nan,nan
+12958.961490098893,8.29928769061669,4,4,17.943200758687013,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,69.02116271366835,REC0487,nan,nan,nan
+22331.30420410151,7.512948986136106,4,6,32.217892604283506,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,126.53329041436808,REC0488,nan,nan,nan
+28032.6391542118,8.817803016905472,4,1,7.510927500501117,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,323.54594342167167,REC0489,nan,nan,nan
+12611.904386328035,5.69378809076813,4,3,15.340813904776581,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,66.16906587561449,REC0490,nan,nan,nan
+27156.535341087292,5.897507334117722,4,1,4.2630858320073415,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,99.57055509138806,REC0491,nan,nan,nan
+16599.399093468048,8.13563896197087,4,3,13.643117535341377,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,51.92020295120495,REC0492,nan,nan,nan
+26535.086047908168,8.530793437440533,4,2,19.425991157388534,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,215.1710880543071,REC0493,nan,nan,nan
+13838.213629912256,8.069733859360976,4,6,0.0,Agricultural,Individual,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,100.15154898544556,REC0494,nan,nan,nan
+18148.797170684662,5.9986904418353495,3,2,6.572304202388631,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,51.967824781904504,REC0495,nan,nan,nan
+19657.895494435623,6.128068696131923,6,1,1.4511854712685963,Agricultural,Individual,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,119.04057861134228,REC0496,nan,nan,nan
+19354.72254054863,5.590284964306138,3,3,18.771741645458487,Agricultural,Individual,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,70.68747778408824,REC0497,nan,nan,nan
+26024.03842447342,8.217968933095447,6,3,21.28605176778306,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,236.59601066423616,REC0498,nan,nan,nan
+31847.740534721182,6.363259380626426,3,2,32.001549541548364,Agricultural,Individual,Low,Low,Black Soil,No,No,Partial,Issued,Under Review,Poor,400.0,REC0499,nan,nan,nan
+19824.53968152144,8.065993800648057,4,3,20.532662564489137,Agricultural,Individual,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,306.55285340561755,REC0500,nan,nan,nan
+19745.73061961639,8.1,5,2,13.365307507498606,Agricultural,Private Company,Low,High,Alluvial,Yes,Yes,Incomplete,Issued,Under Review,Good,197.60353853149945,TN-1,Tiruchirappalli,N/A,Railway Corridor: Tiruchirappalli 1
+14342.183109400488,7.7,2,3,3.0666292023041883,Mixed,Individual,Low,High,Red Soil,No,No,Partial,Issued,Under Review,Moderate,400.0,TN-2,Karur,N/A,Bypass Road: Karur 2
+15065.851053216646,5.7,4,2,17.772802310712066,Agricultural,Government,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,400.0,TN-3,Salem,N/A,New Terminal: Salem 3
+15831.240506048138,7.0,2,0,33.57323446376568,Residential,Individual,Low,Low,Red Soil,No,No,Incomplete,Issued,Under Review,Good,400.0,TN-4,Tirunelveli,N/A,Freight Corridor: Tirunelveli 4
+13636.396934887309,6.8,1,6,6.342170082168169,Commercial,Joint,High,Low,Red Soil,No,No,Complete,Issued,Approved,Poor,400.0,TN-5,Karur,N/A,Slum Rehabilitation: Karur 5
+1487.1168310684811,6.9,5,2,7.149012016807966,Commercial,Government,Medium,Medium,Clay Loam,No,No,Partial,Issued,Approved,Moderate,238.316846440797,TN-6,Tirunelveli,N/A,Port Expansion: Tirunelveli 6
+18164.97697629558,6.8,1,6,0.0,Commercial,Joint,High,Low,Red Soil,No,No,Complete,Issued,Approved,Poor,400.0,TN-7,Cuddalore,N/A,Metro Line: Cuddalore 7
+13507.886332445847,7.7,2,3,3.2804601230164527,Mixed,Individual,Low,High,Red Soil,No,No,Partial,Issued,Under Review,Moderate,82.8592790601833,TN-8,Thoothukudi,N/A,Urban Rail Corridor: Thoothukudi 8
+12277.924650664803,7.6,5,6,2.585170268986446,Agricultural,Joint,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-9,Tiruchirappalli,N/A,Tech Park: Tiruchirappalli 9
+23130.843938055972,7.7,2,5,8.103935197039098,Residential,Individual,High,Low,Clay Loam,No,No,Complete,Issued,Not Started,Poor,87.78097059114354,TN-10,Vellore,N/A,Slum Rehabilitation: Vellore 10
+2177.158784498931,6.9,4,5,18.351485000588386,Mixed,Joint,Medium,High,Black Soil,No,No,Complete,Issued,Approved,Moderate,80.84834482648706,TN-11,Erode,N/A,Railway Corridor: Erode 11
+3095.3729790292527,5.8,1,0,3.749299911856553,Residential,Private Company,Medium,High,Clay Loam,No,No,Complete,Not Issued,Under Review,Moderate,400.0,TN-12,Tiruvallur,N/A,Port Expansion: Tiruvallur 12
+9334.803687930853,6.0,1,0,9.605262669972852,Residential,Government,Low,High,Black Soil,No,No,Complete,Issued,Not Started,Moderate,183.52121172906067,TN-13,Krishnagiri,N/A,Freight Corridor: Krishnagiri 13
+20652.630219144005,7.0,2,0,37.50336281857801,Residential,Individual,Low,Low,Red Soil,No,No,Incomplete,Issued,Under Review,Good,400.0,TN-14,Tirunelveli,N/A,NH Upgrade: Tirunelveli 14
+15628.121524125932,5.7,2,0,9.531395104489166,Commercial,Government,Low,High,Clay Loam,No,No,Complete,Issued,Paid,Poor,400.0,TN-15,Chengalpattu,N/A,Railway Corridor: Chengalpattu 15
+16585.762481584083,7.0,3,2,14.22291393663468,Residential,Individual,Low,High,Alluvial,No,No,Complete,Issued,Approved,Good,117.2472944767064,TN-16,Ranipet,N/A,New Terminal: Ranipet 16
+1672.5250655688187,6.9,5,2,1.2679387163793363,Commercial,Government,Medium,Medium,Clay Loam,No,No,Partial,Issued,Approved,Moderate,205.88608084285877,TN-17,Krishnagiri,N/A,Affordable Housing: Krishnagiri 17
+10838.84287130431,7.3,3,0,17.827213193745713,Mixed,Government,Low,Medium,Sandy Loam,Yes,Yes,Incomplete,Not Issued,Approved,Poor,400.0,TN-18,Coimbatore,N/A,Freight Corridor: Coimbatore 18
+24439.250914624947,6.0,5,0,14.244394318765831,Residential,Individual,Medium,Low,Red Soil,No,No,Incomplete,Issued,Not Started,Good,400.0,TN-19,Vellore,N/A,Metro Line: Vellore 19
+19571.53495138198,6.8,2,1,41.384254170845225,Industrial,Joint,Medium,Medium,Black Soil,No,No,Complete,Issued,Under Review,Poor,400.0,TN-20,Thanjavur,N/A,Rail Link: Thanjavur 20
+27039.12470821779,6.2,4,0,6.342970623665526,Agricultural,Private Company,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,400.0,TN-21,Coimbatore,N/A,Affordable Housing: Coimbatore 21
+18677.762109288513,7.3,5,0,5.943985282722185,Mixed,Government,High,Low,Red Soil,No,No,Complete,Not Issued,Negotiation,Moderate,400.0,TN-22,Tiruvallur,N/A,Tech Park: Tiruvallur 22
+1457.2824375753776,8.0,3,2,11.096964811232683,Mixed,Government,High,Low,Black Soil,No,No,Complete,Issued,Negotiation,Poor,400.0,TN-23,Erode,N/A,Tech Park: Erode 23
+16036.938606993139,7.6,5,6,2.4310569404496274,Agricultural,Joint,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-24,Madurai,N/A,Manufacturing Hub: Madurai 24
+17665.364432039933,7.3,5,0,17.433345736198195,Mixed,Government,High,Low,Red Soil,No,No,Complete,Not Issued,Negotiation,Moderate,235.52682194440112,TN-25,Krishnagiri,N/A,IT Corridor: Krishnagiri 25
+13364.942278989705,5.7,4,2,15.62660449656309,Agricultural,Government,Low,High,Red Soil,No,No,Complete,Issued,Negotiation,Good,400.0,TN-26,Namakkal,N/A,Solar Park: Namakkal 26
+16536.766093363163,7.0,2,0,32.24533777987119,Residential,Individual,Low,Low,Red Soil,No,No,Incomplete,Issued,Under Review,Good,400.0,TN-27,Tiruchirappalli,N/A,Affordable Housing: Tiruchirappalli 27
+24117.436427235833,6.2,2,6,26.734278561438774,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,400.0,TN-28,Karur,N/A,Freight Corridor: Karur 28
+16229.978247503908,7.3,5,0,7.918547853867159,Mixed,Government,High,Low,Red Soil,No,No,Complete,Not Issued,Negotiation,Moderate,400.0,TN-29,Krishnagiri,N/A,Port Expansion: Krishnagiri 29
+12054.360171889604,7.6,5,6,0.0,Agricultural,Joint,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-30,Madurai,N/A,SEZ: Madurai 30
+10157.292970445065,6.0,1,0,1.0326684490223244,Residential,Government,Low,High,Black Soil,No,No,Complete,Issued,Not Started,Moderate,400.0,TN-31,Thanjavur,N/A,State Highway Expansion: Thanjavur 31
+21586.444953994225,7.7,2,5,12.346550608875608,Residential,Individual,High,Low,Clay Loam,No,No,Complete,Issued,Not Started,Poor,272.279325355908,TN-32,Chennai,N/A,Solar Park: Chennai 32
+28409.164369502418,7.7,2,5,5.094348026241829,Residential,Individual,High,Low,Clay Loam,No,No,Complete,Issued,Not Started,Poor,205.50738811050732,TN-33,Kancheepuram,N/A,Thermal Power Expansion: Kancheepuram 33
+3185.6070617063083,7.8,3,2,14.504634205800443,Agricultural,Government,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,TN-34,Vellore,N/A,Thermal Power Expansion: Vellore 34
+16976.909252794547,7.3,5,0,6.847341792959661,Mixed,Government,High,Low,Red Soil,No,No,Complete,Not Issued,Negotiation,Moderate,400.0,TN-35,Tiruchirappalli,N/A,Thermal Power Expansion: Tiruchirappalli 35
+18684.427391311052,6.1,5,6,3.1653180185632737,Residential,Individual,High,Medium,Black Soil,No,No,Complete,Issued,Not Started,Poor,400.0,TN-36,Coimbatore,N/A,Slum Rehabilitation: Coimbatore 36
+4862.9961588065635,7.1,4,0,26.625825814508808,Residential,Private Company,Low,Medium,Red Soil,No,No,Partial,Not Issued,Paid,Moderate,400.0,TN-37,Erode,N/A,Slum Rehabilitation: Erode 37
+5121.738678606034,7.1,4,0,20.26913509829904,Residential,Private Company,Low,Medium,Red Soil,No,No,Partial,Not Issued,Paid,Moderate,400.0,TN-38,Ranipet,N/A,Bypass Road: Ranipet 38
+18296.376479384253,6.6,5,5,33.41240546704906,Agricultural,Government,Medium,High,Black Soil,No,No,Complete,Issued,Negotiation,Moderate,400.0,TN-39,Kancheepuram,N/A,Metro Line: Kancheepuram 39
+13027.641055786975,6.8,1,6,6.273439039536948,Commercial,Joint,High,Low,Red Soil,No,No,Complete,Issued,Approved,Poor,400.0,TN-40,Thoothukudi,N/A,Slum Rehabilitation: Thoothukudi 40
+13535.271854635812,6.4,2,1,17.14765536225992,Residential,Individual,Low,High,Red Soil,No,No,Complete,Issued,Approved,Good,400.0,TN-41,Thanjavur,N/A,Industrial Park: Thanjavur 41
+8989.363419408977,6.2,3,0,25.55977776678009,Industrial,Government,Low,Medium,Sandy Loam,No,No,Partial,Not Issued,Paid,Good,400.0,TN-42,Karur,N/A,New Terminal: Karur 42
+16379.638566458576,6.2,5,2,5.787198120525096,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,134.57762553980493,TN-43,Madurai,N/A,Industrial Park: Madurai 43
+7568.895517785786,6.0,1,0,0.0,Residential,Government,Low,High,Black Soil,No,No,Complete,Issued,Not Started,Moderate,400.0,TN-44,Chennai,N/A,Metro Line: Chennai 44
+2887.4265204531707,7.8,3,2,14.597752939357518,Agricultural,Government,High,Low,Sandy Loam,Yes,No,Complete,Issued,Negotiation,Good,400.0,TN-45,Erode,N/A,Wind Park: Erode 45
+19689.063342742997,7.8,5,6,39.88605243407794,Agricultural,Individual,Medium,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Poor,400.0,TN-46,Dharmapuri,N/A,Tech Park: Dharmapuri 46
+21082.692064749415,6.2,2,6,19.964366958948304,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Not Started,Moderate,400.0,TN-47,Krishnagiri,N/A,IT Corridor: Krishnagiri 47
+7200.273637225558,7.0,4,0,28.3224387554654,Residential,Joint,Medium,Medium,Black Soil,Yes,Yes,Complete,Not Issued,Negotiation,Good,400.0,TN-48,Villupuram,N/A,New Terminal: Villupuram 48
+1530.4805309391556,6.8,3,2,33.13467296799475,Industrial,Individual,Low,Low,Black Soil,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-49,Vellore,N/A,Freight Corridor: Vellore 49
+16997.832733320505,8.1,5,3,17.400423581097133,Agricultural,Individual,Medium,Low,Red Soil,No,No,Complete,Issued,Under Review,Good,400.0,TN-50,Karur,N/A,Thermal Power Expansion: Karur 50
+17955.8590945083,6.2,4,0,1.1631190571356527,Agricultural,Private Company,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,400.0,TN-51,Thanjavur,N/A,New Terminal: Thanjavur 51
+10629.592407995427,7.3,5,6,9.207898636395344,Residential,Private Company,Low,Medium,Clay Loam,No,No,Partial,Issued,Paid,Moderate,400.0,TN-52,Thoothukudi,N/A,Bypass Road: Thoothukudi 52
+18978.5859115679,7.6,5,0,7.980400493164673,Mixed,Individual,Medium,High,Alluvial,Yes,No,Complete,Issued,Approved,Moderate,400.0,TN-53,Thanjavur,N/A,State Highway Expansion: Thanjavur 53
+14726.382191101025,7.0,2,0,36.250457483125444,Residential,Individual,Low,Low,Red Soil,No,No,Incomplete,Issued,Under Review,Good,80.11756029222484,TN-54,Tiruchirappalli,N/A,Affordable Housing: Tiruchirappalli 54
+8133.759894091708,7.0,4,0,21.902885386731455,Residential,Joint,Medium,Medium,Black Soil,Yes,Yes,Complete,Not Issued,Negotiation,Good,120.28536590380516,TN-55,Chengalpattu,N/A,Affordable Housing: Chengalpattu 55
+11363.542358387032,6.6,2,4,11.19005274981302,Commercial,Private Company,Medium,Medium,Alluvial,No,No,Complete,Issued,Not Started,Good,183.45770449205364,TN-56,Tiruvallur,N/A,Industrial Park: Tiruvallur 56
+2533.5400676844215,5.8,1,0,0.7995096583644754,Residential,Private Company,Medium,High,Clay Loam,No,No,Complete,Not Issued,Under Review,Moderate,400.0,TN-57,Namakkal,N/A,Port Expansion: Namakkal 57
+10334.030205716139,5.6,4,0,16.158198547704746,Residential,Joint,Low,High,Red Soil,Yes,No,Partial,Issued,Under Review,Moderate,386.7977876233445,TN-58,Ranipet,N/A,Railway Corridor: Ranipet 58
+24907.072311549837,6.2,4,0,4.574372635851589,Agricultural,Private Company,Low,Medium,Clay Loam,No,No,Incomplete,Not Issued,Paid,Poor,110.87976691121831,TN-59,Thanjavur,N/A,Slum Rehabilitation: Thanjavur 59
+14174.632836095749,7.6,5,6,4.403973960732715,Agricultural,Joint,Medium,Medium,Sandy Loam,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-60,Tiruchirappalli,N/A,Industrial Park: Tiruchirappalli 60
+10560.226637592545,7.3,5,6,15.241074956970827,Residential,Private Company,Low,Medium,Clay Loam,No,No,Partial,Issued,Paid,Moderate,400.0,TN-61,Cuddalore,N/A,Freight Corridor: Cuddalore 61
+14859.394623542852,6.1,5,6,8.764186299640542,Residential,Individual,High,Medium,Black Soil,No,No,Complete,Issued,Not Started,Poor,250.0932342320997,TN-62,Karur,N/A,Manufacturing Hub: Karur 62
+4708.195998241884,7.1,4,0,23.732624764356014,Residential,Private Company,Low,Medium,Red Soil,No,No,Partial,Not Issued,Paid,Moderate,400.0,TN-63,Coimbatore,N/A,Metro Line: Coimbatore 63
+21544.007016845142,7.0,3,2,19.15159870697377,Residential,Individual,Low,High,Alluvial,No,No,Complete,Issued,Approved,Good,400.0,TN-64,Coimbatore,N/A,Rail Link: Coimbatore 64
+28929.534819913686,7.6,5,0,9.439965465817803,Mixed,Individual,Medium,High,Alluvial,Yes,No,Complete,Issued,Approved,Moderate,400.0,TN-65,Cuddalore,N/A,Affordable Housing: Cuddalore 65
+4541.893642311864,6.2,4,3,15.287752607727782,Commercial,Individual,High,High,Black Soil,No,No,Complete,Issued,Approved,Moderate,400.0,TN-66,Villupuram,N/A,Urban Rail Corridor: Villupuram 66
+22104.272196721126,7.0,3,2,17.485873852434246,Residential,Individual,Low,High,Alluvial,No,No,Complete,Issued,Approved,Good,254.144044656789,TN-67,Salem,N/A,Metro Line: Salem 67
+11785.134355158565,6.8,1,6,2.6370116243244923,Commercial,Joint,High,Low,Red Soil,No,No,Complete,Issued,Approved,Poor,400.0,TN-68,Chennai,N/A,Tech Park: Chennai 68
+3280.2590586498573,5.8,1,0,17.065747661485872,Residential,Private Company,Medium,High,Clay Loam,No,No,Complete,Not Issued,Under Review,Moderate,400.0,TN-69,Erode,N/A,Railway Corridor: Erode 69
+24645.209896141947,7.6,5,0,9.210252991603364,Mixed,Individual,Medium,High,Alluvial,Yes,No,Complete,Issued,Approved,Moderate,400.0,TN-70,Thanjavur,N/A,Freight Corridor: Thanjavur 70
+20748.4533219778,7.4,5,3,6.544290723945256,Commercial,Government,Medium,Low,Alluvial,No,No,Partial,Issued,Negotiation,Poor,400.0,TN-71,Namakkal,N/A,Solar Park: Namakkal 71
+1604.474292781,6.8,3,2,31.30463309010834,Industrial,Individual,Low,Low,Black Soil,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-72,Salem,N/A,Industrial Park: Salem 72
+17939.265067151984,7.9,1,3,25.82528529734762,Industrial,Individual,Low,High,Clay Loam,No,No,Incomplete,Issued,Under Review,Good,400.0,TN-73,Cuddalore,N/A,Port Expansion: Cuddalore 73
+16917.748619517486,6.2,5,2,15.389196219126408,Agricultural,Joint,Low,Medium,Clay Loam,No,No,Complete,Issued,Under Review,Moderate,400.0,TN-74,Vellore,N/A,SEZ: Vellore 74
+8657.177357317818,7.0,4,0,27.112518128729203,Residential,Joint,Medium,Medium,Black Soil,Yes,Yes,Complete,Not Issued,Negotiation,Good,367.2221369493421,TN-75,Tiruchirappalli,N/A,New Terminal: Tiruchirappalli 75
+20895.009097169284,6.4,2,1,16.435595493453484,Residential,Individual,Low,High,Red Soil,No,No,Complete,Issued,Approved,Good,156.49739023048807,TN-76,Coimbatore,N/A,NH Upgrade: Coimbatore 76
+15770.164308784151,7.7,2,3,0.0,Mixed,Individual,Low,High,Red Soil,No,No,Partial,Issued,Under Review,Moderate,400.0,TN-77,Cuddalore,N/A,Tech Park: Cuddalore 77
+9078.622909583211,5.6,4,0,14.269267907586867,Residential,Joint,Low,High,Red Soil,Yes,No,Partial,Issued,Under Review,Moderate,400.0,TN-78,Thoothukudi,N/A,Slum Rehabilitation: Thoothukudi 78
+26486.11929866302,7.4,5,3,9.50656954929904,Commercial,Government,Medium,Low,Alluvial,No,No,Partial,Issued,Negotiation,Poor,258.3614638081721,TN-79,Chengalpattu,N/A,Bypass Road: Chengalpattu 79
+15973.356124934871,7.0,2,0,34.89197675846157,Residential,Individual,Low,Low,Red Soil,No,No,Incomplete,Issued,Under Review,Good,400.0,TN-80,Kancheepuram,N/A,IT Corridor: Kancheepuram 80

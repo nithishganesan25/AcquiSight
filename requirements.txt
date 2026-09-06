@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+joblib
+numpy
+pandas
+scikit-learn
+requests
+streamlit
+folium
+streamlit-folium
+openpyxl

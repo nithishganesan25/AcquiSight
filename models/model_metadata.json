@@ -1,0 +1,198 @@
+{
+  "trained_at": "2026-09-05T03:51:30.643648+00:00",
+  "dataset": {
+    "source": "land acquisition_01.xlsx",
+    "cleaned_rows": 500,
+    "train_rows": 400,
+    "test_rows": 100,
+    "note": "Small gazette-derived prototype set. Do not treat test metrics as real-world production performance."
+  },
+  "feature_columns": [
+    "Area_Sqft",
+    "Soil_pH",
+    "No_of_Owners",
+    "District",
+    "Land_Type",
+    "Flood_Risk",
+    "Water_Availability",
+    "Soil_Type",
+    "Document_Issue",
+    "Owner_Objection",
+    "Court_Case",
+    "Compensation_Status",
+    "FMB",
+    "A_Register",
+    "Document_Verified",
+    "Objection",
+    "Ownership_Type"
+  ],
+  "excluded_from_features": [
+    "Land_ID",
+    "Survey_No",
+    "Taluk",
+    "Village",
+    "Ownership_Raw",
+    "Acquisition_Days",
+    "Delay_Status"
+  ],
+  "regression": {
+    "target": "Acquisition_Days",
+    "winning_model": "ExtraTrees",
+    "best_params": {
+      "model__n_estimators": 150,
+      "model__min_samples_split": 2,
+      "model__min_samples_leaf": 1,
+      "model__max_depth": 4
+    },
+    "metrics": {
+      "cv": {
+        "RandomForest": {
+          "cv_mae": 9.27,
+          "cv_rmse": 12.84,
+          "cv_r2": 0.8282
+        },
+        "GradientBoosting": {
+          "cv_mae": 9.44,
+          "cv_rmse": 12.74,
+          "cv_r2": 0.8328
+        },
+        "ExtraTrees": {
+          "cv_mae": 9.24,
+          "cv_rmse": 13.77,
+          "cv_r2": 0.8042
+        },
+        "HistGradientBoosting": {
+          "cv_mae": 9.85,
+          "cv_rmse": 12.81,
+          "cv_r2": 0.83
+        }
+      },
+      "final": {
+        "train": {
+          "mae": 7.4907,
+          "rmse": 10.2638,
+          "r2": 0.9028
+        },
+        "test": {
+          "mae": 8.5336,
+          "rmse": 12.4308,
+          "r2": 0.8738
+        }
+      }
+    }
+  },
+  "classification": {
+    "target": "Delay_Status",
+    "winning_model": "LogisticRegression",
+    "best_params": {
+      "model__C": 0.25
+    },
+    "metrics": {
+      "cv": {
+        "RandomForest": {
+          "cv_accuracy": 0.9375,
+          "cv_f1_macro": 0.903
+        },
+        "ExtraTrees": {
+          "cv_accuracy": 0.93,
+          "cv_f1_macro": 0.8904
+        },
+        "GradientBoosting": {
+          "cv_accuracy": 0.95,
+          "cv_f1_macro": 0.921
+        },
+        "LogisticRegression": {
+          "cv_accuracy": 0.95,
+          "cv_f1_macro": 0.9284
+        }
+      },
+      "final": {
+        "train": {
+          "accuracy": 0.95,
+          "precision_macro": 0.8994,
+          "recall_macro": 0.9641,
+          "f1_macro": 0.9266,
+          "labels": [
+            "Delayed",
+            "No Delay"
+          ],
+          "confusion_matrix": [
+            [
+              77,
+              1
+            ],
+            [
+              19,
+              303
+            ]
+          ]
+        },
+        "test": {
+          "accuracy": 0.95,
+          "precision_macro": 0.9159,
+          "recall_macro": 0.9313,
+          "f1_macro": 0.9233,
+          "labels": [
+            "Delayed",
+            "No Delay"
+          ],
+          "confusion_matrix": [
+            [
+              18,
+              2
+            ],
+            [
+              3,
+              77
+            ]
+          ]
+        }
+      }
+    },
+    "classes": [
+      "No Delay",
+      "Delayed"
+    ]
+  },
+  "risk_thresholds": {
+    "Low": {
+      "min": 0,
+      "max": 60
+    },
+    "Medium": {
+      "min": 61,
+      "max": 120
+    },
+    "High": {
+      "min": 121,
+      "max": 9999
+    }
+  },
+  "winning_model": "ExtraTrees",
+  "final_metrics": {
+    "train": {
+      "mae": 7.4907,
+      "rmse": 10.2638,
+      "r2": 0.9028
+    },
+    "test": {
+      "mae": 8.5336,
+      "rmse": 12.4308,
+      "r2": 0.8738
+    }
+  },
+  "best_params": {
+    "model__n_estimators": 150,
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 1,
+    "model__max_depth": 4
+  },
+  "last_candidate_evaluation": {
+    "timestamp": "2026-09-06T05:08:08.939134+00:00",
+    "status": "rejected_inferior_performance",
+    "candidate_mae": 24.561,
+    "candidate_r2": 0.6359,
+    "production_mae": 9.5,
+    "production_r2": 0.8
+  }
+}
