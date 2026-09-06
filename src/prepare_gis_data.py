@@ -7,9 +7,7 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Input Excel file
-_primary_input = BASE_DIR / "data" / "tn_land_acquisition_dataset.xlsx"
-_fallback_input = BASE_DIR / "data" / "tn_land_acquisition_dataset (1).xlsx"
-INPUT_FILE = _primary_input if _primary_input.exists() else _fallback_input
+INPUT_FILE = BASE_DIR / "data" / "tn_land_acquisition_dataset.xlsx"
 
 # Output file
 OUTPUT_FILE = BASE_DIR / "data" / "gis_parcels.csv"

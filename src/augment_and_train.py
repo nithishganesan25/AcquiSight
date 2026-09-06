@@ -57,8 +57,8 @@ log = logging.getLogger("augment_and_train")
 # File paths
 # ---------------------------------------------------------------------------
 ORIG_FILE  = DATA_DIR / "Land_Acquisition_Predictive_Analytics.xlsx"
-NEW_FILE_1 = DATA_DIR / "Land_Acquisition_500_Official_Source_Workbook (1).xlsx"
-NEW_FILE_2 = DATA_DIR / "tn_land_acquisition_dataset (1).xlsx"
+NEW_FILE_1 = DATA_DIR / "Land_Acquisition_500_Official_Source_Workbook.xlsx"
+NEW_FILE_2 = DATA_DIR / "tn_land_acquisition_dataset.xlsx"
 MERGED_CSV = DATA_DIR / "merged_dataset.csv"
 
 # ---------------------------------------------------------------------------

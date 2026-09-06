@@ -1,4 +1,0 @@
-npm --prefix frontend run dev
-
-cd frontend
-npm run dev
