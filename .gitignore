@@ -68,3 +68,4 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
+frontend/.env
