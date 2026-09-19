@@ -1,33 +1,132 @@
 /**
  * LoginPage.tsx
  * =============
- * Official Officer Login Interface for AcquiSight AI.
- * Uses Firebase Authentication with Google OAuth.
+ * Modern, Standard Officer Login Interface for AcquiSight AI.
+ * Supports standard Email & Password authentication alongside Google OAuth.
  */
 
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { useAuth } from "@/lib/auth-context";
-import { Shield, Lock, AlertCircle, CheckCircle2, ArrowRight, RefreshCw } from "lucide-react";
+import {
+  Shield,
+  Lock,
+  Mail,
+  Eye,
+  EyeOff,
+  AlertCircle,
+  CheckCircle2,
+  ArrowRight,
+  RefreshCw,
+  Sparkles,
+  Info,
+  X,
+} from "lucide-react";
 import { Button } from "@/components/ui";
+
+interface DemoAccount {
+  label: string;
+  role: string;
+  email: string;
+  designation: string;
+}
+
+const DEMO_ACCOUNTS: DemoAccount[] = [
+  {
+    label: "District Revenue Officer",
+    role: "DRO",
+    email: "dro.chennai@tn.gov.in",
+    designation: "Special District Revenue Officer (LA)",
+  },
+  {
+    label: "Land Acquisition Officer",
+    role: "LAO",
+    email: "lao.highways@tn.gov.in",
+    designation: "Land Acquisition Officer (Highways & Transport)",
+  },
+  {
+    label: "Project Director",
+    role: "Director",
+    email: "director.tnidb@tn.gov.in",
+    designation: "Project Director (TN Infrastructure Development)",
+  },
+];
 
 export function LoginPage() {
   const [, setLocation] = useLocation();
-  const { user, officerProfile, loading, error, isConfigured, signInWithGoogle, signOutOfficer, clearError } = useAuth();
+  const {
+    user,
+    officerProfile,
+    loading,
+    error,
+    isConfigured,
+    signInWithGoogle,
+    signInWithEmail,
+    signOutOfficer,
+    clearError,
+  } = useAuth();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [rememberMe, setRememberMe] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showForgotModal, setShowForgotModal] = useState(false);
+  const [activeRoleDesignation, setActiveRoleDesignation] = useState("Special District Revenue Officer (DRO)");
 
   useEffect(() => {
     if (user && !loading) {
-      // Allow slight delay or let user click continue
+      setLocation("/command-center");
     }
-  }, [user, loading]);
+  }, [user, loading, setLocation]);
+
+  const handleEmailPasswordSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email.trim()) return;
+    clearError();
+    setIsSubmitting(true);
+    try {
+      await signInWithEmail(email, password, activeRoleDesignation);
+      setLocation("/command-center");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const selectDemoAccount = (acc: DemoAccount) => {
+    setEmail(acc.email);
+    setPassword("TNRevenue@2026");
+    setActiveRoleDesignation(acc.designation);
+    clearError();
+  };
+
+  const quickLoginDemo = async (acc: DemoAccount) => {
+    setEmail(acc.email);
+    setPassword("TNRevenue@2026");
+    setActiveRoleDesignation(acc.designation);
+    clearError();
+    setIsSubmitting(true);
+    try {
+      await signInWithEmail(acc.email, "TNRevenue@2026", acc.designation);
+      setLocation("/command-center");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
-    <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-[#070c18] px-4 py-12 text-slate-100">
-      <div className="w-full max-w-md">
+    <div className="flex min-h-[100dvh] flex-col items-center justify-center bg-[#070c18] px-4 py-10 text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200">
+      {/* Background Decorative Gradients */}
+      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+        <div className="absolute -top-40 left-1/2 h-[500px] w-[600px] -translate-x-1/2 rounded-full bg-cyan-500/10 blur-[130px]" />
+        <div className="absolute -bottom-40 left-1/3 h-[450px] w-[500px] rounded-full bg-blue-600/10 blur-[140px]" />
+      </div>
+
+      <div className="relative z-10 w-full max-w-[440px]">
         {/* State Department Header */}
-        <div className="mb-8 text-center">
-          <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-400 text-slate-950 shadow-[0_0_35px_rgba(34,211,238,0.35)]">
-            <Shield size={28} />
+        <div className="mb-6 text-center">
+          <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-slate-950 shadow-[0_0_35px_rgba(34,211,238,0.35)]">
+            <Shield size={28} className="text-slate-950" />
           </div>
           <h1 className="mt-4 font-display text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">
             Acqui<span className="text-cyan-400">Sight</span> AI
@@ -40,67 +139,46 @@ export function LoginPage() {
           </p>
         </div>
 
-        {/* Login Box */}
-        <div className="rounded-2xl border border-slate-800 bg-[#0d1527]/90 p-7 shadow-2xl backdrop-blur-xl">
+        {/* Login Card */}
+        <div className="rounded-2xl border border-slate-800/90 bg-[#0d1527]/90 p-6 sm:p-8 shadow-2xl backdrop-blur-xl">
+          {/* Card Title & Subtitle */}
           <div className="border-b border-slate-800/80 pb-5">
-            <div className="flex items-center gap-2 text-xs font-bold text-cyan-400">
-              <Lock size={14} />
-              <span>OFFICER AUTHENTICATION</span>
+            <div className="flex items-center justify-between">
+              <h2 className="text-xl font-bold tracking-tight text-slate-100">
+                Sign In
+              </h2>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-2.5 py-0.5 text-[10px] font-semibold text-cyan-400">
+                <Lock size={11} /> Officer Portal
+              </span>
             </div>
-            <h2 className="mt-2 text-lg font-bold text-slate-200">
-              Sign In to Command Center
-            </h2>
-            <p className="mt-1 text-xs text-slate-400">
-              Authorized revenue officers, District Revenue Officers (DRO), and project directors.
+            <p className="mt-1.5 text-xs text-slate-400">
+              Enter your official credentials to access the command center.
             </p>
           </div>
 
-          {/* Session Expired State */}
+          {/* Session Expired Notice */}
           {window.location.search.includes("session_expired") && !user && (
-            <div role="alert" className="mt-5 rounded-lg border border-amber-500/30 bg-amber-500/10 p-4 text-xs text-amber-300">
+            <div role="alert" className="mt-4 rounded-xl border border-amber-500/30 bg-amber-500/10 p-3.5 text-xs text-amber-300">
               <div className="flex items-start gap-2.5">
                 <AlertCircle size={16} className="shrink-0 mt-0.5 text-amber-400" />
                 <div className="flex-1">
-                  <div className="font-bold">Session expired</div>
-                  <div className="mt-1 text-[11px] leading-relaxed text-amber-200/80">
-                    Your session has expired. Please sign in again.
+                  <div className="font-semibold">Session expired</div>
+                  <div className="mt-0.5 text-[11px] text-amber-200/80">
+                    Your session timed out. Please sign in again.
                   </div>
                 </div>
               </div>
             </div>
           )}
 
-          {/* Configuration Missing Alert */}
-          {!isConfigured && (
-            <div className="mt-5 rounded-lg border border-amber-500/30 bg-amber-500/10 p-4 text-xs text-amber-300">
-              <div className="flex items-start gap-2.5">
-                <AlertCircle size={16} className="shrink-0 mt-0.5 text-amber-400" />
-                <div>
-                  <div className="font-bold">Firebase Configuration Required</div>
-                  <div className="mt-1 text-[11px] leading-relaxed text-amber-300/80">
-                    Real Firebase Google OAuth is active. To authenticate with your Google account, configure{" "}
-                    <code className="rounded bg-black/40 px-1 py-0.5 text-amber-200">VITE_FIREBASE_API_KEY</code> in your environment variables.
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Error State */}
+          {/* Error Message */}
           {error && (
-            <div role="alert" className="mt-5 rounded-lg border border-rose-500/30 bg-rose-500/10 p-4 text-xs text-rose-300">
+            <div role="alert" className="mt-4 rounded-xl border border-rose-500/30 bg-rose-500/10 p-3.5 text-xs text-rose-300">
               <div className="flex items-start gap-2.5">
                 <AlertCircle size={16} className="shrink-0 mt-0.5 text-rose-400" />
                 <div className="flex-1">
-                  <div className="font-bold">Authentication failed</div>
-                  <div className="mt-1 text-[11px] leading-relaxed text-rose-200/80">
-                    We couldn't complete your sign-in. Please try again.
-                  </div>
-                  {error && error !== "Authentication failed" && (
-                    <div className="mt-1.5 text-[10px] text-rose-300/70 border-t border-rose-500/20 pt-1">
-                      {error}
-                    </div>
-                  )}
+                  <div className="font-semibold">Sign in error</div>
+                  <div className="mt-0.5 text-[11px] text-rose-200/90">{error}</div>
                 </div>
               </div>
             </div>
@@ -123,7 +201,7 @@ export function LoginPage() {
                   </div>
                   <div className="truncate text-[11px] text-slate-400">{user.email}</div>
                   <div className="mt-0.5 text-[10px] text-emerald-400 font-semibold">
-                    ✓ Authenticated via Google OAuth
+                    ✓ Authenticated Officer Session
                   </div>
                 </div>
               </div>
@@ -141,14 +219,111 @@ export function LoginPage() {
               </div>
             </div>
           ) : (
-            /* Unauthenticated Login Action */
-            <div className="mt-6 space-y-4">
+            /* Normal Login Form */
+            <form onSubmit={handleEmailPasswordSubmit} className="mt-5 space-y-4">
+              {/* Email / Officer ID Input */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-semibold text-slate-300 flex items-center justify-between" htmlFor="login-email">
+                  <span>Official Email or Officer ID</span>
+                  <span className="text-[10px] text-slate-500 font-normal">e.g. name@tn.gov.in</span>
+                </label>
+                <div className="relative">
+                  <Mail size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
+                  <input
+                    id="login-email"
+                    type="text"
+                    autoComplete="username"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="officer.dro@tn.gov.in"
+                    className="w-full rounded-xl border border-slate-700/80 bg-slate-900/80 pl-10 pr-4 py-2.5 text-xs text-slate-100 placeholder:text-slate-500 transition focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400/40"
+                  />
+                </div>
+              </div>
+
+              {/* Password Input */}
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <label className="text-xs font-semibold text-slate-300" htmlFor="login-password">
+                    Password
+                  </label>
+                  <button
+                    type="button"
+                    onClick={() => setShowForgotModal(true)}
+                    className="text-[11px] text-cyan-400 hover:text-cyan-300 transition"
+                  >
+                    Forgot password?
+                  </button>
+                </div>
+                <div className="relative">
+                  <Lock size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500" />
+                  <input
+                    id="login-password"
+                    type={showPassword ? "text" : "password"}
+                    autoComplete="current-password"
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="••••••••••••"
+                    className="w-full rounded-xl border border-slate-700/80 bg-slate-900/80 pl-10 pr-10 py-2.5 text-xs text-slate-100 placeholder:text-slate-500 transition focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400/40"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200 transition"
+                    title={showPassword ? "Hide password" : "Show password"}
+                  >
+                    {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                  </button>
+                </div>
+              </div>
+
+              {/* Remember Me & Role Badge */}
+              <div className="flex items-center justify-between pt-1">
+                <label className="flex items-center gap-2 cursor-pointer select-none text-xs text-slate-300">
+                  <input
+                    type="checkbox"
+                    checked={rememberMe}
+                    onChange={(e) => setRememberMe(e.target.checked)}
+                    className="h-3.5 w-3.5 rounded border-slate-700 bg-slate-900 text-cyan-400 focus:ring-cyan-400/30 accent-cyan-400"
+                  />
+                  <span>Remember this device</span>
+                </label>
+              </div>
+
+              {/* Primary Sign In Button */}
+              <Button
+                type="submit"
+                disabled={loading || isSubmitting}
+                className="w-full bg-cyan-400 py-2.5 font-bold text-slate-950 hover:bg-cyan-300 transition disabled:opacity-50"
+              >
+                {isSubmitting || loading ? (
+                  <span className="flex items-center justify-center gap-2">
+                    <RefreshCw size={14} className="animate-spin" /> Verifying Credentials...
+                  </span>
+                ) : (
+                  <span className="flex items-center justify-center gap-1.5">
+                    Sign In as Officer <ArrowRight size={14} />
+                  </span>
+                )}
+              </Button>
+
+              {/* OR Divider */}
+              <div className="relative my-4 flex items-center justify-center">
+                <div className="w-full border-t border-slate-800" />
+                <span className="absolute bg-[#0d1527] px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-500">
+                  Or continue with
+                </span>
+              </div>
+
+              {/* Google OAuth Button */}
               <button
                 type="button"
                 data-testid="button-google-signin"
-                disabled={loading}
+                disabled={loading || isSubmitting}
                 onClick={signInWithGoogle}
-                className="flex w-full items-center justify-center gap-3 rounded-xl border border-slate-700 bg-white/[.04] px-4 py-3.5 text-xs font-bold text-slate-200 transition hover:border-cyan-400/50 hover:bg-cyan-400/[.06] hover:text-cyan-300 disabled:opacity-50"
+                className="flex w-full items-center justify-center gap-3 rounded-xl border border-slate-700/80 bg-slate-800/40 px-4 py-2.5 text-xs font-semibold text-slate-200 transition hover:border-slate-600 hover:bg-slate-800/80 disabled:opacity-50"
               >
                 {loading ? (
                   <RefreshCw size={16} className="animate-spin text-cyan-400" />
@@ -172,28 +347,94 @@ export function LoginPage() {
                     />
                   </svg>
                 )}
-                <span>
-                  {loading
-                    ? "Signing you in..."
-                    : window.location.search.includes("session_expired")
-                    ? "Sign In Again"
-                    : "Sign in with Google OAuth"}
-                </span>
+                <span>Sign in with Google OAuth</span>
               </button>
 
-              <div className="text-center text-[11px] text-slate-500">
-                Official security notice: Access is monitored and logged under Tamil Nadu Information Technology Policy.
+              {/* Quick Demo Officer Profiles for SIH Evaluation */}
+              <div className="mt-5 rounded-xl border border-slate-800 bg-slate-900/50 p-3">
+                <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center gap-1.5 text-[11px] font-semibold text-slate-300">
+                    <Sparkles size={12} className="text-cyan-400" />
+                    <span>Quick Demo Accounts (SIH Evaluation)</span>
+                  </div>
+                  <span className="text-[10px] text-slate-500 font-mono">1-Click</span>
+                </div>
+                <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3">
+                  {DEMO_ACCOUNTS.map((acc) => (
+                    <button
+                      key={acc.email}
+                      type="button"
+                      onClick={() => quickLoginDemo(acc)}
+                      className="group flex flex-col items-start rounded-lg border border-slate-800 bg-slate-900/80 p-2 text-left transition hover:border-cyan-500/40 hover:bg-cyan-500/5"
+                    >
+                      <span className="text-[10px] font-bold text-cyan-400 group-hover:text-cyan-300">
+                        {acc.role}
+                      </span>
+                      <span className="mt-0.5 truncate text-[10px] text-slate-400 group-hover:text-slate-200">
+                        {acc.label}
+                      </span>
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
+            </form>
           )}
         </div>
 
-        {/* Statutory Compliance Footer */}
-        <div className="mt-8 text-center text-[10px] text-slate-600">
-          RFCTLARR Act 2013 & Tamil Nadu Land Acquisition Intelligence Portal · v3.1.0
+        {/* Official IT Notice & Legal Footer */}
+        <div className="mt-6 space-y-2 text-center">
+          <p className="text-[11px] leading-relaxed text-slate-500">
+            Official State Portal · Access is logged and audited under Tamil Nadu Information Technology Policy.
+          </p>
+          <p className="text-[10px] text-slate-600">
+            RFCTLARR Act 2013 & Tamil Nadu Land Acquisition Intelligence Platform · v3.1.0
+          </p>
         </div>
       </div>
+
+      {/* Forgot Password Modal */}
+      {showForgotModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm">
+          <div className="w-full max-w-md rounded-2xl border border-slate-800 bg-[#0d1527] p-6 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div className="flex items-center gap-2 text-sm font-bold text-slate-200">
+                <Info size={16} className="text-cyan-400" />
+                <span>Officer Password Assistance</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowForgotModal(false)}
+                className="rounded-lg p-1 text-slate-400 hover:bg-slate-800 hover:text-slate-200"
+              >
+                <X size={16} />
+              </button>
+            </div>
+            <div className="mt-4 space-y-3 text-xs leading-relaxed text-slate-300">
+              <p>
+                In accordance with Tamil Nadu Land Administration Security Guidelines, credentials for Revenue & Land Acquisition Officers are managed through the State NIC Directory.
+              </p>
+              <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-3 text-[11px] text-slate-400">
+                <div className="font-semibold text-slate-300">Self-Service Options:</div>
+                <ul className="mt-1.5 list-disc space-y-1 pl-4">
+                  <li>Use <strong>Google OAuth</strong> if your official email is associated with a Google Workspace domain.</li>
+                  <li>Use any of the <strong>Quick Demo Accounts</strong> on the login screen for instant SIH evaluation.</li>
+                  <li>For credential resets, contact the District Revenue IT Cell at <code className="text-cyan-300">revenue-support@tn.gov.in</code>.</li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-5 flex justify-end">
+              <Button
+                className="bg-cyan-400 text-slate-950 hover:bg-cyan-300 font-semibold text-xs"
+                onClick={() => setShowForgotModal(false)}
+              >
+                Understood
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
+
 export default LoginPage;
