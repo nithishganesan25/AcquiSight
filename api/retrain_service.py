@@ -174,12 +174,12 @@ def execute_safe_retrain(triggered_by: str = "Authorized Officer") -> Dict[str, 
 
     # Train and cross-validate candidate model (ExtraTreesRegressor)
     candidate_model = ExtraTreesRegressor(
-        n_estimators=150,
-        max_depth=6,
+        n_estimators=100,
+        max_depth=12,
         min_samples_split=2,
         min_samples_leaf=1,
         random_state=42,
-        n_jobs=1,
+        n_jobs=-1,
     )
 
     cv = KFold(n_splits=5, shuffle=True, random_state=42)
@@ -190,6 +190,7 @@ def execute_safe_retrain(triggered_by: str = "Authorized Officer") -> Dict[str, 
         cv=cv,
         scoring={"mae": "neg_mean_absolute_error", "r2": "r2"},
         return_train_score=False,
+        n_jobs=-1,
     )
 
     cand_mae = round(float(-scores["test_mae"].mean()), 3)

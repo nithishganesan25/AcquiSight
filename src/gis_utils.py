@@ -50,6 +50,15 @@ def approximate_village_point(district: str, village: str, land_id: str) -> tupl
 
 def attach_approx_coords(df: pd.DataFrame) -> pd.DataFrame:
     out = df.copy()
+    if (
+        "latitude" in out.columns
+        and "longitude" in out.columns
+        and out["latitude"].notnull().all()
+        and out["longitude"].notnull().all()
+    ):
+        if "coord_source" not in out.columns:
+            out["coord_source"] = "Grounded GIS parcel location from official dataset"
+        return out
     coords = [
         approximate_village_point(
             row.get("District", ""),

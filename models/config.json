@@ -70,5 +70,39 @@
     ]
   },
   "winning_regressor": "ExtraTrees",
-  "winning_classifier": "LogisticRegression"
+  "winning_classifier": "HistGradientBoosting",
+  "risk_modes": {
+    "screening": 0.1,
+    "early_warning": 0.25,
+    "balanced": 0.5,
+    "escalation": 0.75,
+    "high_confidence": 0.9
+  },
+  "threshold_operating_points": {
+    "0.10": {
+      "mode": "Screening",
+      "precision": 0.601,
+      "recall": 0.991
+    },
+    "0.25": {
+      "mode": "Early Warning",
+      "precision": 0.682,
+      "recall": 0.945
+    },
+    "0.50": {
+      "mode": "Balanced",
+      "precision": 0.7893,
+      "recall": 0.8338
+    },
+    "0.75": {
+      "mode": "Escalation",
+      "precision": 0.854,
+      "recall": 0.668
+    },
+    "0.90": {
+      "mode": "High Confidence",
+      "precision": 0.921,
+      "recall": 0.453
+    }
+  }
 }

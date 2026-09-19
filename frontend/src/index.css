@@ -484,8 +484,8 @@
 .animate-enter { animation: enter .45s ease both; }
 
 /* ===========================================================================
- * COMPREHENSIVE DAYLIGHT MODE (LIGHT THEME) — FULL VISIBILITY ENGINE v4
- * Total contrast coverage for all components, tables, charts, copilot & modals.
+ * COMPREHENSIVE DAYLIGHT MODE (LIGHT THEME) — FULL VISIBILITY ENGINE v5
+ * Full contrast coverage for all components, tables, charts, badges, forms.
  * =========================================================================== */
 
 /* ── Root & Shell ─────────────────────────────────────────────────────────── */
@@ -547,13 +547,20 @@ html:not(.dark) [data-header-dropdown] .text-slate-500 { color: #64748b !importa
 html:not(.dark) [data-header-dropdown] a:hover,
 html:not(.dark) [data-header-dropdown] button:hover { background-color: #f1f5f9 !important; }
 
-/* ── Main — Text Resets (High Contrast on White) ──────────────────────────── */
+/* ── Main — Text Resets (High Contrast on White) ────────────────────────── */
 html:not(.dark) main [class*="text-slate-100"] { color: #0f172a !important; }
 html:not(.dark) main [class*="text-slate-200"] { color: #1e293b !important; }
 html:not(.dark) main [class*="text-slate-300"] { color: #334155 !important; }
 html:not(.dark) main [class*="text-slate-400"] { color: #475569 !important; }
 html:not(.dark) main [class*="text-slate-500"] { color: #64748b !important; }
 html:not(.dark) main [class*="text-slate-600"] { color: #475569 !important; }
+html:not(.dark) main [class*="text-slate-700"] { color: #374151 !important; }
+html:not(.dark) main [class*="text-slate-800"] { color: #1e293b !important; }
+html:not(.dark) main [class*="text-slate-900"] { color: #0f172a !important; }
+
+/* Indigo tones */
+html:not(.dark) main [class*="text-indigo-300"],
+html:not(.dark) main [class*="text-indigo-400"] { color: #4338ca !important; }
 
 /* Accents — Darkened for high contrast readability on white */
 html:not(.dark) main [class*="text-cyan-100"],
@@ -590,6 +597,12 @@ html:not(.dark) main [class*="text-violet-400"] { color: #6d28d9 !important; }
 html:not(.dark) main .eyebrow { color: #0369a1 !important; }
 html:not(.dark) main .mono { color: #334155; }
 html:not(.dark) main label { color: #334155 !important; }
+html:not(.dark) main h1,
+html:not(.dark) main h2,
+html:not(.dark) main h3,
+html:not(.dark) main h4 { color: #0f172a !important; }
+html:not(.dark) main p { color: #374151; }
+html:not(.dark) main span { color: inherit; }
 
 /* ── Main — Hover States (Prevent white-on-white text) ───────────────────── */
 html:not(.dark) main [class*="hover:text-white"]:hover { color: #0f172a !important; }
@@ -600,15 +613,34 @@ html:not(.dark) main [class*="hover:text-cyan-2"]:hover,
 html:not(.dark) main [class*="hover:text-cyan-3"]:hover { color: #0284c7 !important; }
 
 /* ── Main — Backgrounds ──────────────────────────────────────────────────── */
-html:not(.dark) main [class*="bg-slate-950"] { background-color: #f8fafc !important; }
+html:not(.dark) main [class*="bg-slate-950"],
+html:not(.dark) main [class*="bg-[#070"],
+html:not(.dark) main [class*="bg-[#0f"],
+html:not(.dark) main [class*="bg-[#08"]  { background-color: #f8fafc !important; color: #0f172a !important; }
 html:not(.dark) main [class*="bg-slate-900"]  { background-color: #f8fafc !important; }
 html:not(.dark) main [class*="bg-slate-800"]  { background-color: #f1f5f9 !important; }
 html:not(.dark) main [class*="bg-white/["]    { background-color: #f1f5f9 !important; }
 html:not(.dark) main [class*="bg-slate-50"]   { background-color: #f8fafc !important; }
+
+/* Deep dark hex backgrounds → convert to light */
 html:not(.dark) main [class*="bg-[#0"],
 html:not(.dark) main [class*="bg-[#1"] {
   background-color: #f8fafc !important;
   color: #0f172a !important;
+}
+
+/* Transparent dark tinted backgrounds */
+html:not(.dark) main [class*="bg-slate-950/"] { background-color: #f8fafc !important; }
+html:not(.dark) main [class*="bg-slate-900/"] { background-color: #f1f5f9 !important; }
+html:not(.dark) main [class*="bg-slate-800/"] { background-color: #e8eef5 !important; }
+
+/* Gradient backgrounds from dark ranges — remap to neutral light */
+html:not(.dark) main [class*="from-cyan-950"],
+html:not(.dark) main [class*="from-indigo-950"] { --tw-gradient-from: #eff6ff; }
+html:not(.dark) main [class*="via-slate-900"]   { --tw-gradient-via: #f8fafc; }
+html:not(.dark) main [class*="to-indigo-950"]   { --tw-gradient-to: #eef2ff; }
+html:not(.dark) main [class*="bg-gradient-to-r"] {
+  background: linear-gradient(to right, #eff6ff, #f0f9ff, #eef2ff) !important;
 }
 
 /* ── Main — Borders ──────────────────────────────────────────────────────── */
@@ -616,13 +648,30 @@ html:not(.dark) main [class*="border-slate-700"] { border-color: #e2e8f0 !import
 html:not(.dark) main [class*="border-slate-800"] { border-color: #e2e8f0 !important; }
 html:not(.dark) main [class*="border-slate-600"] { border-color: #cbd5e1 !important; }
 html:not(.dark) main [class*="divide-slate-800"] > * { border-color: #e2e8f0 !important; }
+html:not(.dark) main [class*="border-b border-slate"] { border-bottom-color: #e2e8f0 !important; }
+
+/* Dark-tinted border opacities */
+html:not(.dark) main [class*="border-slate-800/"] { border-color: #e2e8f0 !important; }
+html:not(.dark) main [class*="border-slate-700/"] { border-color: #e8eef5 !important; }
+html:not(.dark) main [class*="divide-slate-800/"] > * { border-color: #e2e8f0 !important; }
+
+/* Cyan / accent borders — keep vibrant */
+html:not(.dark) main [class*="border-cyan-500/"] { border-color: rgba(14,165,233,0.3) !important; }
+html:not(.dark) main [class*="border-cyan-400/"] { border-color: rgba(14,165,233,0.3) !important; }
+html:not(.dark) main [class*="border-emerald-500/"] { border-color: rgba(16,185,129,0.35) !important; }
+html:not(.dark) main [class*="border-amber-500/"] { border-color: rgba(217,119,6,0.35) !important; }
 
 /* ── Main — Tables ───────────────────────────────────────────────────────── */
 html:not(.dark) main thead,
 html:not(.dark) main thead tr { background-color: #f1f5f9 !important; }
-html:not(.dark) main thead th  { color: #475569 !important; border-bottom-color: #e2e8f0 !important; }
+html:not(.dark) main thead th  { color: #475569 !important; border-bottom-color: #e2e8f0 !important; font-weight: 700; }
 html:not(.dark) main tbody tr  { border-bottom-color: #e2e8f0 !important; }
 html:not(.dark) main tbody tr:hover { background-color: #f0f9ff !important; }
+html:not(.dark) main tbody td  { color: #1e293b !important; }
+html:not(.dark) main tbody td [class*="font-mono"],
+html:not(.dark) main tbody td [class*="font-semibold"] { color: #1e293b !important; }
+html:not(.dark) main tbody td [class*="text-slate-"] { color: #334155 !important; }
+html:not(.dark) main tbody td [class*="text-cyan-300"] { color: #0369a1 !important; }
 
 /* ── Main — Form Controls ────────────────────────────────────────────────── */
 html:not(.dark) input,
@@ -646,6 +695,20 @@ html:not(.dark) main button[class*="border-slate-6"] {
   color: #374151 !important;
 }
 
+/* Text buttons that use dark-mode text colours */
+html:not(.dark) main button[class*="text-slate-4"],
+html:not(.dark) main button[class*="text-slate-3"],
+html:not(.dark) main button[class*="text-slate-2"] { color: #374151 !important; }
+
+/* Rounded pill/tab buttons in dossier navigation */
+html:not(.dark) main button[class*="text-slate-400"] { color: #64748b !important; }
+html:not(.dark) main button[class*="hover:bg-slate-800"] { background-color: transparent !important; }
+html:not(.dark) main button[class*="hover:bg-slate-800"]:hover { background-color: #e2e8f0 !important; }
+html:not(.dark) main button[class*="hover:text-slate-200"]:hover { color: #0f172a !important; }
+
+/* Dossier tab active state */
+html:not(.dark) main [class*="bg-cyan-500/20"] { background-color: #dbeafe !important; }
+
 /* ── Main — Links ────────────────────────────────────────────────────────── */
 html:not(.dark) main a[class*="text-cyan-3"] { color: #0369a1 !important; }
 html:not(.dark) main a[class*="text-cyan-4"] { color: #0284c7 !important; }
@@ -665,19 +728,107 @@ html:not(.dark) main [class*="bg-rose-400/15"]    { background-color: #fff1f2 !i
 html:not(.dark) main [class*="bg-amber-500/10"],
 html:not(.dark) main [class*="bg-amber-400/10"],
 html:not(.dark) main [class*="bg-amber-500/20"],
-html:not(.dark) main [class*="bg-amber-300/10"]   { background-color: #fffbeb !important; }
+html:not(.dark) main [class*="bg-amber-300/10"],
+html:not(.dark) main [class*="bg-amber-500/15"]   { background-color: #fffbeb !important; }
 html:not(.dark) main [class*="bg-emerald-400/10"],
 html:not(.dark) main [class*="bg-emerald-500/10"],
 html:not(.dark) main [class*="bg-emerald-500/20"],
+html:not(.dark) main [class*="bg-emerald-500/15"],
 html:not(.dark) main [class*="bg-emerald-400/15"] { background-color: #ecfdf5 !important; }
 html:not(.dark) main [class*="bg-cyan-400/10"],
 html:not(.dark) main [class*="bg-cyan-300/10"],
 html:not(.dark) main [class*="bg-cyan-500/10"],
 html:not(.dark) main [class*="bg-cyan-300/15"],
-html:not(.dark) main [class*="bg-cyan-400/15"]    { background-color: #ecfeff !important; }
+html:not(.dark) main [class*="bg-cyan-400/15"],
+html:not(.dark) main [class*="bg-cyan-400/20"]    { background-color: #ecfeff !important; }
+html:not(.dark) main [class*="bg-indigo-500/15"],
+html:not(.dark) main [class*="bg-indigo-500/10"]  { background-color: #eef2ff !important; }
 html:not(.dark) main [class*="bg-violet-400/10"],
 html:not(.dark) main [class*="bg-violet-500/10"]  { background-color: #f5f3ff !important; }
 html:not(.dark) main [class*="bg-slate-400/10"]   { background-color: #f1f5f9 !important; }
+
+/* ── SIH Reports Page — Hero Banner ──────────────────────────────────────── */
+/* The gradient banner at the top of the reports page */
+html:not(.dark) main .rounded-2xl[class*="border-cyan-500"] {
+  background: linear-gradient(to right, #eff6ff, #f0f9ff, #eef2ff) !important;
+  border-color: rgba(14,165,233,0.2) !important;
+}
+html:not(.dark) main .rounded-2xl[class*="border-cyan-500"] h1 { color: #0f172a !important; }
+html:not(.dark) main .rounded-2xl[class*="border-cyan-500"] p  { color: #374151 !important; }
+
+/* SIH hero KPI strip cards */
+html:not(.dark) main [class*="rounded-lg bg-slate-900/60"] {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Section dossier surfaces */
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/50"],
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/40"],
+html:not(.dark) main [class*="bg-slate-900/50"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* ── Settings Page — System Tab ──────────────────────────────────────────── */
+html:not(.dark) main [class*="rounded-xl border border-slate-700/60 bg-slate-900/50"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+html:not(.dark) main [class*="rounded-xl border border-cyan-400/30"] {
+  background-color: #f0f9ff !important;
+  border-color: rgba(14,165,233,0.25) !important;
+}
+
+/* ML Status Cards inside System tab */
+html:not(.dark) main [class*="rounded-lg bg-slate-100/80"],
+html:not(.dark) main [class*="rounded-lg bg-slate-900/60"] {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Candidate Validation & Deployment Criteria box */
+html:not(.dark) main [class*="rounded-lg border border-slate-200"],
+html:not(.dark) main [class*="rounded-lg border border-slate-800"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+html:not(.dark) main [class*="rounded-lg border border-slate-800"] [class*="text-slate-300"],
+html:not(.dark) main [class*="rounded-lg border border-slate-800"] [class*="text-slate-400"] {
+  color: #374151 !important;
+}
+
+/* ── Status Badge Pill Fixes (new Partially Implemented / Evaluated styles) ── */
+html:not(.dark) main [class*="bg-emerald-500/15"] {
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+}
+html:not(.dark) main [class*="bg-amber-500/15"] {
+  background-color: #fef3c7 !important;
+  color: #92400e !important;
+}
+html:not(.dark) main [class*="bg-indigo-500/15"] {
+  background-color: #e0e7ff !important;
+  color: #3730a3 !important;
+}
+
+/* Override text colors inside status badges */
+html:not(.dark) main [class*="bg-emerald-500/15"] [class*="text-emerald-"] { color: #065f46 !important; }
+html:not(.dark) main [class*="bg-amber-500/15"] [class*="text-amber-"]     { color: #92400e !important; }
+html:not(.dark) main [class*="bg-indigo-500/15"] [class*="text-indigo-"]   { color: #3730a3 !important; }
+
+/* ── Expected Solution cards ─────────────────────────────────────────────── */
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/40"] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/40"] h3,
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/40"] p  { color: #1e293b !important; }
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/40"] [class*="text-slate-400"] { color: #64748b !important; }
+
+/* ── Root Cause / Background cards ───────────────────────────────────────── */
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/50"] h4 { color: #0f172a !important; }
+html:not(.dark) main [class*="rounded-xl border border-slate-800 bg-slate-950/50"] p  { color: #374151 !important; }
 
 /* ── Recharts Tooltips & Legend (Daylight Mode) ──────────────────────────── */
 html:not(.dark) .recharts-default-tooltip {
@@ -794,3 +945,46 @@ html:not(.dark) main [class*="animate-pulse"] { background-color: #e2e8f0 !impor
 /* ── Main — SVG ring chart ───────────────────────────────────────────────── */
 html:not(.dark) main path[stroke="#1e2b41"] { stroke: #e2e8f0 !important; }
 
+/* ── Backdrop / overlay tints from dark-mode patterns ────────────────────── */
+html:not(.dark) main [class*="backdrop-blur"] {
+  /* keep blur but ensure readable background */
+}
+html:not(.dark) main [style*="background: rgba(7"] {
+  background: rgba(248,250,252,0.95) !important;
+  color: #0f172a !important;
+}
+
+/* ── Surface component (rounded-xl with slate borders) ───────────────────── */
+html:not(.dark) main [class*="rounded-xl border border-slate"] {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Prevent double-override killing existing light-mode coloured borders */
+html:not(.dark) main [class*="rounded-xl border border-cyan"] {
+  border-color: rgba(14,165,233,0.25) !important;
+  background-color: #f0f9ff !important;
+}
+html:not(.dark) main [class*="rounded-xl border border-emerald"] {
+  border-color: rgba(16,185,129,0.3) !important;
+  background-color: #f0fdf4 !important;
+}
+html:not(.dark) main [class*="rounded-xl border border-amber"] {
+  border-color: rgba(217,119,6,0.3) !important;
+  background-color: #fffbeb !important;
+}
+html:not(.dark) main [class*="rounded-xl border border-rose"] {
+  border-color: rgba(244,63,94,0.3) !important;
+  background-color: #fff1f2 !important;
+}
+
+/* ── Mono / code text in tables ──────────────────────────────────────────── */
+html:not(.dark) main td[class*="font-mono"],
+html:not(.dark) main .font-mono { color: #1e40af !important; }
+
+/* ── Eyebrow text inside cyan border cards ───────────────────────────────── */
+html:not(.dark) main [class*="eyebrow text-cyan-400"] { color: #0369a1 !important; }
+
+/* ── List items in description-of-study panels ───────────────────────────── */
+html:not(.dark) main li[class*="flex items-center"] { color: #374151 !important; }
+html:not(.dark) main li span[class*="text-slate-200"] { color: #0f172a !important; }

@@ -29,6 +29,9 @@ export interface LandPredictInput {
   taluk?: string;
   village?: string;
   survey_no?: string;
+  // Configurable classification decision threshold
+  threshold?: number;
+  risk_mode?: "screening" | "early_warning" | "balanced" | "escalation" | "high_confidence";
 }
 
 export interface RiskFactor {
@@ -41,10 +44,21 @@ export interface PredictionResult {
   land_id?: string;
   predicted_delay_days: number;
   predicted_delay_range: { lower: number; upper: number };
+  delay_status?: string;
+  delay_status_probability?: number;
+  threshold_used?: number;
+  risk_mode_used?: string;
+  threshold_metrics?: {
+    threshold: number;
+    precision: number;
+    recall: number;
+    label: string;
+  };
   risk_category: "Low" | "Medium" | "High";
   risk_score: number;
   risk_factors: RiskFactor[];
   recommendation: string;
+  label_notes?: Record<string, string>;
 }
 
 export interface FeatureImportanceItem {
@@ -102,27 +116,61 @@ export interface GisParcelsResponse {
   parcels: GisParcel[];
 }
 
-const API_BASE = "https://acquisight-kba3.onrender.com";
+export class ApiError extends Error {
+  status?: number;
+  isNetworkError: boolean;
+  isTimeout: boolean;
+  isServerError: boolean;
 
-async function fetchJson<T>(endpoint: string, options?: RequestInit): Promise<T> {
+  constructor(message: string, status?: number, isTimeout: boolean = false, isNetworkError: boolean = false) {
+    super(message);
+    this.name = "ApiError";
+    this.status = status;
+    this.isTimeout = isTimeout;
+    this.isNetworkError = isNetworkError;
+    this.isServerError = status ? status >= 500 : false;
+  }
+}
+
+const API_BASE = (import.meta as any).env?.VITE_API_BASE ?? "http://localhost:8000";
+
+async function fetchJson<T>(endpoint: string, options?: RequestInit & { timeoutMs?: number }): Promise<T> {
   const url = `${API_BASE}${endpoint}`;
+  const timeoutMs = options?.timeoutMs ?? 15000;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+
   try {
     const res = await fetch(url, {
       ...options,
+      signal: options?.signal || controller.signal,
       headers: {
         "Content-Type": "application/json",
         ...options?.headers,
       },
     });
+    clearTimeout(timer);
+
     if (!res.ok) {
       const err = await res.text();
-      throw new Error(`API error ${res.status}: ${err}`);
+      throw new ApiError(`API error ${res.status}: ${err}`, res.status);
     }
     return await res.json();
   } catch (err: any) {
-    // If backend is offline or network fails, throw informative message
-    console.warn(`[AcquiSight API] Request to ${url} failed:`, err);
-    throw err;
+    clearTimeout(timer);
+    if (err.name === "AbortError") {
+      throw new ApiError("Request timed out waiting for backend response.", 408, true, false);
+    }
+    if (err instanceof ApiError) {
+      throw err;
+    }
+    const isNet = err instanceof TypeError || /fetch|network|failed/i.test(err.message || "");
+    throw new ApiError(
+      err.message || "Unable to connect to AcquiSight services",
+      undefined,
+      false,
+      isNet
+    );
   }
 }
 
@@ -302,6 +350,88 @@ export async function getAnalyticsStatusDistribution(): Promise<
   Array<{ status: string; count: number }>
 > {
   return fetchJson("/analytics/status-distribution");
+}
+
+export interface PerformanceKpi {
+  indicator: string;
+  actual: number;
+  target: number;
+  unit: string;
+  status: string;
+}
+
+export interface DeepInsightsResult {
+  total_cases: number;
+  sectors: Array<{
+    sector: string;
+    total: number;
+    delayed: number;
+    delayed_pct: number;
+    avg_delay_days: number;
+    cost_cr: number;
+    area_ha: number;
+  }>;
+  compensation: Array<{
+    status: string;
+    count: number;
+    percentage: number;
+  }>;
+  project_types: Array<{
+    type: string;
+    total: number;
+    delayed: number;
+    avg_delay_days: number;
+    litigated: number;
+    delay_rate: number;
+  }>;
+  delay_drivers: Array<{
+    driver: string;
+    count: number;
+    percentage: number;
+  }>;
+  district_litigation: Array<{
+    district: string;
+    total: number;
+    litigated: number;
+    litigation_rate: number;
+    delayed: number;
+    delay_rate: number;
+    avg_delay_days: number;
+  }>;
+  rehabilitation: {
+    total_families_affected: number;
+    avg_families_per_case: number;
+    compliance_rate: number;
+    target_compliance_rate: number;
+  };
+  performance_kpis: PerformanceKpi[];
+}
+
+export async function getAnalyticsDeepInsights(): Promise<DeepInsightsResult> {
+  return fetchJson<DeepInsightsResult>("/analytics/deep-insights");
+}
+
+export interface DistrictComparisonItem {
+  district: string;
+  total_cases: number;
+  delayed_cases: number;
+  delay_rate_pct: number;
+  avg_delay_days: number;
+  litigated_cases: number;
+  litigation_rate_pct: number;
+  completed_cases: number;
+  completion_rate_pct: number;
+  total_cost_cr: number;
+  total_area_ha: number;
+  families_affected: number;
+  compensation_verified_pct: number;
+  top_delay_driver: string;
+  performance_score: number;
+}
+
+export async function getAnalyticsComparative(districts?: string[]): Promise<DistrictComparisonItem[]> {
+  const q = districts && districts.length > 0 ? `?districts=${encodeURIComponent(districts.join(","))}` : "";
+  return fetchJson<DistrictComparisonItem[]>(`/analytics/comparative${q}`);
 }
 
 export interface ActionItem {

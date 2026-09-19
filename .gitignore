@@ -69,3 +69,5 @@ coverage.xml
 *.cover
 *.log
 frontend/.env
+*_backup.pkl
+

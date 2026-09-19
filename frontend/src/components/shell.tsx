@@ -23,9 +23,10 @@ import {
   ArrowRight,
   Sun,
   Moon,
+  GitCompare,
 } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import { motion, AnimatePresence } from "framer-motion";
+
 import { useTheme } from "next-themes";
 import { navGroups } from "@/lib/data";
 import { ChatCopilot } from "@/components/chat-copilot";
@@ -40,6 +41,7 @@ const iconMap: Record<string, typeof Command> = {
   BellRing,
   ListChecks,
   ChartNoAxesCombined,
+  GitCompare,
   FileBarChart,
 };
 
@@ -203,20 +205,16 @@ export function Shell({ children }: { children: ReactNode }) {
 
   return (
     <div className="noise app-shell min-h-[100dvh] text-slate-800 dark:text-slate-200">
-      <AnimatePresence>
-        {open && (
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            data-testid="button-mobile-overlay"
-            onClick={() => setOpen(false)}
-            className="fixed inset-0 z-30 bg-slate-950/70 md:hidden"
-          />
-        )}
-      </AnimatePresence>
-
       {sidebar}
+
+      {/* Mobile overlay — plain CSS transition avoids framer-motion stacking-context breaking fixed sidebar */}
+      <div
+        data-testid="button-mobile-overlay"
+        onClick={() => setOpen(false)}
+        className={`fixed inset-0 z-30 bg-slate-950/70 md:hidden transition-opacity duration-200 ${
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+      />
 
       <div
         className={`min-h-[100dvh] transition-[margin] duration-300 ${

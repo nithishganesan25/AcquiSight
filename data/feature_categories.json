@@ -31,24 +31,34 @@
   "categories": {
     "District": [
       "Chengalpattu",
+      "Chennai",
       "Coimbatore",
-      "Dindigul",
+      "Cuddalore",
+      "Dharmapuri",
       "Erode",
       "Kancheepuram",
+      "Karur",
       "Krishnagiri",
       "Madurai",
+      "Namakkal",
       "Ranipet",
       "Salem",
       "Thanjavur",
+      "Thoothukudi",
       "Tiruchirappalli",
       "Tirunelveli",
-      "Tiruppur",
-      "Tiruvallur"
+      "Tiruvallur",
+      "Vellore",
+      "Villupuram"
     ],
     "Land_Type": [
-      "Dry",
-      "Manavari",
-      "Wet"
+      "Agricultural",
+      "Barren",
+      "Coastal",
+      "Commercial",
+      "Forest",
+      "Industrial",
+      "Residential"
     ],
     "Flood_Risk": [
       "No",
@@ -59,10 +69,13 @@
       "Yes"
     ],
     "Soil_Type": [
-      "Alluvial Soil",
-      "Black Soil",
-      "Clay Soil",
-      "Red Soil"
+      "Alluvial",
+      "Black Cotton",
+      "Loamy",
+      "Red Soil",
+      "Saline",
+      "Sandy",
+      "Urban Fill"
     ],
     "Document_Issue": [
       "Available",
@@ -88,7 +101,6 @@
       "Yes"
     ],
     "A_Register": [
-      "No",
       "Yes"
     ],
     "Document_Verified": [
@@ -100,16 +112,14 @@
       "Yes"
     ],
     "Ownership_Type": [
-      "Individual",
       "Joint"
     ]
   },
-  "row_count": 500,
-  "primary_excel": "land acquisition_01.xlsx",
+  "row_count": 20000,
+  "primary_source": "AcquiSight_20K_Synthetic_Augmented_Dataset.csv",
   "notes": {
     "Delay_Risk_Band": "Derived from Acquisition_Days (Low<=60, Medium<=120, High>120). Not a recorded official risk label.",
-    "Delay_Status": "Recorded binary label from Acquisition_Delay sheet (No Delay / Delayed).",
-    "Acquisition_Days": "Recorded acquisition duration from Acquisition_Delay sheet.",
-    "coordinates": "Official gazette workbook has no latitude/longitude."
+    "Delay_Status": "Recorded binary label (No Delay / Delayed).",
+    "Acquisition_Days": "Recorded acquisition duration in days."
   }
 }

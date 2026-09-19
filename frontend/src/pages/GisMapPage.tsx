@@ -40,6 +40,7 @@ import {
   type GisFiltersResult,
   type GisParcel
 } from "@/lib/api";
+import { NetworkErrorState } from "@/components/status-states";
 
 const RISK_COLORS: Record<string, string> = {
   Low: "#10b981",
@@ -63,6 +64,7 @@ export function GisMapPage() {
   const [totalCount, setTotalCount] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [mapError, setMapError] = useState<string | null>(null);
 
   // Filter states
   const [selectedDistrict, setSelectedDistrict] = useState("All Districts");
@@ -77,11 +79,14 @@ export function GisMapPage() {
     return filters.taluks_by_district[selectedDistrict] || [];
   }, [selectedDistrict, filters]);
 
+  const [retryCount, setRetryCount] = useState(0);
+
   // Initial load: summary & filters
   useEffect(() => {
     async function initData() {
       try {
         setLoading(true);
+        setError(null);
         const [sumRes, filRes] = await Promise.all([
           getGisSummary().catch(() => null),
           getGisFilters().catch(() => ({
@@ -94,13 +99,13 @@ export function GisMapPage() {
         if (sumRes) setSummary(sumRes);
         setFilters(filRes);
       } catch (err: any) {
-        setError("Could not connect to GIS backend service.");
+        setError("Unable to connect to AcquiSight services. The backend service is currently unavailable.");
       } finally {
         setLoading(false);
       }
     }
     initData();
-  }, []);
+  }, [retryCount]);
 
   // Fetch parcels on filter change
   useEffect(() => {
@@ -108,6 +113,7 @@ export function GisMapPage() {
     async function fetchParcels() {
       try {
         setLoading(true);
+        setError(null);
         const res = await getGisParcels({
           district: selectedDistrict,
           taluk: selectedTaluk,
@@ -133,7 +139,7 @@ export function GisMapPage() {
       active = false;
       clearTimeout(debouncer);
     };
-  }, [selectedDistrict, selectedTaluk, selectedRisk, searchQuery]);
+  }, [selectedDistrict, selectedTaluk, selectedRisk, searchQuery, retryCount]);
 
   // Handle district selection change
   const handleDistrictChange = (d: string) => {
@@ -475,6 +481,16 @@ export function GisMapPage() {
         </div>
       </div>
 
+      {error && (
+        <div className="mt-4">
+          <NetworkErrorState
+            title="Unable to connect to AcquiSight services"
+            detail={error}
+            onRetry={() => setRetryCount((c) => c + 1)}
+          />
+        </div>
+      )}
+
       {/* Main Interactive Map & Inspector Grid */}
       <div className="mt-6 grid grid-cols-1 gap-6 xl:grid-cols-3">
         {/* Map Canvas */}
@@ -496,6 +512,54 @@ export function GisMapPage() {
           <div className="relative mt-4 h-[460px] w-full overflow-hidden rounded-lg border border-slate-800 bg-[#050b14]">
             {/* Real Map Canvas */}
             <div ref={mapContainerRef} className="h-full w-full z-0" />
+
+            {/* Loading Spatial Intelligence Overlay */}
+            {loading && (
+              <div className="absolute inset-0 z-[450] flex flex-col items-center justify-center bg-slate-950/80 backdrop-blur-[2px]">
+                <RefreshCw size={24} className="animate-spin text-cyan-400 mb-2" />
+                <span className="text-xs font-bold text-slate-200">Loading spatial intelligence...</span>
+              </div>
+            )}
+
+            {/* Map Failure State */}
+            {mapError && (
+              <div className="absolute inset-0 z-[460] flex flex-col items-center justify-center bg-slate-950/90 p-6 text-center">
+                <AlertCircle size={32} className="text-rose-400 mb-2" />
+                <h3 className="text-sm font-bold text-slate-100">Map data unavailable</h3>
+                <p className="mt-1 text-xs text-slate-400 max-w-sm">The spatial map could not be loaded.</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMapError(null);
+                    setRetryCount((c) => c + 1);
+                  }}
+                  className="mt-4 inline-flex items-center gap-2 rounded-lg bg-cyan-400 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-cyan-300"
+                >
+                  <RefreshCw size={13} /> Retry
+                </button>
+              </div>
+            )}
+
+            {/* No Data Overlay */}
+            {!loading && !error && parcels.length === 0 && (
+              <div className="absolute inset-0 z-[440] flex flex-col items-center justify-center bg-slate-950/85 p-6 text-center">
+                <Layers size={32} className="text-slate-500 mb-2" />
+                <h3 className="text-sm font-bold text-slate-200">No spatial records available for the selected criteria.</h3>
+                <p className="mt-1 text-xs text-slate-400 max-w-xs">Try selecting a different district, taluk, or risk filter.</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedDistrict("All Districts");
+                    setSelectedTaluk("All Taluks");
+                    setSelectedRisk("All Risk Categories");
+                    setSearchQuery("");
+                  }}
+                  className="mt-4 rounded-lg border border-slate-700 bg-slate-900 px-4 py-2 text-xs font-bold text-cyan-300 hover:border-cyan-400"
+                >
+                  Reset Filters
+                </button>
+              </div>
+            )}
 
             {/* Base map switcher: Streets & Satellite */}
             <div className="absolute top-3 right-3 z-[400] flex items-center gap-1 rounded-lg border border-slate-700/80 bg-slate-950/90 p-1 backdrop-blur-md shadow-lg">

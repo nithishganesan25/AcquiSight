@@ -1,0 +1,47 @@
+{
+  "total_records": 20000,
+  "training_records": 16000,
+  "test_records": 4000,
+  "feature_count": 17,
+  "features": [
+    "Area_Sqft",
+    "Soil_pH",
+    "No_of_Owners",
+    "District",
+    "Land_Type",
+    "Flood_Risk",
+    "Water_Availability",
+    "Soil_Type",
+    "Document_Issue",
+    "Owner_Objection",
+    "Court_Case",
+    "Compensation_Status",
+    "FMB",
+    "A_Register",
+    "Document_Verified",
+    "Objection",
+    "Ownership_Type"
+  ],
+  "classification_target": "Delay_Status",
+  "regression_target": "Acquisition_Days",
+  "class_distribution_total": {
+    "Delayed": 11493,
+    "No Delay": 8507
+  },
+  "class_distribution_pct": {
+    "Delayed": 0.5746,
+    "No Delay": 0.4254
+  },
+  "regression_stats": {
+    "count": 20000.0,
+    "mean": 119.90715,
+    "std": 124.83369938242869,
+    "min": 0.0,
+    "25%": 0.0,
+    "50%": 99.0,
+    "75%": 193.0,
+    "max": 581.0
+  },
+  "unique_source_parcels": 1919,
+  "unique_source_cases": 483
+}

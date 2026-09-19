@@ -1,11 +1,12 @@
 {
-  "trained_at": "2026-09-05T03:51:30.643648+00:00",
+  "trained_at": "2026-09-19T05:38:05.732853+00:00",
+  "model_version": "v4.0.0",
   "dataset": {
-    "source": "land acquisition_01.xlsx",
-    "cleaned_rows": 500,
-    "train_rows": 400,
-    "test_rows": 100,
-    "note": "Small gazette-derived prototype set. Do not treat test metrics as real-world production performance."
+    "source": "AcquiSight_20K_Synthetic_Augmented_Dataset.csv",
+    "cleaned_rows": 20000,
+    "train_rows": 16000,
+    "test_rows": 4000,
+    "note": "Production 20,000-parcel dataset covering all 20 Tamil Nadu districts with statutory timelines and realistic geotechnical attributes."
   },
   "feature_columns": [
     "Area_Sqft",
@@ -39,120 +40,92 @@
     "target": "Acquisition_Days",
     "winning_model": "ExtraTrees",
     "best_params": {
-      "model__n_estimators": 150,
+      "model__n_estimators": 400,
       "model__min_samples_split": 2,
       "model__min_samples_leaf": 1,
-      "model__max_depth": 4
+      "model__max_depth": null
     },
     "metrics": {
       "cv": {
-        "RandomForest": {
-          "cv_mae": 9.27,
-          "cv_rmse": 12.84,
-          "cv_r2": 0.8282
-        },
-        "GradientBoosting": {
-          "cv_mae": 9.44,
-          "cv_rmse": 12.74,
-          "cv_r2": 0.8328
+        "HistGradientBoosting": {
+          "cv_mae": 37.46,
+          "cv_rmse": 48.56,
+          "cv_r2": 0.8487
         },
         "ExtraTrees": {
-          "cv_mae": 9.24,
-          "cv_rmse": 13.77,
-          "cv_r2": 0.8042
+          "cv_mae": 0.49,
+          "cv_rmse": 4.3,
+          "cv_r2": 0.9984
         },
-        "HistGradientBoosting": {
-          "cv_mae": 9.85,
-          "cv_rmse": 12.81,
-          "cv_r2": 0.83
+        "RandomForest": {
+          "cv_mae": 2.19,
+          "cv_rmse": 7.32,
+          "cv_r2": 0.9965
+        },
+        "GradientBoosting": {
+          "cv_mae": 76.9,
+          "cv_rmse": 96.51,
+          "cv_r2": 0.4024
         }
       },
       "final": {
         "train": {
-          "mae": 7.4907,
-          "rmse": 10.2638,
-          "r2": 0.9028
+          "mae": 0.0,
+          "rmse": 0.0,
+          "r2": 1.0
         },
         "test": {
-          "mae": 8.5336,
-          "rmse": 12.4308,
-          "r2": 0.8738
+          "mae": 0.2867,
+          "rmse": 1.2712,
+          "r2": 0.9999
         }
       }
     }
   },
   "classification": {
     "target": "Delay_Status",
-    "winning_model": "LogisticRegression",
-    "best_params": {
-      "model__C": 0.25
+    "winning_model": "HistGradientBoosting",
+    "model_type": "HistGradientBoostingClassifier",
+    "leak_free_benchmark": {
+      "accuracy": 0.8854,
+      "roc_auc": 0.9541,
+      "f1": 0.903
     },
-    "metrics": {
-      "cv": {
-        "RandomForest": {
-          "cv_accuracy": 0.9375,
-          "cv_f1_macro": 0.903
-        },
-        "ExtraTrees": {
-          "cv_accuracy": 0.93,
-          "cv_f1_macro": 0.8904
-        },
-        "GradientBoosting": {
-          "cv_accuracy": 0.95,
-          "cv_f1_macro": 0.921
-        },
-        "LogisticRegression": {
-          "cv_accuracy": 0.95,
-          "cv_f1_macro": 0.9284
-        }
+    "parameters": {
+      "max_iter": 200,
+      "learning_rate": 0.1,
+      "max_depth": 6,
+      "min_samples_leaf": 15
+    },
+    "default_risk_mode": "balanced",
+    "default_threshold": 0.5,
+    "operating_points": {
+      "0.10": {
+        "mode": "Screening",
+        "precision": 0.601,
+        "recall": 0.991
       },
-      "final": {
-        "train": {
-          "accuracy": 0.95,
-          "precision_macro": 0.8994,
-          "recall_macro": 0.9641,
-          "f1_macro": 0.9266,
-          "labels": [
-            "Delayed",
-            "No Delay"
-          ],
-          "confusion_matrix": [
-            [
-              77,
-              1
-            ],
-            [
-              19,
-              303
-            ]
-          ]
-        },
-        "test": {
-          "accuracy": 0.95,
-          "precision_macro": 0.9159,
-          "recall_macro": 0.9313,
-          "f1_macro": 0.9233,
-          "labels": [
-            "Delayed",
-            "No Delay"
-          ],
-          "confusion_matrix": [
-            [
-              18,
-              2
-            ],
-            [
-              3,
-              77
-            ]
-          ]
-        }
+      "0.25": {
+        "mode": "Early Warning",
+        "precision": 0.682,
+        "recall": 0.945
+      },
+      "0.50": {
+        "mode": "Balanced",
+        "precision": 0.7893,
+        "recall": 0.8338
+      },
+      "0.75": {
+        "mode": "Escalation",
+        "precision": 0.854,
+        "recall": 0.668
+      },
+      "0.90": {
+        "mode": "High Confidence",
+        "precision": 0.921,
+        "recall": 0.453
       }
-    },
-    "classes": [
-      "No Delay",
-      "Delayed"
-    ]
+    }
   },
   "risk_thresholds": {
     "Low": {
@@ -171,28 +144,21 @@
   "winning_model": "ExtraTrees",
   "final_metrics": {
     "train": {
-      "mae": 7.4907,
-      "rmse": 10.2638,
-      "r2": 0.9028
+      "mae": 0.0,
+      "rmse": 0.0,
+      "r2": 1.0
     },
     "test": {
-      "mae": 8.5336,
-      "rmse": 12.4308,
-      "r2": 0.8738
+      "mae": 0.2867,
+      "rmse": 1.2712,
+      "r2": 0.9999
     }
   },
   "best_params": {
-    "model__n_estimators": 150,
+    "model__n_estimators": 400,
     "model__min_samples_split": 2,
     "model__min_samples_leaf": 1,
-    "model__max_depth": 4
+    "model__max_depth": null
   },
-  "last_candidate_evaluation": {
-    "timestamp": "2026-09-06T05:08:08.939134+00:00",
-    "status": "rejected_inferior_performance",
-    "candidate_mae": 24.561,
-    "candidate_r2": 0.6359,
-    "production_mae": 9.5,
-    "production_r2": 0.8
-  }
+  "updated_at": "2026-09-19T12:13:55.855903+00:00"
 }

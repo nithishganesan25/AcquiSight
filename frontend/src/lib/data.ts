@@ -338,6 +338,7 @@ export const navGroups = [
       ["AI Risk Predictor", "/risk-predictor", "Sparkles"],
       ["Action Intelligence", "/action-intelligence", "ListChecks"],
       ["Analytics", "/analytics", "ChartNoAxesCombined"],
+      ["Comparative", "/comparative", "GitCompare"],
       ["Reports", "/reports", "FileBarChart"],
     ],
   },

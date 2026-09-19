@@ -23,6 +23,14 @@ import {
 } from "@/pages";
 import { GisMapPage } from "@/pages/GisMapPage";
 import { RiskPredictorPage } from "@/pages/RiskPredictorPage";
+import { ComparativeAnalyticsPage } from "@/pages/ComparativeAnalyticsPage";
+
+import {
+  AppSplashScreen,
+  UnauthorizedPage,
+  NotFoundPage,
+  GlobalErrorFallback,
+} from "@/components/status-states";
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -44,11 +52,7 @@ function ProtectedRoute({ component: Component }: { component: React.ComponentTy
   }, [loading, user, location, setLocation]);
 
   if (loading) {
-    return (
-      <div className="flex h-screen items-center justify-center bg-[#070c18] text-xs font-semibold text-slate-400">
-        Verifying officer authorization...
-      </div>
-    );
+    return <AppSplashScreen />;
   }
 
   if (!user) {
@@ -63,6 +67,9 @@ function Router() {
     <RoutedErrorBoundary>
       <Switch>
         <Route path="/login" component={LoginPage} />
+        <Route path="/403" component={UnauthorizedPage} />
+        <Route path="/404" component={NotFoundPage} />
+        <Route path="/500" component={() => <GlobalErrorFallback />} />
         <Route path="/" component={() => <ProtectedRoute component={CommandCenterPage} />} />
         <Route path="/command-center" component={() => <ProtectedRoute component={CommandCenterPage} />} />
         <Route path="/land-intelligence" component={() => <ProtectedRoute component={LandIntelligencePage} />} />
@@ -75,6 +82,7 @@ function Router() {
         <Route path="/risk-alerts" component={() => <ProtectedRoute component={RiskAlertsPage} />} />
         <Route path="/cases/:id" component={() => <ProtectedRoute component={CaseProfilePage} />} />
         <Route path="/analytics" component={() => <ProtectedRoute component={AnalyticsPage} />} />
+        <Route path="/comparative" component={() => <ProtectedRoute component={ComparativeAnalyticsPage} />} />
         <Route path="/reports" component={() => <ProtectedRoute component={ReportsPage} />} />
         <Route path="/settings" component={() => <ProtectedRoute component={SettingsPage} />} />
         <Route component={NotFound} />

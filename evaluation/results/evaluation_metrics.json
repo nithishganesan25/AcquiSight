@@ -1,0 +1,281 @@
+{
+  "dataset_summary": {
+    "total_records": 20000,
+    "training_records": 16000,
+    "test_records": 4000,
+    "feature_count": 17,
+    "features": [
+      "Area_Sqft",
+      "Soil_pH",
+      "No_of_Owners",
+      "District",
+      "Land_Type",
+      "Flood_Risk",
+      "Water_Availability",
+      "Soil_Type",
+      "Document_Issue",
+      "Owner_Objection",
+      "Court_Case",
+      "Compensation_Status",
+      "FMB",
+      "A_Register",
+      "Document_Verified",
+      "Objection",
+      "Ownership_Type"
+    ],
+    "classification_target": "Delay_Status",
+    "regression_target": "Acquisition_Days",
+    "class_distribution_total": {
+      "Delayed": 11493,
+      "No Delay": 8507
+    },
+    "class_distribution_pct": {
+      "Delayed": 0.5746,
+      "No Delay": 0.4254
+    },
+    "regression_stats": {
+      "count": 20000.0,
+      "mean": 119.90715,
+      "std": 124.83369938242869,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 99.0,
+      "75%": 193.0,
+      "max": 581.0
+    },
+    "unique_source_parcels": 1919,
+    "unique_source_cases": 483
+  },
+  "claims_comparison": {
+    "reported_claims": {
+      "roc_auc": 0.915,
+      "mae_days": 14.2
+    },
+    "original_model_test_split": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "roc_auc": 1.0,
+      "mae_days": 0.2867,
+      "rmse_days": 1.2712,
+      "r2": 0.999896,
+      "note": "Replication leakage present due to row-level split across identical parcel replicas."
+    },
+    "corrected_leak_free_group_split": {
+      "accuracy": 0.777583,
+      "precision": 0.789321,
+      "recall": 0.833843,
+      "f1": 0.810972,
+      "roc_auc": 0.859588,
+      "mae_days": 46.9851,
+      "rmse_days": 66.1063,
+      "r2": 0.720533,
+      "note": "Genuine out-of-sample generalization on completely unseen land parcels."
+    }
+  },
+  "original_classification_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "specificity": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "tp": 2299,
+      "tn": 1701,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "original_threshold_sweep": [
+    {
+      "threshold": 0.1,
+      "accuracy": 0.995,
+      "precision": 0.9914,
+      "recall": 1.0,
+      "f1": 0.9957
+    },
+    {
+      "threshold": 0.25,
+      "accuracy": 0.9998,
+      "precision": 0.9996,
+      "recall": 1.0,
+      "f1": 0.9998
+    },
+    {
+      "threshold": 0.5,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    {
+      "threshold": 0.75,
+      "accuracy": 0.9995,
+      "precision": 1.0,
+      "recall": 0.9991,
+      "f1": 0.9996
+    },
+    {
+      "threshold": 0.9,
+      "accuracy": 0.9978,
+      "precision": 1.0,
+      "recall": 0.9961,
+      "f1": 0.998
+    }
+  ],
+  "original_regression_metrics": {
+    "mae": 0.2867,
+    "mse": 1.616,
+    "rmse": 1.2712,
+    "r2": 0.999896,
+    "median_absolute_error": 0.0,
+    "max_absolute_error": 30.04,
+    "mean_actual_delay": 120.14,
+    "mean_predicted_delay": 120.13,
+    "min_actual_delay": 0.0,
+    "max_actual_delay": 581.0,
+    "min_predicted_delay": 0.0,
+    "max_predicted_delay": 581.0,
+    "within_7_days_pct": 99.42,
+    "within_14_days_pct": 99.83,
+    "within_30_days_pct": 99.98
+  },
+  "corrected_classification_metrics": {
+    "accuracy": 0.777583,
+    "precision": 0.789321,
+    "recall": 0.833843,
+    "f1": 0.810972,
+    "specificity": 0.702339,
+    "roc_auc": 0.859588,
+    "pr_auc": 0.888661,
+    "confusion_matrix": {
+      "tp": 1907,
+      "tn": 1201,
+      "fp": 509,
+      "fn": 380
+    }
+  },
+  "corrected_regression_metrics": {
+    "mae": 46.9851,
+    "mse": 4370.0397,
+    "rmse": 66.1063,
+    "r2": 0.720533,
+    "median_absolute_error": 33.42,
+    "max_absolute_error": 287.4325,
+    "mean_actual_delay": 120.24,
+    "mean_predicted_delay": 117.59,
+    "min_actual_delay": 0.0,
+    "max_actual_delay": 581.0,
+    "min_predicted_delay": 2.7,
+    "max_predicted_delay": 495.65,
+    "within_7_days_pct": 11.81,
+    "within_14_days_pct": 22.44,
+    "within_30_days_pct": 45.43
+  },
+  "cross_validation": {
+    "standard_row_cv": {
+      "classification": {
+        "accuracy_mean": 0.9999,
+        "accuracy_std": 0.0002,
+        "roc_auc_mean": 1.0,
+        "roc_auc_std": 0.0,
+        "f1_mean": 0.9999
+      },
+      "regression": {
+        "mae_mean": 0.49,
+        "mae_std": 0.13,
+        "rmse_mean": 4.43,
+        "r2_mean": 0.9981
+      }
+    },
+    "leak_free_group_cv": {
+      "classification": {
+        "accuracy_mean": 0.7843,
+        "accuracy_std": 0.0276,
+        "roc_auc_mean": 0.8755,
+        "roc_auc_std": 0.02,
+        "f1_mean": 0.7728,
+        "fold_roc_aucs": [
+          0.8708,
+          0.8756,
+          0.9131,
+          0.8558,
+          0.862
+        ]
+      },
+      "regression": {
+        "mae_mean": 43.99,
+        "mae_std": 4.65,
+        "rmse_mean": 66.41,
+        "r2_mean": 0.7127,
+        "fold_maes": [
+          49.18,
+          42.06,
+          39.63,
+          39.18,
+          49.92
+        ]
+      }
+    }
+  },
+  "leakage_audit": {
+    "status": "FAIL (Original Split) -> FIXED (Group-Based Split)",
+    "leakage_type": "Group-level Data Leakage / Synthetic Record Replication Leakage",
+    "description": "The 20,000 synthetic dataset contains ~10 augmented copies of 1,919 underlying parcels. A standard random train_test_split partitioned rows rather than parcels, resulting in identical underlying parcels with identical delay_days appearing in both train and test. This caused unconstrained ExtraTrees models to achieve a synthetic 100% accuracy and 0.28-day MAE.",
+    "fix": "Enforce GroupShuffleSplit and GroupKFold grouped strictly on parcel_id / source_record_id.",
+    "parcel_overlap_original": 1682,
+    "parcel_overlap_corrected": 0,
+    "group_train_rows": 16003,
+    "group_train_parcels": 1535,
+    "group_test_rows": 3997,
+    "group_test_parcels": 384
+  },
+  "api_validation": {
+    "status": "PASS",
+    "samples": [
+      {
+        "land_id": "ACQ_SYN_009282",
+        "direct_delay_days": 2.7,
+        "api_delay_days": 2.7,
+        "direct_status": "No Delay",
+        "api_status": "No Delay",
+        "match": true
+      },
+      {
+        "land_id": "ACQ_SYN_012592",
+        "direct_delay_days": 369.0,
+        "api_delay_days": 369.0,
+        "direct_status": "Delayed",
+        "api_status": "Delayed",
+        "match": true
+      },
+      {
+        "land_id": "ACQ_SYN_018019",
+        "direct_delay_days": 0.0,
+        "api_delay_days": 0.0,
+        "direct_status": "No Delay",
+        "api_status": "No Delay",
+        "match": true
+      },
+      {
+        "land_id": "ACQ_SYN_019449",
+        "direct_delay_days": 183.0,
+        "api_delay_days": 183.0,
+        "direct_status": "Delayed",
+        "api_status": "Delayed",
+        "match": true
+      },
+      {
+        "land_id": "ACQ_SYN_002791",
+        "direct_delay_days": 145.0,
+        "api_delay_days": 145.0,
+        "direct_status": "Delayed",
+        "api_status": "Delayed",
+        "match": true
+      }
+    ]
+  }
+}

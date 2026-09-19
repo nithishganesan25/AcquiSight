@@ -83,6 +83,14 @@ class CaseRepository:
         with self._lock:
             return len(self._load())
 
+    def reload(self) -> int:
+        """Force a fresh load from disk, discarding the in-memory cache."""
+        with self._lock:
+            self._cases = None
+            cases = self._load()
+            log.info("Repository reloaded: %d cases from %s", len(cases), self._path)
+            return len(cases)
+
     def get_by_id(self, case_id: str) -> Optional[Dict[str, Any]]:
         with self._lock:
             cases = self._load()

@@ -55,6 +55,21 @@ export function LoginPage() {
             </p>
           </div>
 
+          {/* Session Expired State */}
+          {window.location.search.includes("session_expired") && !user && (
+            <div role="alert" className="mt-5 rounded-lg border border-amber-500/30 bg-amber-500/10 p-4 text-xs text-amber-300">
+              <div className="flex items-start gap-2.5">
+                <AlertCircle size={16} className="shrink-0 mt-0.5 text-amber-400" />
+                <div className="flex-1">
+                  <div className="font-bold">Session expired</div>
+                  <div className="mt-1 text-[11px] leading-relaxed text-amber-200/80">
+                    Your session has expired. Please sign in again.
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Configuration Missing Alert */}
           {!isConfigured && (
             <div className="mt-5 rounded-lg border border-amber-500/30 bg-amber-500/10 p-4 text-xs text-amber-300">
@@ -77,8 +92,15 @@ export function LoginPage() {
               <div className="flex items-start gap-2.5">
                 <AlertCircle size={16} className="shrink-0 mt-0.5 text-rose-400" />
                 <div className="flex-1">
-                  <div className="font-bold">Authentication Notice</div>
-                  <div className="mt-1 text-[11px] leading-relaxed text-rose-200/80">{error}</div>
+                  <div className="font-bold">Authentication failed</div>
+                  <div className="mt-1 text-[11px] leading-relaxed text-rose-200/80">
+                    We couldn't complete your sign-in. Please try again.
+                  </div>
+                  {error && error !== "Authentication failed" && (
+                    <div className="mt-1.5 text-[10px] text-rose-300/70 border-t border-rose-500/20 pt-1">
+                      {error}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -150,7 +172,13 @@ export function LoginPage() {
                     />
                   </svg>
                 )}
-                <span>{loading ? "Authenticating with Google..." : "Sign in with Google OAuth"}</span>
+                <span>
+                  {loading
+                    ? "Signing you in..."
+                    : window.location.search.includes("session_expired")
+                    ? "Sign In Again"
+                    : "Sign in with Google OAuth"}
+                </span>
               </button>
 
               <div className="text-center text-[11px] text-slate-500">

@@ -82,7 +82,7 @@ def split_and_save(df: pd.DataFrame):
         stratify=strata if can_stratify else None,
     )
 
-    keep = feature_cols + [cfg.TARGET_COL, cfg.CLASS_TARGET_COL, "Land_ID", "Taluk", "Village", "Survey_No", "Delay_Risk_Band"]
+    keep = feature_cols + [cfg.TARGET_COL, cfg.CLASS_TARGET_COL, "Land_ID", "Taluk", "Village", "Survey_No", "Delay_Risk_Band", "latitude", "longitude"]
     keep = [c for c in keep if c in df.columns]
     train_df[keep].to_csv(cfg.TRAIN_CSV, index=False)
     test_df[keep].to_csv(cfg.TEST_CSV, index=False)

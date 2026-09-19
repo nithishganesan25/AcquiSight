@@ -1,0 +1,7 @@
+Model,Accuracy,ROC_AUC,F1,MAE_Days,RMSE_Days,R2
+ExtraTrees,0.7776,0.8596,0.811,47.03,66.24,0.7194
+GradientBoosting,0.7586,0.8458,0.8074,83.52,103.02,0.3213
+HistGradientBoosting,0.8854,0.9541,0.903,62.36,80.94,0.5811
+LogisticRegression,0.5136,0.5499,0.5439,,,
+RandomForest,0.8151,0.9071,0.8452,44.06,72.29,0.6658
+Ridge,,,,101.53,125.37,-0.0052
