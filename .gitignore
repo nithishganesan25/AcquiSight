@@ -14,7 +14,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-# lib/
 lib64/
 parts/
 sdist/
@@ -23,19 +22,27 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.pytest_cache/
 
 # Node / Frontend
 node_modules/
 frontend/node_modules/
 frontend/dist/
 frontend/.vite/
+.turbo/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
 # Environment Variables & Secrets
-# Keep sample env, ignore sensitive locals if any
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
 .env.local
 .env.*.local
 
@@ -68,6 +75,15 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
-frontend/.env
-*_backup.pkl
+*.tmp
 
+# Heavy Generated / Duplicate Artifacts
+# Uncompressed 55MB cases JSON (superseded by 3.89MB data/tn_cases_processed.json.gz)
+data/tn_cases_processed.json
+# 46MB duplicate model (identical to models/delay_regression_pipeline.pkl)
+models/acquisight_pipeline.pkl
+# Intermediate train/test splits (regenerable via src/Prepare_data.py)
+data/train_processed.csv
+data/test_processed.csv
+# Model backups
+*_backup.pkl

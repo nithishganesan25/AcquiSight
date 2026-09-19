@@ -10,6 +10,7 @@ later transition from local JSON to cloud Firestore without changing business lo
 from __future__ import annotations
 
 import copy
+import gzip
 import json
 import logging
 import threading
@@ -21,6 +22,7 @@ log = logging.getLogger("acquisight.repository")
 
 _DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 _PRIMARY_CASES_FILE = _DATA_DIR / "tn_cases_processed.json"
+_GZ_CASES_FILE = _DATA_DIR / "tn_cases_processed.json.gz"
 
 
 class CaseRepository:
@@ -29,23 +31,41 @@ class CaseRepository:
         self._lock = threading.RLock()
         self._cases: Optional[List[Dict[str, Any]]] = None
 
+    def _resolve_read_path(self) -> Optional[Path]:
+        """Resolve file to read from: checks configured path, then gzip sibling."""
+        if self._path.exists():
+            return self._path
+        # If configured path does not exist, check for .gz version
+        gz_alt = self._path.with_suffix(self._path.suffix + ".gz") if not self._path.name.endswith(".gz") else None
+        if gz_alt and gz_alt.exists():
+            return gz_alt
+        if self._path == _PRIMARY_CASES_FILE and _GZ_CASES_FILE.exists():
+            return _GZ_CASES_FILE
+        return None
+
     def _load(self) -> List[Dict[str, Any]]:
         with self._lock:
             if self._cases is not None:
                 return self._cases
 
-            if self._path.exists():
+            target = self._resolve_read_path()
+            if target and target.exists():
                 try:
-                    with open(self._path, "r", encoding="utf-8") as f:
-                        data = json.load(f)
-                        if isinstance(data, list):
-                            self._cases = data
-                            log.info("Loaded %d operational cases from %s", len(data), self._path)
-                        else:
-                            log.error("Data in %s is not a list; resetting cache to empty", self._path)
-                            self._cases = []
+                    if str(target).endswith(".gz"):
+                        with gzip.open(target, "rt", encoding="utf-8") as f:
+                            data = json.load(f)
+                    else:
+                        with open(target, "r", encoding="utf-8") as f:
+                            data = json.load(f)
+
+                    if isinstance(data, list):
+                        self._cases = data
+                        log.info("Loaded %d operational cases from %s", len(data), target)
+                    else:
+                        log.error("Data in %s is not a list; resetting cache to empty", target)
+                        self._cases = []
                 except Exception as exc:
-                    log.exception("Error loading cases from %s: %s", self._path, exc)
+                    log.exception("Error loading cases from %s: %s", target, exc)
                     self._cases = []
             else:
                 log.warning("Cases storage path %s does not exist; initializing empty store", self._path)

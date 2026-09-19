@@ -1,8 +1,8 @@
-﻿"""
+"""
 import_20k_to_cases.py
 """
 from __future__ import annotations
-import json, logging, sys
+import gzip, json, logging, sys
 from pathlib import Path
 import numpy as np, pandas as pd
 
@@ -156,10 +156,16 @@ log.info("  %d rows", len(raw20k))
 log.info("Building case documents ...")
 cases=build(scored, raw20k)
 log.info("Built %d cases", len(cases))
-tmp=OUT_JSON.with_suffix(".tmp")
-with open(tmp,"w",encoding="utf-8") as fh: json.dump(cases, fh, indent=2, ensure_ascii=False)
+compact = json.dumps(cases, separators=(',', ':'), ensure_ascii=False).encode('utf-8')
+tmp = OUT_JSON.with_suffix(".tmp")
+with open(tmp, "wb") as fh: fh.write(compact)
 tmp.replace(OUT_JSON)
-log.info("Written %s  (%.1f MB)", OUT_JSON, OUT_JSON.stat().st_size/1e6)
+log.info("Written %s  (%.1f MB)", OUT_JSON, OUT_JSON.stat().st_size / 1e6)
+gz_out = OUT_JSON.parent / (OUT_JSON.name + ".gz")
+gz_tmp = gz_out.with_suffix(".tmp")
+with gzip.open(gz_tmp, "wb", compresslevel=9) as fh: fh.write(compact)
+gz_tmp.replace(gz_out)
+log.info("Written %s  (%.1f MB)", gz_out, gz_out.stat().st_size / 1e6)
 delayed=sum(1 for c in cases if c["delay_status"]=="Delayed")
 litigated=sum(1 for c in cases if c["has_litigation"])
 districts=len({c["district"] for c in cases})
