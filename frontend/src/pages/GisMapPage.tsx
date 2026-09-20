@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useLocation } from "wouter";
 import { motion } from "framer-motion";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -53,6 +54,7 @@ function getMarkerColor(risk: string) {
 }
 
 export function GisMapPage() {
+  const [, navigate] = useLocation();
   const [summary, setSummary] = useState<GisSummaryResult | null>(null);
   const [filters, setFilters] = useState<GisFiltersResult>({
     districts: [],
@@ -145,6 +147,35 @@ export function GisMapPage() {
   const handleDistrictChange = (d: string) => {
     setSelectedDistrict(d);
     setSelectedTaluk("All Taluks");
+  };
+
+  // Navigate to Risk Predictor with parcel data pre-filled
+  const handleAnalyzeInPredictor = (p: any) => {
+    const params = new URLSearchParams({
+      land_id: String(p.Land_ID || ""),
+      district: String(p.District || p.district || ""),
+      taluk: String(p.Taluk || p.tehsil || ""),
+      village: String(p.Village || p.village_name || ""),
+      survey_no: String(p.Survey_No || ""),
+      area_sqft: String(p.Area_Sqft || (p.Extent_Hectares ? Math.round(p.Extent_Hectares * 10763.9) : (p.area_ha ? Math.round(p.area_ha * 10763.9) : 15000))),
+      soil_ph: String(p.Soil_pH ?? 7.2),
+      no_of_owners: String(p.No_of_Owners ?? 1),
+      ownership_type: String(p.Ownership_Type || "Individual"),
+      land_type: String(p.Land_Type || "Dry"),
+      soil_type: String(p.Soil_Type || "Red Soil"),
+      flood_risk: String(p.Flood_Risk || "No"),
+      water_availability: String(p.Water_Availability || "Yes"),
+      document_issue: String(p.Document_Issue || "Available"),
+      owner_objection: String(p.Owner_Objection || "No"),
+      court_case: String(p.Court_Case || "No"),
+      compensation_status: String(p.Compensation_Status || "To be paid"),
+      fmb: String(p.FMB || "Yes"),
+      a_register: String(p.A_Register || "Yes"),
+      document_verified: String(p.Document_Verified || "Yes"),
+      objection: String(p.Objection || "No"),
+      from_gis: "1",
+    });
+    navigate(`/risk-predictor?${params.toString()}`);
   };
 
   // Leaflet map refs and state
@@ -249,31 +280,59 @@ export function GisMapPage() {
         fillOpacity: 0.85,
       });
 
+      circle.bindTooltip(`
+        <div style="font-family: system-ui, -apple-system, sans-serif; font-size: 11px; padding: 2px 4px;">
+          <div style="font-weight: 700; color: #0f172a;">${p.Land_ID} · ${p.Village || p.District}</div>
+          <div style="color: #475569; font-size: 10px;">${p.Taluk || ""}, ${p.District || ""} · Survey #${p.Survey_No || "N/A"}</div>
+          <div style="margin-top: 2px; font-weight: 600; color: ${color};">
+            ${p.Predicted_Risk_Category} Risk · ${p.Predicted_Delay_Days || 0}d delay
+          </div>
+          <div style="margin-top: 4px; color: #0284c7; font-weight: 700; font-size: 10px;">
+            ⚡ Click point to analyze in AI Predictor →
+          </div>
+        </div>
+      `, { direction: "top", offset: [0, -6] });
+
       circle.bindPopup(`
-        <div style="font-family: system-ui, sans-serif; min-width: 170px; padding: 2px;">
+        <div style="font-family: system-ui, sans-serif; min-width: 200px; padding: 2px;">
           <div style="font-weight: 700; font-size: 13px; color: #0f172a; margin-bottom: 3px;">
-            ${p.Land_ID} · ${p.Village}
+            ${p.Land_ID} · ${p.Village || ""}
           </div>
           <div style="font-size: 11px; color: #475569; margin-bottom: 6px;">
-            ${p.Taluk}, ${p.District}
+            ${p.Taluk || ""}, ${p.District || ""}
           </div>
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 2px;">
             <span style="color: #64748b;">Survey No:</span>
-            <span style="font-weight: 600; color: #0f172a;">${p.Survey_No}</span>
+            <span style="font-weight: 600; color: #0f172a;">${p.Survey_No || "N/A"}</span>
           </div>
           <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 2px;">
             <span style="color: #64748b;">Predicted Risk:</span>
             <span style="font-weight: 700; color: ${color};">${p.Predicted_Risk_Category}</span>
           </div>
-          <div style="display: flex; justify-content: space-between; font-size: 11px;">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 8px;">
             <span style="color: #64748b;">Predicted Delay:</span>
             <span style="font-weight: 600; color: #0f172a;">${p.Predicted_Delay_Days} d</span>
           </div>
+          <button id="gis-popup-btn-${p.Land_ID}"
+            style="display:block; width:100%; text-align:center; background:#06b6d4; color:#0f172a; font-weight:700; font-size:11px; padding:7px 10px; border-radius:6px; border:none; cursor:pointer;">
+            ⚡ Analyze in AI Predictor →
+          </button>
         </div>
       `);
 
+      circle.on("popupopen", () => {
+        const btn = document.getElementById(`gis-popup-btn-${p.Land_ID}`);
+        if (btn) {
+          btn.onclick = (e) => {
+            e.stopPropagation();
+            handleAnalyzeInPredictor(p);
+          };
+        }
+      });
+
       circle.on("click", () => {
         setSelectedParcel(p);
+        handleAnalyzeInPredictor(p);
       });
 
       circle.addTo(markersGroupRef.current!);
@@ -710,13 +769,23 @@ export function GisMapPage() {
             )}
           </div>
 
-          <div className="mt-4 border-t border-slate-800 pt-3">
-            <a
-              href="/risk-predictor"
-              className="flex w-full items-center justify-center gap-2 rounded-md bg-cyan-400 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-cyan-300"
-            >
-              <Sparkles size={14} /> Analyze Delay Risk in Predictor
-            </a>
+          <div className="mt-4 border-t border-slate-800 pt-3 space-y-2">
+            {selectedParcel ? (
+              <button
+                onClick={() => handleAnalyzeInPredictor(selectedParcel)}
+                className="flex w-full items-center justify-center gap-2 rounded-md bg-cyan-400 px-4 py-2 text-xs font-bold text-slate-950 hover:bg-cyan-300 transition-colors"
+              >
+                <Sparkles size={14} className="animate-pulse" />
+                Analyze This Parcel in Predictor
+              </button>
+            ) : (
+              <a
+                href="/risk-predictor"
+                className="flex w-full items-center justify-center gap-2 rounded-md border border-slate-700 bg-slate-900 px-4 py-2 text-xs font-semibold text-slate-300 hover:bg-slate-800 transition-colors"
+              >
+                <Sparkles size={14} /> Open AI Predictor
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -833,15 +902,26 @@ export function GisMapPage() {
                   <td className="py-2 px-3 text-slate-400">{p.Predicted_Delay_Days.toFixed(1)} days</td>
                   <td className="py-2 px-3 font-bold text-emerald-400">{p.Acquisition_Days} days</td>
                   <td className="py-2 px-3 text-right">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelectedParcel(p);
-                      }}
-                      className="rounded border border-slate-700 bg-slate-900 px-2 py-1 text-[10px] font-bold text-cyan-300 hover:bg-cyan-400 hover:text-slate-950"
-                    >
-                      Inspect
-                    </button>
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedParcel(p);
+                        }}
+                        className="rounded border border-slate-700 bg-slate-900 px-2 py-1 text-[10px] font-bold text-cyan-300 hover:bg-slate-800"
+                      >
+                        Inspect
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleAnalyzeInPredictor(p);
+                        }}
+                        className="rounded border border-cyan-500/50 bg-cyan-500/10 px-2 py-1 text-[10px] font-bold text-cyan-300 hover:bg-cyan-400 hover:text-slate-950 transition-colors"
+                      >
+                        ⚡ Analyze
+                      </button>
+                    </div>
                   </td>
                 </tr>
               ))}

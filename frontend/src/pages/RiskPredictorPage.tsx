@@ -12,7 +12,9 @@ import {
   ShieldAlert,
   HelpCircle,
   FileCheck,
-  Scale
+  Scale,
+  MapPin,
+  ArrowLeft
 } from "lucide-react";
 import {
   BarChart,
@@ -51,6 +53,9 @@ const DEFAULT_INPUT: LandPredictInput = {
   ownership_type: "Individual",
   land_id: "TN-LND-2026",
   district: "Kancheepuram",
+  taluk: "Sriperumbudur",
+  village: "Nemili",
+  survey_no: "142/3A",
 };
 
 const RISK_MODES_CONFIG = [
@@ -75,8 +80,15 @@ export function RiskPredictorPage() {
   const [rehabStatus, setRehabStatus] = useState("Scheme Gazetted");
   const [consentPct, setConsentPct] = useState(75);
   const [compAcceptancePct, setCompAcceptancePct] = useState(80);
+  const [gisOrigin, setGisOrigin] = useState<{
+    land_id?: string;
+    district?: string;
+    taluk?: string;
+    village?: string;
+    survey_no?: string;
+  } | null>(null);
 
-  // Load feature importance once
+  // Load feature importance once and parse GIS parcel params if navigated from GIS map
   useEffect(() => {
     getFeatureImportance()
       .then((res) => {
@@ -90,8 +102,71 @@ export function RiskPredictorPage() {
         }
       })
       .catch(() => {});
-    // Initial prediction
-    handlePredict(DEFAULT_INPUT, "balanced");
+
+    // Check if query params were passed from GIS Map
+    const searchParams = new URLSearchParams(window.location.search);
+    const fromGis = searchParams.get("from_gis") === "1" || searchParams.has("land_id");
+
+    if (fromGis) {
+      const landId = searchParams.get("land_id") || "TN-GIS-PARCEL";
+      const district = searchParams.get("district") || DEFAULT_INPUT.district || "Kancheepuram";
+      const taluk = searchParams.get("taluk") || "";
+      const village = searchParams.get("village") || "";
+      const surveyNo = searchParams.get("survey_no") || "";
+      const areaSqft = Number(searchParams.get("area_sqft")) || 15000;
+      const soilPh = Number(searchParams.get("soil_ph")) || 7.2;
+      const noOfOwners = Number(searchParams.get("no_of_owners")) || 1;
+      const ownershipType = searchParams.get("ownership_type") || "Individual";
+      const landType = searchParams.get("land_type") || "Dry";
+      const soilType = searchParams.get("soil_type") || "Red Soil";
+      const floodRisk = searchParams.get("flood_risk") || "No";
+      const waterAvailability = searchParams.get("water_availability") || "Yes";
+      const documentIssue = searchParams.get("document_issue") || "Available";
+      const ownerObjection = searchParams.get("owner_objection") || "No";
+      const courtCase = searchParams.get("court_case") || "No";
+      const compStatus = searchParams.get("compensation_status") || "To be paid";
+      const fmb = searchParams.get("fmb") || "Yes";
+      const aRegister = searchParams.get("a_register") || "Yes";
+      const docVerified = searchParams.get("document_verified") || "Yes";
+      const objection = searchParams.get("objection") || "No";
+
+      const loadedInput: LandPredictInput = {
+        land_id: landId,
+        district: district,
+        taluk: taluk,
+        village: village,
+        survey_no: surveyNo,
+        area_sqft: areaSqft,
+        soil_ph: soilPh,
+        no_of_owners: noOfOwners,
+        ownership_type: ownershipType,
+        land_type: landType,
+        soil_type: soilType,
+        flood_risk: floodRisk,
+        water_availability: waterAvailability,
+        document_issue: documentIssue,
+        owner_objection: ownerObjection,
+        court_case: courtCase,
+        compensation_status: compStatus,
+        fmb: fmb,
+        a_register: aRegister,
+        document_verified: docVerified,
+        objection: objection,
+      };
+
+      setFormData(loadedInput);
+      setGisOrigin({
+        land_id: landId,
+        district,
+        taluk,
+        village,
+        survey_no: surveyNo,
+      });
+      handlePredict(loadedInput, "balanced");
+    } else {
+      // Initial prediction with default input
+      handlePredict(DEFAULT_INPUT, "balanced");
+    }
   }, []);
 
   const validate = (data: LandPredictInput): boolean => {
@@ -158,6 +233,56 @@ export function RiskPredictorPage() {
         </div>
       </div>
 
+      {/* GIS Plotted Point Linked Banner */}
+      {gisOrigin && (
+        <motion.div
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mt-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-xl border border-cyan-500/40 bg-cyan-950/30 p-4 backdrop-blur-md shadow-lg shadow-cyan-950/30"
+        >
+          <div className="flex items-start sm:items-center gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/40">
+              <MapPin size={20} className="animate-pulse" />
+            </div>
+            <div>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="font-display font-bold text-sm text-cyan-200">
+                  Plotted GIS Parcel: {gisOrigin.land_id}
+                </span>
+                <span className="rounded-full bg-cyan-500/20 border border-cyan-500/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-cyan-300">
+                  Live Plotted Point Analyzed
+                </span>
+              </div>
+              <div className="mt-0.5 text-xs text-slate-400">
+                <span>District: <strong className="text-slate-200">{gisOrigin.district || "N/A"}</strong></span>
+                {gisOrigin.taluk && <span> · Taluk: <strong className="text-slate-200">{gisOrigin.taluk}</strong></span>}
+                {gisOrigin.village && <span> · Village: <strong className="text-slate-200">{gisOrigin.village}</strong></span>}
+                {gisOrigin.survey_no && <span> · Survey No: <strong className="text-cyan-300">{gisOrigin.survey_no}</strong></span>}
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center gap-2 self-end sm:self-center">
+            <a
+              href="/gis-map"
+              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-900/90 px-3 py-1.5 text-xs font-semibold text-slate-300 hover:bg-slate-800 hover:text-white transition-colors"
+            >
+              <ArrowLeft size={13} /> Return to GIS Map
+            </a>
+            <button
+              onClick={() => {
+                setGisOrigin(null);
+                setFormData(DEFAULT_INPUT);
+                handlePredict(DEFAULT_INPUT);
+              }}
+              className="rounded-lg border border-slate-700 bg-slate-900/90 px-2.5 py-1.5 text-xs text-slate-400 hover:text-rose-400 transition-colors"
+              title="Reset to default benchmark"
+            >
+              Reset
+            </button>
+          </div>
+        </motion.div>
+      )}
+
       {error && (
         <div className="mt-4 rounded-lg border border-rose-500/30 bg-rose-500/10 p-3 text-xs text-rose-300 flex items-center gap-2">
           <AlertTriangle size={15} /> {error}
@@ -172,6 +297,7 @@ export function RiskPredictorPage() {
             <h2 className="text-sm font-bold text-slate-200">Parcel Parameters & Risk Signals</h2>
             <button
               onClick={() => {
+                setGisOrigin(null);
                 setFormData(DEFAULT_INPUT);
                 handlePredict(DEFAULT_INPUT);
               }}
@@ -189,6 +315,62 @@ export function RiskPredictorPage() {
             }}
             className="mt-5 space-y-5"
           >
+            {/* Geographic & Parcel Identification */}
+            <div className="rounded-lg border border-slate-800 bg-slate-900/50 p-3.5">
+              <div className="flex items-center justify-between mb-2.5">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-cyan-400 flex items-center gap-1.5">
+                  <MapPin size={12} /> Geographic & Survey Identification
+                </span>
+                {formData.land_id && (
+                  <span className="font-mono text-[10px] text-cyan-300 bg-cyan-950/80 border border-cyan-800/60 px-2 py-0.5 rounded">
+                    {formData.land_id}
+                  </span>
+                )}
+              </div>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-4">
+                <div>
+                  <label className="text-[11px] font-semibold text-slate-400">Land ID</label>
+                  <input
+                    type="text"
+                    value={formData.land_id || ""}
+                    onChange={(e) => updateField("land_id", e.target.value)}
+                    placeholder="e.g. TN-LND-2026"
+                    className="mt-1 h-9 w-full rounded-md border border-slate-700 bg-slate-900 px-2.5 text-xs text-slate-200 outline-none focus:border-cyan-400"
+                  />
+                </div>
+                <div>
+                  <label className="text-[11px] font-semibold text-slate-400">District</label>
+                  <input
+                    type="text"
+                    value={formData.district || ""}
+                    onChange={(e) => updateField("district", e.target.value)}
+                    placeholder="e.g. Kancheepuram"
+                    className="mt-1 h-9 w-full rounded-md border border-slate-700 bg-slate-900 px-2.5 text-xs text-slate-200 outline-none focus:border-cyan-400"
+                  />
+                </div>
+                <div>
+                  <label className="text-[11px] font-semibold text-slate-400">Taluk / Village</label>
+                  <input
+                    type="text"
+                    value={formData.taluk ? `${formData.taluk}${formData.village ? ` / ${formData.village}` : ""}` : (formData.village || "")}
+                    onChange={(e) => updateField("village", e.target.value)}
+                    placeholder="e.g. Sriperumbudur"
+                    className="mt-1 h-9 w-full rounded-md border border-slate-700 bg-slate-900 px-2.5 text-xs text-slate-200 outline-none focus:border-cyan-400"
+                  />
+                </div>
+                <div>
+                  <label className="text-[11px] font-semibold text-slate-400">Survey Number</label>
+                  <input
+                    type="text"
+                    value={formData.survey_no || ""}
+                    onChange={(e) => updateField("survey_no", e.target.value)}
+                    placeholder="e.g. 142/3A"
+                    className="mt-1 h-9 w-full rounded-md border border-slate-700 bg-slate-900 px-2.5 text-xs text-slate-200 outline-none focus:border-cyan-400"
+                  />
+                </div>
+              </div>
+            </div>
+
             {/* Numerical Row 1 */}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
               <div>

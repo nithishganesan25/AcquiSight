@@ -840,12 +840,17 @@ def get_cases_summary_endpoint() -> Dict[str, Any]:
 def get_alerts_endpoint(limit: int = 25) -> List[Dict[str, Any]]:
     cases = cases_repo.get_all()
     alerts = []
+    seen_ids: set = set()
     for c in cases:
         if c.get("has_litigation") and c.get("disputes"):
             disp = c["disputes"][0]
             cid = c.get("id") or str(c.get("la_case_id"))
+            alert_id = f"alert-lit-{cid}"
+            if alert_id in seen_ids:
+                continue
+            seen_ids.add(alert_id)
             alerts.append({
-                "id": f"alert-lit-{c.get('la_case_id', cid)}",
+                "id": alert_id,
                 "caseId": c.get("case_number") or cid,
                 "case_id": cid,
                 "district": c.get("district", "Tamil Nadu"),
@@ -859,8 +864,12 @@ def get_alerts_endpoint(limit: int = 25) -> List[Dict[str, Any]]:
         days = int(c.get("delay_days") or 0)
         if days > 120 and not c.get("has_litigation"):
             cid = c.get("id") or str(c.get("la_case_id"))
+            alert_id = f"alert-del-{cid}"
+            if alert_id in seen_ids:
+                continue
+            seen_ids.add(alert_id)
             alerts.append({
-                "id": f"alert-del-{c.get('la_case_id', cid)}",
+                "id": alert_id,
                 "caseId": c.get("case_number") or cid,
                 "case_id": cid,
                 "district": c.get("district", "Tamil Nadu"),
